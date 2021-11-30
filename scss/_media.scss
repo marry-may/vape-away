@@ -1,0 +1,1137 @@
+
+@media screen and (min-width: 1440px) {
+    .uk-container {
+        max-width: 1360px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .h2{
+        font-size: 48px;
+    }
+    
+    .h5 {
+        font-size: 28px;
+    }
+
+    .text{
+        font-size: 14px;
+    }
+
+    .main{
+        .h1{
+            font-size: 52px;
+        }
+        .subtitle{
+            font-size: 16px;
+        }
+        .logo{
+            max-width: 300px;
+        }
+        .btn-wrapper{
+            margin-top: 3rem;
+        }
+        .content{
+            padding-top: 15%;
+        }
+    }
+
+    .uk-container {
+        width: 80%;
+    }
+
+    .products{
+        .h4 {
+            font-size: 36px;
+        }
+    }
+
+    .about{
+        .title{
+            padding: 0;
+        }
+    }
+
+    .choose{
+        padding-top: 7rem;
+        
+        .content{
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .choice-grid {
+            margin-top: 4rem;
+        }
+
+        .choice {
+            .h6{
+                font-size: 20px;
+                padding-top: 1.5rem;
+            }
+        }
+
+        .img-wrapper{
+            height: 200px;
+        }
+
+        .title{
+            font-size: 20px;
+        }
+    }
+
+    .certified{
+        padding-top: 0;
+        
+         .title {
+            font-size: 48px;
+         }
+
+         .container{
+             padding-top: 10rem;
+             padding-bottom: 10rem;
+         }
+
+         .uk-container{
+            width: 100%;
+         }
+
+        .text{
+            font-size: 16px;
+            padding-left: 2rem;
+            width: 440px;
+        }
+
+    }
+
+    .collaborating{
+        padding-top: 5rem;
+
+        .uk-container{
+            width: 100%;
+        }
+        .title {
+            font-size: 32px;
+        }
+        .text {
+            padding-top: 20%;
+            padding-left: 4rem;
+            font-size: 16px;
+            max-width: 440px;
+        }
+    }
+
+    .technology{
+        .uk-container{
+            width: 100%;
+        }
+
+        .technology-img{
+            position: relative;
+            top: -4rem;
+            right: -18%;
+        }
+
+        .text{
+            font-size: 16px;
+
+            p{
+                width: 400px;
+            }
+        }
+    }
+
+    .blog{
+        .h5 {
+            font-size: 24px;
+        }
+
+        .item {
+            margin-bottom: 3rem;
+
+            .post {
+                max-width: 90%;
+            }
+        }
+    }
+
+    .underline{
+        &:after {
+            margin: 1.85rem 0;
+        }
+    }
+
+    .doctors{
+        .subtitle{
+            font-size: 15px;
+            width: 630px;
+            max-width: 100%;
+        }
+    } 
+    
+    .testimonials{
+        padding-bottom: 7rem;
+    }
+
+    .navbar{
+        .btn{
+            font-size: 13px;
+            padding: 1rem 1.5rem;
+        }
+        
+        .uk-logo{
+            max-width: 150px;
+        }
+
+        .uk-navbar-nav {
+            & > li{
+                & > a{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .nav-link {
+            margin-right: 1.5rem;
+            line-height: 1;
+        }
+
+        .icon{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .main {
+        .content {
+            padding-top: 12%;
+        }
+
+        .video-wrapper{
+            max-width: 520px;
+        }
+
+        .play{
+            height: 70px;
+
+            img{
+                height: 100%;
+            }
+        }
+    }
+
+    .h2 {
+        font-size: 48px;
+    }
+
+    .how-it-works{
+        padding-top: 5rem;
+    }
+
+    .certified{
+        .container{
+            padding: 8rem 5rem;
+        }
+
+        .title{
+            font-size: 42px;
+        }
+    }
+
+    .collaborating{
+        .container{
+            padding-top: 9rem;
+            padding-bottom: 10rem;
+        }
+    }
+
+    .products{
+        padding-bottom: 10rem;
+        
+        .content {
+            max-width: 320px;
+        }
+
+        .h4 {
+            font-size: 32px;
+        }
+
+        .underline{
+            &::after{
+                margin: 1.25rem 0 1.5rem;
+            }
+        }
+
+        .img-wrapper{
+            text-align: center;
+
+            .play{
+                height: 60px;
+                width: 60px;
+                right: -1.5rem;
+            }
+        }
+        
+        .product-img{
+            height: 320px;
+            width: auto;
+        }
+    }
+
+    .testimonials{
+        .slider{
+            margin-top: 2rem;
+        }
+    }
+    
+    .technology{
+        padding: 10rem 0;
+
+        .uk-container{
+            width: 90%;
+        }
+    }
+
+    .footer{
+        .uk-container {
+            width: 95%;
+        }
+
+        .logo{
+            width: 240px;
+            max-width: 100%;
+        }
+
+        .uk-grid{
+            margin: 0 auto;
+
+            &>*{
+                padding-left: 0;
+            }
+        }
+
+        .nav-container{
+            padding: 0 1rem;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+        }
+
+        .social{
+            width: 180px;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .social-link{
+            margin-right: 0;
+        }
+        
+        &-nav{
+            width: 200px;
+            max-width: 100%;
+            margin: 0 auto;
+
+            &:first-child{
+                display: none;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 639px) {
+    .testimonials{
+        .slider{
+            .uk-slider-items{
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .h5{
+        font-size: 26px;
+    }
+
+    .h2 {
+        font-size: 38px;
+    }
+
+    .section{
+        min-height: 700px;
+    }
+    
+    .main{
+        height: auto;
+        background-position-x: 58%;
+        
+        .h1 {
+            font-size: 36px;
+        }
+
+        .logo {
+            max-width: 200px;
+        }
+
+        .content{
+            max-width: 100%;
+            padding-top: 10rem;
+            padding-bottom: 4rem;
+        }
+
+        .subtitle{
+            max-width: 320px;
+        }
+
+        .video-wrapper {
+            width: 320px;
+            margin-top: 3rem;
+        }
+
+        .play{
+            height: 60px;
+            width: 60px;
+        }
+
+        .btn-wrapper {
+            margin-top: 2rem;
+        }
+    }
+
+    .navbar{
+        padding-top: 0;
+        padding-bottom: 0;
+        
+        .btn{
+            display: none;
+        }
+    }
+
+    .about{
+        .container{
+            padding: 6rem 1rem 7rem;
+            max-width: 100%;
+        }
+
+        .uk-grid{
+            margin: 0 auto;
+        }
+
+        .title{
+            font-size: 38px;
+        }
+    }
+
+    .testimonials{
+        .subtitle{
+            font-size: 15px;
+            margin-top: 1rem;
+            opacity: 1;
+
+            &::before{
+                width: 80px;
+                margin-right: 2.5rem;
+            }
+        }
+    }
+
+    .certified{
+        .container{
+            padding: 9rem 4rem 10rem;
+        }
+        
+        .text{
+            // width: 330px;
+            font-size: 15px;
+            width: 100%;
+            padding-top: 0;
+            padding-left: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: start;
+
+            p{
+                width: 380px;
+                margin-top: 0;
+                
+                &:first-child{
+                    margin-right: 5rem;
+                }
+            }
+        }
+
+        .title {
+            font-size: 36px;
+        }
+    }
+
+    .uk-container{
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .btn-wrapper{
+        margin-top: 2rem;
+    }
+
+    .btn-primary{
+        font-size: 14px;
+        line-height: 1;
+        padding: 1rem 1.5rem;
+    }
+
+    .btn-link{
+        font-size: 14px;
+    }
+
+    .play-video{
+        font-size: 15px;
+    }
+    
+    .choose{
+        min-height: auto;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+
+        .polygon{
+            display: none;
+        }
+
+        .content{
+            max-width: 100%;
+        }
+
+        .img-wrapper {
+            height: 220px;
+        }
+
+        .choice{
+            .h6{
+                font-size: 18px;
+                padding-top: 1rem;
+            }
+        }
+
+        .choice-grid {
+            margin-top: 2.5rem;
+        }
+    }
+
+    .about{
+        .text{
+            font-size: 16px;
+            padding-left: 6rem;
+        }
+    }
+
+    .collaborating{
+        padding-bottom: 4rem;
+
+        .container{
+            padding: 10rem 5rem;
+            min-height: 500px;
+        }
+        
+       .title {
+            font-size: 28px;
+        }
+    }
+
+    .doctors{
+        .name{
+            font-size: 18px;
+        }
+        
+        .info{
+            font-size: 15px;
+
+            &::before{
+                min-width: 40px;
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    .blog{
+        .title{
+            position: relative;
+            top: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .navbar{
+        .uk-logo {
+            max-width: 130px;
+        }
+        .uk-navbar-nav {
+            & > li{
+                & > a{
+                    font-size: 15px;
+                    padding: 0 10px;
+                }
+            }
+        }
+        .navbar-container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .uk-navbar-center:not(:only-child) {
+            position: initial;
+            transform: none;
+        }
+        .uk-navbar-right{
+            margin-left: 0;
+        }
+    }
+
+    .h2 {
+        font-size: 36px;
+    }
+
+    .how-it-works{
+        padding: 4rem 0;
+        min-height: 600px;
+    }
+    
+    .about {
+        padding: 0;
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 6rem 0;
+        }
+
+        .grid{
+            justify-content: flex-end;
+        }
+
+        .text{
+            padding-left: 0;
+            width: 310px;
+            max-width: 100%;
+        }
+    }
+
+    .choose {
+        padding: 5rem 0;
+        
+        .choice-grid{
+            justify-content: center;
+        }
+        .choice{
+            margin-bottom: 3rem;
+        }
+
+        &::after{
+            height: 65%;
+        }
+    }
+
+    .technology{
+        padding: 5rem 0;
+
+        .text{
+            display: block;
+            
+            p{
+                width: 100%;
+                max-width: 100%;
+                margin: 0 0 1rem;
+            }
+        }
+
+        .technology-img{
+            max-width: 90%;
+            position: static;
+            margin: 0 auto 3rem;
+        }
+
+        .content{
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        
+    }
+
+    .certified{
+        .container{
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        .text{
+            display: block;
+
+            p{
+                width: 100%;
+                
+                &:first-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .collaborating{
+        padding: 0;
+        min-height: auto;
+
+        .title{
+            width: 400px;
+            max-width: 100%;
+            padding: 0 0 1rem;
+            margin: 0 auto;
+            
+            &-container{
+                padding-left: 0;
+            }
+        }
+        
+        
+        .text{
+            width: 400px;
+            padding-left: 0;
+            padding-top: 0;
+        }
+
+        .uk-grid{
+            justify-content: center;
+        }
+    }
+
+    .certified{
+        min-height: initial;
+        padding-bottom: 7rem;
+
+        .container{
+            min-height: initial;
+        }
+        
+        .text{
+            padding-top: 1rem;
+            padding-left: 5rem;
+            width: 100%;
+        }
+
+        .uk-container{
+            width: 500px;
+
+            .text{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .blog {
+        padding-top: 5rem;
+        
+        .title{
+            top: 0;
+            margin-bottom: 4rem;
+            text-align: center;
+
+            &:after{
+                margin: 1.5rem auto;
+            }
+        }
+
+        .item{
+            margin:  0 auto 5rem;
+            width: 500px;
+            max-width: 100%;
+
+            .post{
+                max-width: 100%;
+            }
+            
+            &:first-child {
+                margin-top: 2rem;
+            }
+
+            &:nth-child(2n+1){
+                margin-top: 0;
+            }
+        }
+    }
+    
+    .footer{
+        .content{
+            width: 320px;
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .uk-grid{
+            &>*{
+                margin-bottom: 2rem;
+            }
+        }
+
+        .logo-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo{
+            margin-bottom: 2rem;
+        }
+
+        .social{
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .mobile-toggle{
+        display: block;
+    }
+
+    .how-it-works.section{
+        min-height: 500px;
+    }
+
+    .hidden-m{
+        display: none;
+    }
+
+    .navbar{
+        .uk-logo {
+            max-width: 125px;
+        }
+        .nav-link{
+            margin-right: 5px;
+            
+            
+            &:first-child{
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .bg-smoke{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .products{
+        padding: 5rem 0;
+        
+        .product{
+            &:not(:last-child){
+                margin-bottom: 5rem;
+            }
+
+            &-img{
+                height: auto;
+                max-width: 90%;
+            }
+        }
+
+        .img-wrapper{
+            .play{
+                border-radius: 50%;
+                overflow-x: hidden;
+                background: $color-white;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+
+    .how-it-works{
+        background: $color-blue url('../images/main/bg-hw-mobile.png') no-repeat bottom center;
+        background-size: contain;
+    }
+
+    .choose{
+        padding-top: 5rem;
+        background: $color-text;
+
+        .title{
+            p{
+                font-size: 1rem;
+            }
+        }
+
+        .content{
+            max-width: 320px;
+            margin: 0 auto;
+        }
+
+        .polygon{
+            display: none;
+        }
+
+        &::after,
+        &:before{
+            content: none;
+        }
+
+        .img-wrapper{
+            height: auto;
+        }
+    }
+
+    .about{
+        background: $color-blue;
+        min-height: initial;
+
+        .h5{
+            font-size: 22px;
+        }
+
+        .title{
+            font-size: 32px;
+        }
+        
+        .container{
+            padding: 4rem 2rem 5rem;
+            background-image: none;
+
+            &::after{
+                content: none;
+            }
+        }
+
+        .uk-container{
+            max-width: 320px;
+            margin: 0 auto;
+        }
+
+        .text,
+        .title{
+            max-width: 100%;
+            padding: 0;
+        }
+
+        &::before{
+            content: none;
+        }
+    }
+
+    .doctors{
+        .grid{
+            width: 380px;
+            max-width: 100%;
+            margin: 3rem auto 0;
+        }
+
+        .item{
+            padding: 0;
+        }
+    }
+
+    .certified{
+        padding-bottom: 4rem;
+        
+        .container{
+            background-size: auto 120%;
+            background-position: bottom right;
+            padding-top: 5rem;
+        }
+
+        .title{
+            font-size: 32px;
+        }
+    }
+
+    .collaborating{
+        .title {
+            font-size: 24px;
+        }        
+
+        .container{
+            background-position: bottom right;
+            background-size: auto 120%;
+            max-width: 100%;
+            padding: 5rem 3rem;
+        }
+    }
+
+    .testimonials{
+        padding: 5rem 0 3rem;
+
+        .slider{
+            margin-top: 2rem;
+        }
+
+        .subtitle{
+            letter-spacing: normal;
+            text-transform: none;
+            font-weight: normal;
+            margin-bottom: 0;
+            
+            &::before{
+                content: none;
+            }
+        }
+    }
+
+    .blog{
+        padding-bottom: 5rem;
+
+        .title{
+            top: 0;
+        }
+    }
+
+    .footer{
+        .copyright{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .h2 {
+        font-size: 32px;
+    }
+
+    .about{
+        .container{
+            padding: 4rem 1rem;
+
+        }
+
+        .title{
+            margin-bottom: 1rem;
+        }
+
+        .uk-grid{
+            margin-left: 0;
+        }
+    }
+
+    .products{
+        .h4{
+            font-size: 24px;
+        }
+    }
+
+    .blog{
+        .h5 {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        .title{
+            margin-bottom: 3rem;
+
+            &:after{
+                content: none;
+            }
+        }
+
+        .item{
+            margin-bottom: 3rem;
+            
+            .post-title{
+                margin-top: 1rem;
+            }
+        }
+    }
+    
+    .section{
+        min-height: auto;
+    }
+
+    .main {
+        .container{
+            min-height: 100vh;
+        }
+        .subtitle{
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .btn-wrapper{
+            margin: 2rem 0 0;
+
+            .btn:first-child{
+                margin-right: 1.5rem;
+            }
+        }
+
+        .btn{
+            font-size: 12px;
+        }
+    }
+
+    .testimonials{
+        padding: 5rem 0;
+        .slider{
+            .uk-slider-items{
+                padding: 0 1rem;
+            }
+        }
+    }
+
+    .certified{
+        .title{
+            font-size: 28px;
+            
+        }
+
+        .underline{
+            &::after{
+                margin-top: 1.5rem;
+            }
+        }
+
+        .container{
+            padding: 3rem 1rem;
+            max-width: 100%;
+        }
+        
+        .uk-container{
+            max-width: 90%;
+        }
+    }
+
+    .collaborating{
+        .uk-grid{
+            margin: 0;
+        }
+
+        .container{
+            padding: 7rem 1.5rem;
+        }
+    } 
+
+    .doctors{
+        .name{
+            margin: 1rem 0;
+        }
+
+        .info{
+            font-size: 14px;
+            padding: 0;
+            
+            &::before{
+                content: none;
+            }
+        }
+    }
+
+    .underline{
+        &:after{
+            width: 60px;
+            margin: 1rem 0;
+        }
+    }
+
+}
