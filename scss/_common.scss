@@ -170,3 +170,14 @@ p{
 .mobile-toggle{
     display: none;
 }
+
+.play-btn{
+    display: flex;
+    align-items: center;
+    color: $color-white;
+    transition: .5s all;
+
+    &:hover{
+        color: $color-primary;
+    }
+}

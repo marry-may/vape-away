@@ -320,6 +320,14 @@ p {
 .mobile-toggle {
   display: none; }
 
+.play-btn {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  transition: .5s all; }
+  .play-btn:hover {
+    color: #1660FE; }
+
 .navbar {
   position: absolute;
   top: 0;
@@ -659,7 +667,15 @@ p {
       font-size: 20px;
       font-weight: 600;
       color: #000E19;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      position: relative; }
+      .testimonials .slider .author::after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 5px;
+        background: #1660FE;
+        margin: 1.5rem 0 1rem; }
     .testimonials .slider .quote {
       font-size: 16px;
       line-height: 1.5;
@@ -675,7 +691,8 @@ p {
         height: 25px;
         line-height: .7;
         color: #1660FE;
-        position: absolute; }
+        position: absolute;
+        opacity: 0; }
       .testimonials .slider .quote::after {
         bottom: -.5rem;
         right: 1rem; }
@@ -1532,7 +1549,17 @@ p {
     .navbar .nav-link:first-child {
       margin-right: 1rem; }
   .bg-smoke {
-    display: none; } }
+    display: none; }
+  .testimonials .slider .author {
+    font-size: 18px;
+    margin-bottom: 1.5rem; }
+    .testimonials .slider .author::after {
+      width: 50px;
+      margin: 1rem 0 0; }
+  .testimonials .slider .quote p {
+    font-size: 15px; }
+  .testimonials .slider .video-cover .video-play {
+    padding: 0; } }
 
 @media screen and (max-width: 639px) {
   .products {

@@ -291,6 +291,16 @@
             font-weight: 600;
             color: $color-text;
             margin-bottom: 2rem;
+            position: relative;
+            
+            &::after{
+                content: "";
+                display: block;
+                width: 70px;
+                height: 5px;
+                background: $color-primary;
+                margin: 1.5rem 0 1rem;
+            }
         }
 
         .quote{
@@ -304,6 +314,7 @@
                 margin: 0 auto;
             }
 
+
             &::before,
             &::after{
                 content: '"';
@@ -313,6 +324,7 @@
                 line-height: .7;
                 color: $color-primary;
                 position: absolute;
+                opacity: 0;
             }
 
             &::after{
@@ -841,3 +853,4 @@
         }
     }
 }
+
