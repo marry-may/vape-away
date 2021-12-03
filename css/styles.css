@@ -897,7 +897,7 @@ p {
   position: relative;
   background: #000;
   color: #FFFFFF;
-  padding: 10rem 0; }
+  padding: 6rem 0 10rem; }
   .collaborating:after {
     content: "";
     display: block;
