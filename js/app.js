@@ -1,6 +1,12 @@
 
 var bg = document.querySelector('.bg');
 
+if (document.body.scrollTop >= 700 || document.documentElement.scrollTop >= 700) {
+    bg.classList.add("scroll");
+  } else {
+    bg.classList.remove("scroll");
+}
+  
 window.onscroll = function() {
   "use strict";
   if (document.body.scrollTop >= 700 || document.documentElement.scrollTop >= 700) {
