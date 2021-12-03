@@ -63,7 +63,7 @@
 
     .subtitle {
         width: 100%;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 22px;
         line-height: 160%;
         width: 540px;
@@ -341,7 +341,6 @@
     color: $color-white;
     padding: 2rem 0;
 
-    &::before,
     &::after{
         content: "";
         display: block;
@@ -350,13 +349,6 @@
         position: absolute;
         left: 0;
         right: 0;
-    }
-
-    &::before{
-        background: $color-bg;
-        bottom: 0;
-        z-index: 1;
-        opacity: .7;
     }
 
      &::after{
@@ -497,7 +489,6 @@
     color: $color-white;
     padding: 8rem 0;
 
-    &::before,
     &::after{
         content: "";
         display: block;
@@ -506,17 +497,6 @@
         position: absolute;
         left: 0;
         right: 0;
-        z-index: 0;
-    }
-
-    &:before{
-        background: $color-bg;
-        opacity: .7;
-        top: 0;
-        z-index: 1;
-    }
-
-    &::after{
         top: auto;
         bottom: -1px;
         background: $color-white;
@@ -627,7 +607,6 @@
     color: $color-white;
     padding: 10rem 0;
 
-    &::before,
     &:after{
         content: "";
         display: block;
@@ -636,16 +615,6 @@
         position: absolute;
         left: 0;
         right: 0;
-    }
-
-    &:before{
-        background: $color-bg;
-        opacity: .7;
-        bottom: 0;
-        z-index: 1;
-    }
-
-    &:after{
         height: 50%;
         background: $color-white;
         top: -1px;
@@ -761,7 +730,7 @@
 .blog,
 .technology{
     &:before{
-        content: "";
+        // content: "";
         background: $color-bg;
         opacity: .7;
         display: block;
@@ -844,12 +813,8 @@
     &.scroll{
         .bg-smoke{
             &:after{
-                opacity: .5;
+                opacity: .85;
             }
-        }
-
-        .polygon{
-            opacity: 0.1;
         }
     }
 }

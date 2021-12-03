@@ -505,7 +505,7 @@ p {
     height: 44px; }
   .main .subtitle {
     width: 100%;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 22px;
     line-height: 160%;
     width: 540px;
@@ -702,7 +702,7 @@ p {
   position: relative;
   color: #FFFFFF;
   padding: 2rem 0; }
-  .about::before, .about::after {
+  .about::after {
     content: "";
     display: block;
     width: 100%;
@@ -710,11 +710,6 @@ p {
     position: absolute;
     left: 0;
     right: 0; }
-  .about::before {
-    background: #000;
-    bottom: 0;
-    z-index: 1;
-    opacity: .7; }
   .about::after {
     top: -1px;
     background: #FFFFFF;
@@ -816,7 +811,7 @@ p {
   position: relative;
   color: #FFFFFF;
   padding: 8rem 0; }
-  .certified::before, .certified::after {
+  .certified::after {
     content: "";
     display: block;
     width: 100%;
@@ -824,13 +819,6 @@ p {
     position: absolute;
     left: 0;
     right: 0;
-    z-index: 0; }
-  .certified:before {
-    background: #000;
-    opacity: .7;
-    top: 0;
-    z-index: 1; }
-  .certified::after {
     top: auto;
     bottom: -1px;
     background: #FFFFFF;
@@ -905,20 +893,14 @@ p {
   background: #000;
   color: #FFFFFF;
   padding: 10rem 0; }
-  .collaborating::before, .collaborating:after {
+  .collaborating:after {
     content: "";
     display: block;
     width: 100%;
     height: 50%;
     position: absolute;
     left: 0;
-    right: 0; }
-  .collaborating:before {
-    background: #000;
-    opacity: .7;
-    bottom: 0;
-    z-index: 1; }
-  .collaborating:after {
+    right: 0;
     height: 50%;
     background: #FFFFFF;
     top: -1px;
@@ -995,7 +977,6 @@ p {
 .choose:before,
 .blog:before,
 .technology:before {
-  content: "";
   background: #000;
   opacity: .7;
   display: block;
@@ -1061,9 +1042,7 @@ p {
       opacity: 0;
       z-index: 1; }
   .bg.scroll .bg-smoke:after {
-    opacity: .5; }
-  .bg.scroll .polygon {
-    opacity: 0.1; }
+    opacity: .85; }
 
 .mt-8 {
   margin-top: 8rem; }
