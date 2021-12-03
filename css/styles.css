@@ -216,14 +216,14 @@ p {
 .h2 {
   font-size: 58px;
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 800;
   color: inherit;
   text-transform: capitalize; }
 
 .h3 {
   font-size: 56px;
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 800;
   color: inherit;
   text-transform: capitalize; }
 
@@ -247,6 +247,7 @@ p {
   color: #000E19; }
 
 .btn {
+  display: inline-block;
   font-family: "Gilroy", sans-serif;
   font-size: 16px;
   transition: all .5s;
@@ -615,6 +616,8 @@ p {
   background-color: #FFFFFF;
   position: relative;
   z-index: 2; }
+  .testimonials .h2 {
+    font-weight: 800; }
   .testimonials .subtitle {
     font-size: 16px;
     font-weight: 500;
@@ -852,6 +855,8 @@ p {
   color: #000E19;
   position: relative;
   z-index: 2; }
+  .doctors .h2 {
+    font-weight: 800; }
   .doctors .title span {
     display: inline-block; }
   .doctors .subtitle {
@@ -1102,17 +1107,13 @@ p {
 
 @media screen and (max-width: 1600px) {
   .h2 {
-    font-size: 48px; }
+    font-size: 52px; }
   .h5 {
     font-size: 28px; }
   .text {
     font-size: 14px; }
   .main .h1 {
-    font-size: 52px; }
-  .main .subtitle {
-    font-size: 16px; }
-  .main .logo {
-    max-width: 300px; }
+    font-size: 64px; }
   .main .btn-wrapper {
     margin-top: 3rem; }
   .main .content {
@@ -1134,7 +1135,11 @@ p {
       font-size: 20px;
       padding-top: 1.5rem; }
     .choose .img-wrapper {
-      height: 200px; }
+      display: flex;
+      align-items: center;
+      height: 250px; }
+      .choose .img-wrapper img {
+        max-height: 100%; }
     .choose .title {
       font-size: 20px; }
   .certified {
@@ -1155,7 +1160,7 @@ p {
     .collaborating .uk-container {
       width: 100%; }
     .collaborating .title {
-      font-size: 32px; }
+      font-size: 42px; }
     .collaborating .text {
       padding-top: 20%;
       padding-left: 4rem;
@@ -1277,6 +1282,8 @@ p {
     font-size: 26px; }
   .h2 {
     font-size: 44px; }
+  .subtitle {
+    font-size: 16px; }
   .uk-container {
     width: 95%;
     max-width: 100%;
@@ -1288,9 +1295,14 @@ p {
     padding-bottom: 0; }
     .navbar .btn {
       display: none; }
+  .main .h1 {
+    font-size: 56px; }
   .main .uk-container {
     width: 85%; }
+  .main .logo {
+    max-width: 300px; }
   .main .subtitle {
+    font-size: 16px;
     width: 380px; }
   .main .btn-wrapper {
     margin-top: 2rem; }
@@ -1586,6 +1598,8 @@ p {
       margin-right: 1rem; }
   .bg-smoke {
     display: none; }
+  .certified .uk-grid {
+    margin-left: -30px; }
   .testimonials .slider .author {
     font-size: 18px;
     margin-bottom: 1.5rem; }
@@ -1617,6 +1631,13 @@ p {
   .choose {
     padding-top: 5rem;
     background: #000E19; }
+    .choose .choice .img-wrapper {
+      border-radius: 5px;
+      overflow: hidden; }
+    .choose .choice .h6 {
+      font-size: 15px;
+      font-weight: 600;
+      max-width: 100%; }
     .choose .title p {
       font-size: 1rem; }
     .choose .content {
@@ -1636,7 +1657,7 @@ p {
     .about .title {
       font-size: 32px; }
     .about .container {
-      padding: 4rem 2rem 5rem;
+      padding: 5rem 2rem 7rem;
       background-image: none; }
       .about .container::after {
         content: none; }
