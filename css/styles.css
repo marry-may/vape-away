@@ -494,7 +494,7 @@ p {
     text-transform: capitalize;
     font-weight: 700;
     font-weight: bold;
-    font-size: 68px;
+    font-size: 72px;
     line-height: 1.2;
     color: #FFFFFF; }
     .main .h1 span {
@@ -506,9 +506,9 @@ p {
   .main .subtitle {
     width: 100%;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 160%;
-    width: 480px;
+    width: 580px;
     margin-left: 50px; }
   .main .btn-wrapper {
     width: 100%;
@@ -555,7 +555,7 @@ p {
     position: relative;
     z-index: 5; }
   .choose .img-wrapper {
-    background: #0E141A;
+    background: #FFFFFF;
     height: 320px;
     display: flex;
     flex-wrap: wrap;
@@ -572,10 +572,10 @@ p {
     text-align: center;
     z-index: 2; }
     .choose .choice img {
-      max-width: 75%;
+      max-width: 90%;
       margin: auto; }
     .choose .choice .h6 {
-      font-size: 24px;
+      font-size: 26px;
       font-weight: 700;
       width: 100%;
       color: #FFFFFF;
