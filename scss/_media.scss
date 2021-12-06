@@ -30,10 +30,6 @@
         }
     }
 
-    .uk-container {
-        width: 80%;
-    }
-
     .products{
         .h4 {
             font-size: 36px;
@@ -372,7 +368,6 @@
         margin: 0 auto;
     }
 
-
     .section{
         min-height: 700px;
     }
@@ -441,12 +436,25 @@
         padding-bottom: 5rem;
         
         .container{
-            padding: 9rem 3rem 14rem;
+            padding: 9rem 3rem;
             max-width: 94%;
         }
 
         .uk-grid {
             margin-left: 0;
+        }
+
+        .view-results{
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .title{
+            max-width: 500px;
+
+            .h3{
+                font-size: inherit;
+            }
         }
         
         .text{
@@ -669,7 +677,7 @@
 
     .certified{
         .container{
-            padding: 7rem 1rem 11rem 0;
+            padding: 7rem 1rem 7rem 0;
         }
     }
 
@@ -844,6 +852,7 @@
 
         .uk-container{
             width: 500px;
+            max-width: 90%;
 
             .text{
                 padding-left: 0;
@@ -1106,6 +1115,15 @@
 
         .item{
             padding: 0;
+            text-align: center;
+
+            .img{
+                max-width: 70%;
+            }
+        }
+
+        .more{
+            text-align: inherit;
         }
     }
 

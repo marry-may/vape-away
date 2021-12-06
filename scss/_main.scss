@@ -318,7 +318,7 @@
 }
 
 .testimonials{
-    padding: 6rem 0 10rem;
+    padding: 6rem 0 8rem;
     background-color: $color-white;
     position: relative;
     z-index: 2;
@@ -329,7 +329,7 @@
 
     .uk-dotnav{
         justify-content: center;
-        margin-top: 3rem;
+        margin-top: 4rem;
 
         &>*{
             &>*{
@@ -563,6 +563,10 @@
         font-weight: 700;
         text-transform: none;
         padding-left: 5rem;
+
+        .h4{
+            font-size: inherit;
+        }
     }
 
     .text{

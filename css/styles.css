@@ -695,7 +695,7 @@ p {
     justify-content: flex-end; }
 
 .testimonials {
-  padding: 6rem 0 10rem;
+  padding: 6rem 0 8rem;
   background-color: #FFFFFF;
   position: relative;
   z-index: 2; }
@@ -703,7 +703,7 @@ p {
     font-weight: 800; }
   .testimonials .uk-dotnav {
     justify-content: center;
-    margin-top: 3rem; }
+    margin-top: 4rem; }
     .testimonials .uk-dotnav > * > * {
       border-color: transparent;
       background: rgba(22, 96, 254, 0.4); }
@@ -874,6 +874,8 @@ p {
     font-weight: 700;
     text-transform: none;
     padding-left: 5rem; }
+    .about .title .h4 {
+      font-size: inherit; }
   .about .text {
     padding-top: 28%;
     padding-left: 8rem;
@@ -1235,8 +1237,6 @@ p {
     margin-top: 3rem; }
   .main .content {
     padding-top: 15%; }
-  .uk-container {
-    width: 80%; }
   .products .h4 {
     font-size: 36px; }
   .about .title {
@@ -1441,10 +1441,17 @@ p {
   .certified {
     padding-bottom: 5rem; }
     .certified .container {
-      padding: 9rem 3rem 14rem;
+      padding: 9rem 3rem;
       max-width: 94%; }
     .certified .uk-grid {
       margin-left: 0; }
+    .certified .view-results {
+      margin-top: 2rem;
+      width: 100%; }
+    .certified .title {
+      max-width: 500px; }
+      .certified .title .h3 {
+        font-size: inherit; }
     .certified .text {
       font-size: 14px;
       width: 100%;
@@ -1563,7 +1570,7 @@ p {
       width: 80px;
       margin-right: 2.5rem; }
   .certified .container {
-    padding: 7rem 1rem 11rem 0; }
+    padding: 7rem 1rem 7rem 0; }
   .collaborating {
     padding-bottom: 4rem; }
     .collaborating .container {
@@ -1661,7 +1668,8 @@ p {
       padding-left: 5rem;
       width: 100%; }
     .certified .uk-container {
-      width: 500px; }
+      width: 500px;
+      max-width: 90%; }
       .certified .uk-container .text {
         padding-left: 0; }
   .blog {
@@ -1796,7 +1804,12 @@ p {
     max-width: 100%;
     margin: 3rem auto 0; }
   .doctors .item {
-    padding: 0; }
+    padding: 0;
+    text-align: center; }
+    .doctors .item .img {
+      max-width: 70%; }
+  .doctors .more {
+    text-align: inherit; }
   .certified {
     padding-bottom: 4rem; }
     .certified .container {
