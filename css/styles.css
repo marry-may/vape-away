@@ -402,7 +402,7 @@ p {
       position: relative; }
 
 .footer {
-  background: #0D1317;
+  background: #0D1A24;
   color: #FFFFFF;
   padding: 5rem 0 0;
   position: relative;
@@ -889,7 +889,7 @@ p {
   background: transparent;
   background-size: cover;
   color: #FFFFFF;
-  padding: 10rem;
+  padding: 10rem 0 8rem;
   position: relative;
   overflow-x: hidden; }
   .technology .container {
@@ -941,6 +941,9 @@ p {
     z-index: 2; }
     .certified .container .underline::after {
       background-color: #FFFFFF; }
+  .certified .uk-container {
+    position: relative;
+    z-index: 4; }
   .certified .title {
     font-weight: 700;
     margin-top: 1.5rem; }
@@ -1123,38 +1126,35 @@ p {
   left: 0;
   z-index: 1;
   overflow: hidden; }
-  .bg video {
+  .bg video,
+  .bg img {
     position: absolute;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
     opacity: .6;
     z-index: 1; }
-    .bg video.bg-1 {
+    .bg video.bg-1,
+    .bg img.bg-1 {
       left: -50%; }
-    .bg video.bg-2 {
+    .bg video.bg-2,
+    .bg img.bg-2 {
       right: -40%;
       left: auto; }
-  .bg .bg-smoke {
+  .bg:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     bottom: 0;
-    height: 100%;
-    width: 100%; }
-    .bg .bg-smoke:after {
-      content: "";
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      background: #001124;
-      opacity: 0;
-      z-index: 1; }
-  .bg.scroll .bg-smoke:after {
-    opacity: .85; }
+    right: 0;
+    background: #001124;
+    opacity: 0;
+    z-index: 1; }
+  .bg.scroll:after {
+    opacity: .8; }
 
 .filter {
   display: none;
