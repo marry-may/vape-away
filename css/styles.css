@@ -189,7 +189,7 @@
 html {
   font: normal 16px/1.5 "Gilroy", sans-serif;
   color: #000E19;
-  background: #000; }
+  background: #001124; }
 
 a {
   text-decoration: none; }
@@ -271,7 +271,7 @@ p {
     border-radius: 60px;
     padding: 1rem 2.5rem; }
     .btn-white:hover {
-      background: #000;
+      background: #001124;
       color: #FFFFFF; }
   .btn-pure {
     color: #1660FE;
@@ -328,6 +328,14 @@ p {
   transition: .5s all; }
   .play-btn:hover {
     color: #1660FE; }
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
 
 .navbar {
   position: absolute;
@@ -394,7 +402,7 @@ p {
       position: relative; }
 
 .footer {
-  background: #0D1A24;
+  background: #0D1317;
   color: #FFFFFF;
   padding: 5rem 0 0;
   position: relative;
@@ -461,7 +469,7 @@ p {
   box-sizing: border-box; }
 
 .main {
-  background: #000;
+  background: #001124;
   height: 100vh;
   color: #FFFFFF;
   position: relative;
@@ -474,9 +482,9 @@ p {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #000 url("../images/main/main_bg.jpg") no-repeat center center;
+    background: #001124 url("../images/main/main-1.jpg") no-repeat center center;
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.8;
     z-index: 1; }
   .main .container {
     position: relative;
@@ -526,20 +534,95 @@ p {
     display: flex;
     justify-content: flex-end; }
 
+.smoke {
+  overflow: hidden; }
+  .smoke::after {
+    content: "";
+    background: transparent url("../images/main/smoke.png") no-repeat center center;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    -webkit-animation: smoke 60s infinite;
+    animation: smoke 60s infinite; }
+
+@-webkit-keyframes smoke {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.3);
+    opacity: .5; }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes smoke {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.3);
+    opacity: .5; }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
 .how-it-works {
-  background: #1660FE url("../images/main/bg-hiw.jpg") no-repeat center center;
-  background-size: cover;
+  background: #1C6CE8;
   color: #FFFFFF;
   padding: 8rem 0;
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
   z-index: 3; }
   .how-it-works .title {
     text-align: center; }
+  .how-it-works .polygon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    z-index: 2; }
+  .how-it-works .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 3; }
+    .how-it-works .overlay::before {
+      content: "";
+      display: block;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: radial-gradient(50% 50% at 50% 50%, rgba(28, 108, 232, 0) 0%, rgba(28, 108, 232, 0.367708) 63.33%, #1C6CE8 100%);
+      position: absolute;
+      z-index: 3; }
+    .how-it-works .overlay::after {
+      content: "";
+      display: block;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: transparent url("../images/main/bg-hiw.png") no-repeat center center;
+      background-size: cover;
+      position: absolute;
+      z-index: 4; }
+  .how-it-works .container {
+    z-index: 6; }
 
 .choose {
   padding: 10rem 0 15rem;
-  background: #000;
+  background: #001124;
   position: relative; }
   .choose .container {
     position: relative;
@@ -618,6 +701,14 @@ p {
   z-index: 2; }
   .testimonials .h2 {
     font-weight: 800; }
+  .testimonials .uk-dotnav {
+    justify-content: center;
+    margin-top: 3rem; }
+    .testimonials .uk-dotnav > * > * {
+      border-color: transparent;
+      background: rgba(22, 96, 254, 0.4); }
+    .testimonials .uk-dotnav > *.uk-active > * {
+      background: rgba(22, 96, 254, 0.7); }
   .testimonials .subtitle {
     font-size: 16px;
     font-weight: 500;
@@ -701,7 +792,7 @@ p {
         right: 1rem; }
 
 .about {
-  background: #000;
+  background: #001124;
   position: relative;
   color: #FFFFFF;
   padding: 2rem 0; }
@@ -712,11 +803,12 @@ p {
     height: 50%;
     position: absolute;
     left: 0;
-    right: 0; }
-  .about::after {
+    right: 0;
     top: -1px;
     background: #FFFFFF;
     z-index: 1; }
+  .about .overlay {
+    position: absolute; }
   .about .container {
     background: #1C6CE8;
     max-width: 90%;
@@ -739,7 +831,7 @@ p {
       height: 100%;
       width: 100%;
       position: absolute;
-      z-index: 2; }
+      z-index: 3; }
     .about .container::before {
       content: "";
       display: block;
@@ -765,6 +857,16 @@ p {
       width: 100%;
       opacity: .6;
       z-index: 1; }
+      .about .container .polygon::after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/smoke-blue.gif) no-repeat center center;
+        background-size: cover;
+        z-index: 4; }
     .about .container .underline::after {
       background-color: #FFFFFF; }
   .about .title {
@@ -783,7 +885,8 @@ p {
     margin-top: 3rem; }
 
 .technology {
-  background: #000E19 url("../images/main/bg-technology.jpg") no-repeat center center;
+  background: #001124 url("../images/main/bg-technology.jpg") no-repeat center center;
+  background: transparent;
   background-size: cover;
   color: #FFFFFF;
   padding: 10rem;
@@ -810,7 +913,7 @@ p {
       margin: 0 20px 0 50px; }
 
 .certified {
-  background: #000;
+  background: #001124;
   position: relative;
   color: #FFFFFF;
   padding: 8rem 0; }
@@ -832,22 +935,52 @@ p {
     max-width: 86%;
     width: 1620px;
     margin: 0 auto;
-    padding: 12rem 5rem;
+    padding: 10rem 5rem 8rem;
     box-sizing: border-box;
     position: relative;
     z-index: 2; }
     .certified .container .underline::after {
       background-color: #FFFFFF; }
   .certified .title {
-    font-weight: 700; }
+    font-weight: 700;
+    margin-top: 1.5rem; }
   .certified .text {
-    padding-top: 30%;
+    padding-top: 34%;
     padding-left: 10%;
     width: 540px;
     max-width: 100%;
     font-size: 18px; }
     .certified .text p {
       font-size: inherit; }
+  .certified .view-results {
+    margin-top: 3.5rem; }
+    .certified .view-results a,
+    .certified .view-results .link {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      color: #FFFFFF;
+      font-weight: 500;
+      text-transform: capitalize; }
+    .certified .view-results .icon {
+      margin-left: 1.25rem;
+      width: 5rem; }
+
+.doctors-modal .uk-modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem; }
+
+.doctors-modal .h6 {
+  margin: 1rem 0 .5rem; }
+
+.doctors-modal .doctor-img {
+  max-width: 280px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 1rem auto; }
 
 .doctors {
   padding: 0 0 2rem;
@@ -864,7 +997,7 @@ p {
     font-weight: 500;
     line-height: 1.6;
     text-transform: none;
-    max-width: 70%; }
+    max-width: 65%; }
   .doctors .grid {
     margin-top: 5rem; }
   .doctors .item {
@@ -895,7 +1028,7 @@ p {
 
 .collaborating {
   position: relative;
-  background: #000;
+  background: #001124;
   color: #FFFFFF;
   padding: 6rem 0 10rem; }
   .collaborating:after {
@@ -926,7 +1059,8 @@ p {
     font-size: 46px;
     font-weight: 700;
     text-transform: none;
-    padding-bottom: 8rem; }
+    padding-bottom: 8rem;
+    max-width: 90%; }
   .collaborating .text {
     padding-top: 22%;
     padding-left: 8rem;
@@ -936,7 +1070,7 @@ p {
       font-size: inherit; }
 
 .blog {
-  background: #000;
+  background: #001124;
   color: #FFFFFF;
   padding: 0 0 10rem;
   position: relative;
@@ -979,21 +1113,6 @@ p {
   border-radius: 60px;
   padding: 1rem 2rem; }
 
-.choose:before,
-.blog:before,
-.technology:before {
-  background: #000;
-  opacity: .7;
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1; }
-
 .bg {
   width: 100%;
   height: 100%;
@@ -1003,7 +1122,7 @@ p {
   right: 0;
   left: 0;
   z-index: 1;
-  overflow-x: hidden; }
+  overflow: hidden; }
   .bg video {
     position: absolute;
     bottom: 0;
@@ -1016,18 +1135,6 @@ p {
     .bg video.bg-2 {
       right: -40%;
       left: auto; }
-  .bg .polygon {
-    background: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    max-height: 100%;
-    width: 100vw;
-    max-width: 100%;
-    z-index: 1;
-    opacity: 0;
-    display: none; }
   .bg .bg-smoke {
     position: absolute;
     top: 0;
@@ -1043,11 +1150,21 @@ p {
       top: 0;
       bottom: 0;
       right: 0;
-      background: #000E19;
+      background: #001124;
       opacity: 0;
       z-index: 1; }
   .bg.scroll .bg-smoke:after {
     opacity: .85; }
+
+.filter {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  right: 6vw;
+  top: 19vh;
+  width: 18vw;
+  position: absolute;
+  z-index: 4; }
 
 .mt-8 {
   margin-top: 8rem; }
@@ -1628,6 +1745,10 @@ p {
   .how-it-works {
     background: #1C6CE8 url("../images/main/bg-hw-mobile.png") no-repeat bottom center;
     background-size: contain; }
+    .how-it-works .polygon {
+      display: none; }
+    .how-it-works::after {
+      content: none; }
   .choose {
     padding-top: 5rem;
     background: #000E19; }

@@ -1009,6 +1009,14 @@
     .how-it-works{
         background: $color-blue url('../images/main/bg-hw-mobile.png') no-repeat bottom center;
         background-size: contain;
+
+        .polygon{
+            display: none;
+        }
+
+        &::after{
+            content: none;
+        }
     }
 
     .choose{

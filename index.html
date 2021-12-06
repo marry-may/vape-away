@@ -87,14 +87,17 @@
 </div>
 
 <div class="bg">
-    <div class="bg-smoke">
+    <img src="images/bg-smoke.gif" alt="">
+    <!-- 
+    <div class="bg-smoke">deo/v-2.mp4" type="video/mp4">
+        </video> 
         <video autoplay muted loop class="bg-video bg-2">
             <source src="images/video/bg-v2.mp4" type="video/mp4">
         </video>
         <video autoplay muted loop class="bg-video bg-1">
             <source src="images/video/bg-v2.mp4" type="video/mp4">
         </video>
-    </div>
+    </div>-->
 </div>
 
 <section class="main section">
@@ -118,10 +121,7 @@
                 <a href="#" class="btn-link btn-link-primary">Learn More</a>
             </div>
 
-            
-
             <div class="video-wrapper">
-
                 <div class="play-video">
                     <div uk-lightbox>
                         <a class="play-btn" href="https://www.youtube.com/watch?v=sVIMUMEI61c" data-caption="YouTube">
@@ -133,11 +133,18 @@
                     </div>
                 </div>
             </div>
+
+            <div class="filter">
+                <img src="images/filter.png" alt="">
+            </div>
+
         </div>
     </div>
 </section>
 
-<section class="how-it-works section blue">
+<section class="how-it-works section smoke">
+    <div id="polygon" class="polygon"></div>
+    <div class="overlay"></div>
     <div class="uk-container container">
         <div class="content">
             <h2 class="h2 title">How it works?</h2>
@@ -158,7 +165,7 @@
         </div>
     </div>
     <div class="slider">
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="1" uk-slider="center: true; index: 2">
+        <div class="uk-position-relative uk-visible-toggle" tabindex="1" uk-slider="center: true; index: 2">
             <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@l uk-grid"> 
                 
                 <li>
@@ -191,7 +198,7 @@
 
                 <li>
                     <div class="video-cover">
-                        <div class="overlay">
+                        <div class="video-overlay">
                             <img src="images/testimonials/1.jpg" alt="">
                         </div>
                         
@@ -331,19 +338,23 @@
                     </div>
                 </li>
             </ul>
+
+            <ul class="uk-slider-nav uk-dotnav"></ul>
         </div>
     </div>
 </section>
 
 <section class="about section">
-    <div class="container">
-        <div id="polygon" class="polygon"></div>
+    <div class="container smoke">        
+        <div id="polygon2" class="polygon"></div>
+        <div class="overlay smoke"></div>
+       
+        
         <div class="uk-container">
             <div class="grid uk-grid uk-child-width-1-2@m">
                 <div class="title">
                     <h2 class="h4 title underline">
-                        This is not an <br>
-                        E-Cigarette
+                        Unique Filter <br> Solutions
                     </h2>
                 </div>
                 <div class="text">
@@ -476,7 +487,7 @@
 
                 <div class="text">
                     <p>
-                        Each Vapeaway filter is equipped with our vaporfreeze 2.0 technology. a propiertary blend of military-grade fibers that is manufactured in the united kingdom that freezes the toxic chemicals on contact.
+                        Each VapeAway Filter is equipped with our VaporFreeze 2.0 Technology. a propiertary blend of military-grade fibers that is manufactured in the united kingdom that freezes the toxic chemicals on contact.
                     </p>
 
                     <p>
@@ -490,12 +501,12 @@
 
 <section class="certified section">
     <div class="container">
+        <div class="overlay smoke"></div>
         <div class="uk-container">
             <div class="uk-grid uk-child-width-1-2@l">
                 <div class="title">
                     <h2 class="h3 title underline">
-                        Certified by <br>
-                        laboratory testing
+                        Certified laboratory testing results
                     </h2>
                 </div>
                 <div class="content">
@@ -506,7 +517,16 @@
                         <p>
                             Vapeaway’s patent pending vaporfreeze 2.0 technology has been tested to ensure that it meets our stated use cases, and that it effectively and consistently performs to achieve the stated impact for our users. 
                         </p>
+
+                        <div class="view-results" uk-lightbox>
+                            <a href="images/TestingResults.png" class="link">
+                                Testing Results
+                                <img class="icon" src="images/icons/more.svg" alt="">
+                            </a>
+                        </div>
                     </div>
+
+                    
                 </div>
             </div>
            
@@ -524,7 +544,7 @@
                 </span>
             </h2>
             <p class="h5 subtitle">
-                VapeAway was created with the utmost consideration to all of the factors that contribute to vaping.  This includes the chemical, psychological and behavioral aspects of the habit.  Alongside our patent pending technology, our advisors serve to help provide insights and guidance to fulfill our mission to help users regardless of where they are in their vaping journey, and their loved ones by providing tools they can use to help them start the road towards quitting.
+                VapeAway was created with the utmost consideration to all of the factors that contribute to vaping.  This includes the chemical, psychological and behavioral aspects of the habit. Alongside our patented technology, our board certified doctors and advisors serve to help provide insights and guidance to fulfill our mission to help users regardless of where they are in their vaping journey, and their loved ones by providing tools they can use to help them start the road towards quitting.
             </p>
         </div>
         <div class="grid uk-grid uk-child-width-1-2@s uk-child-width-1-3@m">
@@ -541,11 +561,11 @@
                         Dr. Kirshenbaum is a Professor of Psychology at Saint Michael’s College.
                     </p>
                 </div>
-                <div class="link">
+                <a href="#doctor-1" class="link" uk-toggle>
                     <div class="more">
                         Read More
                     </div>
-                </div>
+                </a>
             </div>
             
             <div class="item">
@@ -557,14 +577,14 @@
                 </div>
                 <div class="info">
                     <p>
-                        Dr. Kirshenbaum is a Professor of Psychology at Saint Michael’s College.
+                        Erica is an author, addiction and wellness specialist, motivational speaker.
                     </p>
                 </div>
-                <div class="link">
+                <a href="#doctor-2" class="link" uk-toggle>
                     <div class="more">
                         Read More
                     </div>
-                </div>
+                </a>
             </div>
             
             <div class="item">
@@ -579,11 +599,11 @@
                         Licensed clinical social worker, credentialed in alcoholism and abuse counseling.
                     </p>
                 </div>
-                <div class="link">
+                 <a href="#doctor-3" class="link" uk-toggle>
                     <div class="more">
                         Read More
                     </div>
-                </div>
+                </a>
             </div>
             
             <div class="item">
@@ -591,18 +611,18 @@
                     <img class="uk-transition-scale-up uk-transition-opaque" src="images/doctors/4.jpg" alt="">
                 </div>
                 <div class="name">
-                    Dr. Kathrine Pannel
+                    Dr. Kathrine Pannel, DO
                 </div>
                 <div class="info">
                     <p>
                         Osteopathic psychiatrist and medical director for Right Track Medical Group.
                     </p>
                 </div>
-                <div class="link">
+                 <a href="#doctor-4" class="link" uk-toggle>
                     <div class="more">
                         Read More
                     </div>
-                </div>
+                </a>
             </div>
             
             <div class="item">
@@ -614,14 +634,14 @@
                 </div>
                 <div class="info">
                     <p>
-                        Dr. Kirshenbaum is a Professor of Psychology at Saint Michael’s College.
+                        Dr. Stogner is a pulmonologist physician at Hattiesburg Clinic Pulmonary Medicine.
                     </p>
                 </div>
-                <div class="link">
+                 <a href="#doctor-5" class="link" uk-toggle>
                     <div class="more">
                         Read More
                     </div>
-                </div>
+                </a>
             </div>
             
             <div class="item">
@@ -629,18 +649,18 @@
                     <img class="uk-transition-scale-up uk-transition-opaque" src="images/doctors/6.jpg" alt="">
                 </div>
                 <div class="name">
-                    Raymond E. Guerry
+                    Raymond E. Guerry, Scientist
                 </div>
                 <div class="info">
                     <p>
                         Chemical scientist and engineer with nearly 30 years of experience.
                     </p>
                 </div>
-                <div class="link">
+                 <a href="#doctor-6" class="link" uk-toggle>
                     <div class="more">
                         Read More
                     </div>
-                </div>
+                </a>
             </div>
 
 
@@ -656,11 +676,11 @@
                         Partner at Dickinson & Avella PLLC with more than 24 years of experience
                     </p>
                 </div>
-                <div class="link">
+                 <a href="#doctor-7" class="link" uk-toggle>
                     <div class="more">
                         Read More
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="item">
@@ -675,11 +695,11 @@
                         Partner at Dickinson & Avella PLLC with nearly 30 years of experience
                     </p>
                 </div>
-                <div class="link">
+                 <a href="#doctor-8" class="link" uk-toggle>
                     <div class="more">
                         Read More
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="item">
@@ -694,19 +714,177 @@
                         Mike Avella, Jr., Government Affairs Associate, Dickinson & Avella PLLC
                     </p>
                 </div>
-                <div class="link">
+                <a href="#doctor-9" class="link" uk-toggle>
                     <div class="more">
                         Read More
                     </div>
-                </div>
+                </a>
             </div>
 
         </div>
     </div>
 </section>
 
+
+<!-- MODAL -->
+<!-- Doctor Modal 1 -->
+<div id="doctor-1" class="doctors-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <img class="doctor-img uk-transition-scale-up uk-transition-opaque" src="images/doctors/1.jpg" alt="">
+
+        <h2 class="h6 uk-text-center">
+            Dr. Ari Kirshenbaum, PhD
+        </h2>
+
+        <p>
+            Dr. Ari Kirshenbaum is Professor of Psychology at Saint Michael’s College. He teaches courses in psychopharmacology and neuroscience, and currently has grants from NIH and NSF for work in human behavioral pharmacology. His grant-funded work focuses on cognitive and behavioral responses to nicotine and cannabinoids. Recently, his work on abuse-liability of e-cigarettes was recently published in the journal called Experimental and Clinical Psychopharmacology and he wrote a chapter in the clinical handbook called “The Neuroscience of Nicotine: Mechanisms and Treatment.” He has also served as the Chair for the IRB at Saint Michael’s, the Director of the Pre-Pharmacy program, and Chair of the Council of Undergraduate Research. Other research interests include toxicology, bioethics and law, and he is the Scientific Director and Co-founder of a Vermont-based small business devoted to public health and safety as it pertains to cannabis and driving-related impairment.
+        </p>
+        
+    </div>
+</div>
+
+<!-- Doctor Modal 2 -->
+<div id="doctor-2" class="doctors-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <img class="doctor-img uk-transition-scale-up uk-transition-opaque" src="images/doctors/2.jpg" alt="">
+
+        <h2 class="h6 uk-text-center">
+           Erica Spiegelman, Author
+        </h2>
+
+        <p>Erica is an author, addiction and wellness specialist, and motivational speaker who works with individuals, couples, and families on personal growth and overall wellness. Erica provides a holistic approach to helping people overcome their struggles with addictions and dependency and gives them the tools they need to create healthy lives for themselves Erica Is the author of the new book The Rewired Life Workbook (2019), The Rewired Life (2018) as well as Rewired: A Bold New Approach to Addiction & Recovery (2015), the Rewired Workbook (2017) Erica holds a bachelor’s degree in literature from the University of Arizona and is a California State Certified Drug and Alcohol Counselor (CADAC)-II from UCLA.</p>
+        
+    </div>
+</div>
+
+<!-- Doctor Modal 3-->
+<div id="doctor-3" class="doctors-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <img class="doctor-img uk-transition-scale-up uk-transition-opaque" src="images/doctors/3.jpg" alt="">
+
+        <h2 class="h6 uk-text-center">
+            Dr. Shalom Augenbaum, PhD, CASAC
+        </h2>
+
+        <p>Dr. Augenbaum is a licensed clinical social worker, credentialed alcoholism & substance abuse counselor, certified clinical trauma professional, and holds a Ph.D. in clinical social work. Trained psychodynamically, with over a decade’s worth of experience and clinical expertise in the field of addictions and psychotherapy. Dr. Augenbaum effectively guides, advises and helps his patients overcome complex issues consistently seen with those struggling with addiction. Prior to opening his private practice, Dr. Augenbaum was the clinical director of a drug and alcohol rehab, overseeing all aspects of staff, operation, and provision of treatment. The author of over 200 articles dealing with addiction, existentialism, mental health, and daily living.</p>
+        
+    </div>
+</div>
+
+<!-- Doctor Modal 4 -->
+<div id="doctor-4" class="doctors-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <img class="doctor-img uk-transition-scale-up uk-transition-opaque" src="images/doctors/4.jpg" alt="">
+
+        <h2 class="h6 uk-text-center">
+            Dr. Katherine Pannel, DO
+        </h2>
+
+        <p>
+            Dr. Pannel DO, is an osteopathic psychiatrist and medical director for Right Track Medical Group in Oxford, Mississippi. She is certified by the American Board of Psychiatry and Neurology. Dr. Pannel serves as president of the Northeast Medical Society and is the District 3 trustee for the Mississippi State Medical Association (MSMA). She is also a member of the American Psychiatric Association and serves on the boards of the Mississippi Psychiatric Association as well as the Mississippi Osteopathic Association. She also serves on the Mississippi Delegation to the AMA and AOA. 
+        </p>
+        
+    </div>
+</div>
+
+<!-- Doctor Modal 5 -->
+<div id="doctor-5" class="doctors-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <img class="doctor-img uk-transition-scale-up uk-transition-opaque" src="images/doctors/5.jpg" alt="">
+
+        <h2 class="h6 uk-text-center">Dr. Steven W. Stogner, M.D., FCCP</h2>
+
+        <p>Dr. Steven W. Stogner, M.D., FCCP is a pulmonologist physician at Hattiesburg Clinic Pulmonary Medicine and Hattiesburg Clinic Critical Care Medicine. The center provides prevention, diagnosis, treatment, critical care and rehabilitation of respiratory disorders.</p>
+        
+    </div>
+</div>
+
+<!-- Doctor Modal 6 -->
+<div id="doctor-6" class="doctors-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <img class="doctor-img uk-transition-scale-up uk-transition-opaque" src="images/doctors/6.jpg" alt="">
+
+        <h2 class="h6 uk-text-center">Raymond E. Guerry</h2>
+
+        <p>
+            Raymond is a chemical scientist and engineer with nearly 30 years of experience in commercial research and product development. Currently, Raymond conducts research for VapeAway, a revolutionary vaping accessory designed to reduce the chemicals being ingested while vaping by 50 percent or more, all with minimal impact on the quality of the vaping experience. Previously Raymond worked in Procter & Gamble’s Research and Development as Lead of Product & Package Research for Liquid Tide, where he grew the business by more than 800%.
+        </p>
+        
+    </div>
+</div>
+
+
+<!-- Doctor Modal 7 -->
+<div id="doctor-7" class="doctors-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <img class="doctor-img uk-transition-scale-up uk-transition-opaque" src="images/doctors/7.jpg" alt="">
+
+        <h2 class="h6 uk-text-center">
+            Christina L. Dickinson, Esq., Partner, Dickinson & Avella PLLC
+        </h2>
+
+        <p>
+            Christina is a partner at Dickinson &amp; Avella PLLC, specializing in issues such as real estate, healthcare, tax issues, consumer products and criminal justice matters. Her experience includes work post-9/11 for The World Trade Center site, the Senate Democratic Conference, and as a legislative aide to members of the Senate. Christina has also served as the assistant and deputy counsel to the NYS Senate Minority.
+        </p>
+        
+    </div>
+</div>
+
+<!-- Doctor Modal 8 -->
+<div id="doctor-8" class="doctors-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <img class="doctor-img uk-transition-scale-up uk-transition-opaque" src="images/doctors/8.jpg" alt="">
+
+        <h2 class="h6 uk-text-center">
+            Michael Avella, Esq., Partner, Dickinson & Avella PLLC
+        </h2>
+
+        <p>
+            Michael is a partner at Dickinson & Avella PLLC, specializing in tax, racing/gaming budget issues facing the state and New York City on a legislative level. His experience includes acting as chief counsel to the Senate Majority, including under two majority leaders. In his capacity as the chief legal officer for the New York State Senate, Michael advised the majority leader and each member of the Majority Conference on every major policy initiative confronting the state. Michael currently serves as a board member of the Capital Region Chapter of the New York League of Conservation Voters (NYLCV). Michael is a board member of the New York League of Conservation Voters. He also serves as a board member for the Nelson A. Rockefeller Empire State Plaza Performing Arts Center.
+        </p>
+        
+    </div>
+</div>
+
+<!-- Doctor Modal 9 -->
+<div id="doctor-9" class="doctors-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <img class="doctor-img uk-transition-scale-up uk-transition-opaque" src="images/doctors/9.jpg" alt="">
+
+        <h2 class="h6 uk-text-center">
+            Mike Avella, Jr., Government Affairs Associate, Dickinson & Avella PLLC
+        </h2>
+
+        <p>
+            Mike has an extensive background in legislative and regulatory affairs to support issues surrounding education, consumer products and health policies. He began his career as a press coordinator at the New York State Assembly and later served as a senior contracts manager at DentaQuest and the senior associate director of governmental affairs at the NYS Medical Society (MSSNY), where he formulated and advocated policy agendas. Mike has previously served as the fundraising coordinator for The Leukemia & Lymphoma Society,chapter co-founder for Team Red, White and Blue and is the president elect for the Kiwanis Club of Troy.
+        </p>
+        
+    </div>
+</div>
+
+<!-- END MODAL -->
+
 <section class="collaborating section">
     <div class="container">
+        <div class="overlay smoke"></div>
         <div class="uk-container">
             <div class="uk-grid uk-child-width-1-2@m">
                 <div class="title-container">
@@ -840,7 +1018,7 @@
                     <img src="images/logo.svg" alt="">
                 </div>
                 <div class="subtitle">
-                    Vape the smarter way
+                    The Smarter Way
                 </div>
 
                 <div class="social">

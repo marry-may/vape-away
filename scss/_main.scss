@@ -17,9 +17,9 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: $color-bg  url('../images/main/main_bg.jpg') no-repeat center center;
+        background: $color-bg  url('../images/main/main-1.jpg') no-repeat center center;
         background-size: cover;
-        opacity: 0.9;
+        opacity: 0.8;
         z-index: 1;
     }
 
@@ -92,17 +92,119 @@
     }
 }
 
-.how-it-works{
-    background: $color-primary url('../images/main/bg-hiw.jpg') no-repeat center center;
+.smoke{
+    // position: relative;
+    overflow: hidden;
+
+    &::after{
+        content: "";
+        background: transparent url('../images/main/smoke.png') no-repeat center center;
     background-size: cover;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        -webkit-animation: smoke 60s infinite;
+            animation: smoke 60s infinite;
+    }
+}
+
+@-webkit-keyframes smoke {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    } 
+}
+
+@keyframes smoke {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.how-it-works{
+    background: $color-blue;
     color: $color-white;
     padding: 8rem 0;
     min-height: 100vh;
     position: relative;
+    overflow: hidden;
     z-index: 3;
 
     .title{
         text-align: center;
+    }
+
+    
+
+    .polygon{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .4;
+        z-index: 2;
+    }
+    
+    .overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: 3;
+        
+        &::before {
+            content: "";
+            display: block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            // background: radial-gradient(50% 50% at 50% 50%, #1c6ce8 50%, rgba(28, 108, 232, 0.5) 60%, #1C6CE8 90%);
+            background: radial-gradient(50% 50% at 50% 50%, rgba(28, 108, 232, 0) 0%, rgba(28, 108, 232, 0.367708) 63.33%, #1C6CE8 100%);
+            position: absolute;
+            z-index: 3;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: transparent url('../images/main/bg-hiw.png') no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            z-index: 4;
+        }
+    }
+
+
+    .container{
+        z-index: 6;
     }
 }
 
@@ -223,6 +325,23 @@
 
     .h2{
         font-weight: 800;
+    }
+
+    .uk-dotnav{
+        justify-content: center;
+        margin-top: 3rem;
+
+        &>*{
+            &>*{
+                border-color: transparent;
+                background: rgba($color-primary, .4);
+            }
+            &.uk-active{
+                &>*{
+                    background: rgba($color-primary, .7);
+                }
+            }
+        }
     }
 
     .subtitle{
@@ -353,16 +472,17 @@
         position: absolute;
         left: 0;
         right: 0;
-    }
-
-     &::after{
         top: -1px;
         background: $color-white;
         z-index: 1;
     }
 
+    .overlay{
+        position: absolute;
+    }
+
     .container{
-        background: #1C6CE8;
+        background: $color-blue;
         max-width: 90%;
         width: 1620px;
         margin: 0 auto;
@@ -376,7 +496,6 @@
             content: "";
             background: url('../images/main/bg-device.png') no-repeat center center;
             background-size: cover;
-            
             display: block;
             top: 0;
             right: 0;
@@ -385,7 +504,7 @@
             height: 100%;
             width: 100%;
             position: absolute;
-            z-index: 2;
+            z-index: 3;
         }
 
         &::before{
@@ -417,6 +536,19 @@
             width: 100%;
             opacity: .6;
             z-index: 1;
+
+            &::after{
+                // content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url(../images/smoke-blue.gif) no-repeat center center;
+                background-size: cover;
+                z-index: 4;
+            }
         }
 
         .underline{
@@ -450,7 +582,8 @@
 }
 
 .technology{
-    background: $color-text url('../images/main/bg-technology.jpg') no-repeat center center;
+    background: $color-bg url('../images/main/bg-technology.jpg') no-repeat center center;
+    background: transparent;
     background-size: cover;
     color: $color-white;
     padding: 10rem;
@@ -513,7 +646,7 @@
         max-width: 86%;
         width: 1620px;
         margin: 0 auto;
-        padding: 12rem 5rem;
+        padding: 10rem 5rem 8rem;
         box-sizing: border-box;
         position: relative;
         z-index: 2;
@@ -527,10 +660,11 @@
 
     .title{
         font-weight: 700;
+        margin-top: 1.5rem;
     }
 
     .text{
-        padding-top: 30%;
+        padding-top: 34%;
         padding-left: 10%;
         width: 540px;
         max-width: 100%;
@@ -540,7 +674,48 @@
             font-size: inherit;
         }
     }
+
+    .view-results{
+        margin-top: 3.5rem;
+
+        a,
+        .link{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            color: $color-white;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        .icon{
+            margin-left: 1.25rem;
+            width: 5rem;
+        }
+    }
 }
+
+.doctors-modal{
+    .uk-modal-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+    }
+
+    .h6{
+        margin: 1rem 0 .5rem;
+    }
+
+    .doctor-img{
+       max-width: 280px;
+       border-radius: 100%;
+       overflow: hidden;
+       margin: 1rem auto;
+    }
+}
+
 
 .doctors{
     padding: 0 0 2rem;
@@ -564,7 +739,7 @@
         font-weight: 500;
         line-height: 1.6;
         text-transform: none;
-        max-width: 70%;
+        max-width: 65%;
     }
     
     .grid {
@@ -652,6 +827,7 @@
         font-weight: 700;
         text-transform: none;
         padding-bottom: 8rem;
+        max-width: 90%;
     }
 
     .text{
@@ -734,25 +910,6 @@
     }
 }
 
-.choose,
-.blog,
-.technology{
-    &:before{
-        // content: "";
-        background: $color-bg;
-        opacity: .7;
-        display: block;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-    }
-}
-
 .bg{
     width: 100%;
     height: 100%;
@@ -762,7 +919,7 @@
     right: 0;
     left: 0;
     z-index: 1;
-    overflow-x: hidden;
+    overflow: hidden;
 
     video{
         position: absolute;
@@ -782,20 +939,6 @@
         }
     }
 
-    .polygon{
-        background: transparent;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        max-height: 100%;
-        width: 100vw;
-        max-width: 100%;
-        z-index: 1;
-        opacity: 0;
-        display: none;
-    }
-
     .bg-smoke{
         position: absolute;
         top: 0;
@@ -812,7 +955,7 @@
             top: 0;
             bottom: 0;
             right: 0;
-            background: $color-text;
+            background: $color-bg;
             opacity: 0;
             z-index: 1;
         }
@@ -827,3 +970,14 @@
     }
 }
 
+
+.filter{
+    display: none;
+    position: absolute;
+    z-index: 4;
+    right: 6vw;
+    top: 19vh;
+    width: 18vw;
+    position: absolute;
+    z-index: 4;
+}
