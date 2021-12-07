@@ -993,6 +993,8 @@ p {
   color: #000E19;
   position: relative;
   z-index: 2; }
+  .doctors .description {
+    width: 70%; }
   .doctors .h2 {
     font-weight: 800; }
   .doctors .title span {
@@ -1029,7 +1031,8 @@ p {
     color: #1660FE;
     font-weight: 500;
     text-align: right;
-    display: block; }
+    display: block;
+    padding: 5px 0; }
 
 .collaborating {
   position: relative;
@@ -1301,12 +1304,16 @@ p {
       max-width: 90%; }
   .underline:after {
     margin: 1.85rem 0; }
+  .testimonials {
+    padding-bottom: 7rem; }
   .doctors .subtitle {
     font-size: 15px;
     width: 670px;
     max-width: 100%; }
-  .testimonials {
-    padding-bottom: 7rem; }
+  .doctors.testimonials {
+    padding-bottom: 3rem; }
+    .doctors.testimonials .uk-dotnav {
+      margin-top: 0; }
   .navbar .btn {
     font-size: 13px;
     padding: 1rem 1.5rem; }
@@ -1391,7 +1398,9 @@ p {
       display: none; } }
 
 @media screen and (max-width: 1199px) and (min-width: 639px) {
-  .testimonials .slider .uk-slider-items {
+  .testimonials .author {
+    font-size: 18px; }
+  .testimonials:not(.doctors) .slider .uk-slider-items {
     padding: 0; } }
 
 @media screen and (max-width: 1199px) {
@@ -1501,21 +1510,25 @@ p {
       min-height: 500px; }
     .collaborating .title {
       font-size: 28px; }
-  .doctors .grid {
-    margin-top: 3rem; }
-  .doctors .name {
-    font-size: 16px;
-    margin-bottom: 0; }
-  .doctors .info {
-    font-size: 14px;
-    display: block; }
-    .doctors .info::before {
-      width: 40px;
-      margin: .75rem 0; }
-  .doctors .uk-grid {
-    margin-left: -30px; }
-  .doctors .more {
-    font-size: 14px; }
+  .doctors {
+    padding-bottom: 3rem; }
+    .doctors .uk-dotnav {
+      margin-top: 0; }
+    .doctors .grid {
+      margin-top: 3rem; }
+    .doctors .name {
+      font-size: 16px;
+      margin-bottom: 0; }
+    .doctors .info {
+      font-size: 14px;
+      display: block; }
+      .doctors .info::before {
+        width: 40px;
+        margin: .75rem 0; }
+    .doctors .uk-grid {
+      margin-left: -30px; }
+    .doctors .more {
+      font-size: 14px; }
   .blog .uk-grid {
     margin-left: -30px; }
   .blog .title {
@@ -1734,7 +1747,36 @@ p {
   .testimonials .slider .quote p {
     font-size: 15px; }
   .testimonials .slider .video-cover .video-play {
-    padding: 0; } }
+    padding: 0; }
+  .how-it-works {
+    background: #1C6CE8 url("../images/main/bg-hw-mobile.png") no-repeat bottom center;
+    background-size: contain; }
+    .how-it-works .overlay {
+      display: none; }
+  .doctors.testimonials {
+    padding-top: 0rem; }
+  .doctors .description {
+    width: 520px;
+    max-width: 100%; }
+  .doctors .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .doctors .video-cover img {
+    display: block;
+    width: 70%;
+    margin: 0 auto; }
+  .doctors .slider .author {
+    text-align: center; }
+    .doctors .slider .author::after {
+      margin: 1rem auto; }
+  .doctors .more {
+    margin-top: 1rem;
+    text-align: center; }
+  .doctors .uk-dotnav {
+    margin-top: 0;
+    margin-bottom: 3rem; } }
 
 @media screen and (max-width: 639px) {
   .products {
@@ -1808,8 +1850,6 @@ p {
     text-align: center; }
     .doctors .item .img {
       max-width: 70%; }
-  .doctors .more {
-    text-align: inherit; }
   .certified {
     padding-bottom: 4rem; }
     .certified .container {

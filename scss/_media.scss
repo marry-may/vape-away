@@ -157,16 +157,24 @@
         }
     }
 
+    .testimonials{
+        padding-bottom: 7rem;
+    }
+
     .doctors{
         .subtitle{
             font-size: 15px;
             width: 670px;
             max-width: 100%;
         }
-    } 
-    
-    .testimonials{
-        padding-bottom: 7rem;
+
+        &.testimonials{
+            padding-bottom: 3rem;
+            
+            .uk-dotnav{
+                margin-top: 0;
+            }
+        }
     }
 
     .navbar{
@@ -341,9 +349,14 @@
 
 @media screen and (max-width: 1199px) and (min-width: 639px) {
     .testimonials{
-        .slider{
-            .uk-slider-items{
-                padding: 0;
+        .author {
+            font-size: 18px;
+        }
+        &:not(.doctors){
+            .slider{
+                .uk-slider-items{
+                    padding: 0;
+                }
             }
         }
     }
@@ -548,6 +561,12 @@
     }
 
     .doctors{
+        padding-bottom: 3rem;
+
+        .uk-dotnav{
+            margin-top: 0;
+        }
+        
         .grid{
             margin-top: 3rem;
         }
@@ -927,7 +946,7 @@
 @media screen and (max-width: 739px) {
     .mobile-toggle{
         display: block;
-    }
+    }    
 
     .how-it-works.section{
         min-height: 500px;
@@ -985,6 +1004,61 @@
                     padding: 0;
                 }
             }
+        }
+    }
+
+    .how-it-works{
+        background: $color-blue url('../images/main/bg-hw-mobile.png') no-repeat bottom center;
+        background-size: contain;
+        
+         .overlay{
+             display: none;
+         }
+    }
+
+    .doctors{
+        &.testimonials{
+            padding-top: 0rem;
+        }
+        
+        .description{
+            width: 520px;
+            max-width: 100%;
+        }
+
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .video-cover{
+            img{
+                display: block;
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+
+        .slider {
+            .author{
+                text-align: center;
+                
+                &::after{
+                    margin: 1rem auto;
+                }
+            }
+        }
+
+        .more{
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .uk-dotnav{
+            margin-top: 0;
+            margin-bottom: 3rem;
         }
     }
 }
@@ -1120,10 +1194,6 @@
             .img{
                 max-width: 70%;
             }
-        }
-
-        .more{
-            text-align: inherit;
         }
     }
 
