@@ -655,7 +655,7 @@ form .textarea,
 .how-it-works {
   background: #1C6CE8;
   color: #FFFFFF;
-  padding: 8rem 0;
+  padding: 5rem 0 12rem;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
@@ -693,7 +693,7 @@ form .textarea,
       left: 0;
       height: 100%;
       width: 100%;
-      background: transparent url("../images/main/bg-hiw.png") no-repeat center center;
+      background: transparent url("../images/main/bg-hiw.jpg") no-repeat center center;
       background-size: cover;
       position: absolute;
       z-index: 4; }
@@ -2333,7 +2333,7 @@ form .textarea,
   .mobile-toggle {
     display: block; }
   .how-it-works.section {
-    min-height: 500px; }
+    min-height: 1500px; }
   .hidden-m {
     display: none; }
   .navbar .uk-logo {
@@ -2357,8 +2357,9 @@ form .textarea,
   .testimonials .slider .video-cover .video-play {
     padding: 0; }
   .how-it-works {
-    background: #1C6CE8 url("../images/main/bg-hw-mobile.png") no-repeat bottom center;
-    background-size: contain; }
+    background: #1660FE url("../images/main/bg-hw.jpg") no-repeat top center;
+    background-size: contain;
+    min-height: 1500px; }
     .how-it-works .overlay {
       display: none; }
   .doctors.testimonials {
@@ -2401,8 +2402,7 @@ form .textarea,
       right: 0;
       bottom: 0; }
   .how-it-works {
-    background: #1C6CE8 url("../images/main/bg-hw-mobile.png") no-repeat bottom center;
-    background-size: contain; }
+    background-size: auto 100%; }
     .how-it-works .polygon {
       display: none; }
     .how-it-works::after {

@@ -146,7 +146,7 @@
 .how-it-works{
     background: $color-blue;
     color: $color-white;
-    padding: 8rem 0;
+    padding: 5rem 0 12rem;
     min-height: 100vh;
     position: relative;
     overflow: hidden;
@@ -195,13 +195,12 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: transparent url('../images/main/bg-hiw.png') no-repeat center center;
+            background: transparent url('../images/main/bg-hiw.jpg') no-repeat center center;
             background-size: cover;
             position: absolute;
             z-index: 4;
         }
     }
-
 
     .container{
         z-index: 6;
