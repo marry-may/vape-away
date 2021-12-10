@@ -715,6 +715,10 @@
 }
 
 @media screen and (max-width: 959px) {
+    .navbar.dark .navbar-container{
+        padding: 0 1rem;
+    }
+    
     .navbar{
         .uk-logo {
             max-width: 130px;
@@ -749,7 +753,7 @@
         min-height: 600px;
     }
     
-    .about {
+    .about{
         padding: 0;
         
         .container {
@@ -769,7 +773,7 @@
         }
     }
 
-    .choose {
+    .choose{
         padding: 5rem 0;
         
         .choice-grid{

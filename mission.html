@@ -22,7 +22,6 @@
 
         <div class="uk-navbar-center hidden-m">
             <ul class="uk-navbar-nav">
-                <!-- <li><a href="shop.html">Shop</a></li> -->
                 <li><a href="mission.html">Our Mission</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="faq.html">FAQ</a></li>
@@ -57,9 +56,6 @@
             <li class="uk-active">
                 <a href="index.html">Main</a>
             </li>
-            <!-- <li>
-                <a href="shop.html">Shop</a>
-            </li> -->
             <li>
                 <a href="mission.html">Our Mission</a>
             </li>
@@ -80,31 +76,43 @@
     </div>
 </div>
 
-<section class="contacts section">
-    <div class="container">
-        <div class="overlay smoke"></div>
-        <div class="uk-container">
-            <div class="uk-grid uk-child-width-1-2@m">
-                <div class="title-container">
-                    <h2 class="h1 underline">
-                        Get in Touch
-                    </h2>
-
-                    <p class="subtitle">
-                        Send us a message, we will reply as soon as possible!
-                    </p>
-                </div>
+<section class="mission">
+    <div class="uk-container container">
+        <div class="uk-grid">
+            <div class="img-conteiner uk-width-2-5@m">
+            </div>
+            <div class="wrapper  uk-width-3-5@m">
                 <div class="content">
-                    <form action="" class="form">
-                        <input type="text" class="input" placeholder="Name">
-                        <input type="text" class="input" placeholder="Email">
-                        <textarea class="textarea" placeholder="Message"></textarea>
+                    <div class="title">
+                        <h2 class="h2 underline">
+                            Our
+                            <span class="bright">
+                                Mission
+                            </span>
+                        </h2>
+                    </div>
 
-                        <button class="btn btn-white" type="submit">Submit</button>
-                    </form>
+                    <div class="text">
+                        <p>
+                            VapeAway is a company focused on redefining vaping by promoting awareness and producing tools and technology that provide safer experiences and pathways to ending vaping dependency globally.
+                        </p>
+
+                        <p>
+                            Born out of a father’s resolve to help his son’s addiction, VapeAway created VaporFreeze 2.0, a revolutionary technology. VF 2.0 (VaporFreeze 2.0) powers our TakeAway system, designed for those looking to start their journey to kick the habit, and our VapeAway filters, designed for those vapors who are looking to cut back, both while not introducing additional toxins to their bodies, and allowing a user to continue vaping through a nearly unchanged experience. VapeAway is continuously creating tools and resources to support every step of a vapor’s journey with the hope of helping to end the vaping epidemic.
+                        </p>
+
+                        <div class="play">
+                            <a href="#" class="play-video">
+                                Video From Founder
+
+                                <span class="icon"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
-           
         </div>
     </div>
 </section>
@@ -205,12 +213,17 @@
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.8.0/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.8.0/dist/js/uikit-icons.min.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Animation -->
 <script src="js/particles.min.js"></script>
 
 <!-- JS Custom -->
 <script src="js/app.js" defer></script>
+
+
+<script>
+    document.querySelector('.bg-1').playbackRate = .3;
+    document.querySelector('.bg-2').playbackRate = .3;
+</script>
 
 
 </body>

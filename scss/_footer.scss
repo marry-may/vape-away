@@ -1,10 +1,36 @@
-
 .footer{
-    background: $color-footer;
+    background: darken($color-bg, 2%);
     color: $color-white;
     padding: 5rem 0 0;
     position: relative;
     z-index: 5;
+
+    .form{
+        .input{
+            background: $color-white;
+            color: $color-text;
+
+            &::-webkit-input-placeholder{
+                color: $color-text;
+            }
+
+            &::-moz-placeholder{
+                color: $color-text;
+            }
+
+            &:-ms-input-placeholder{
+                color: $color-text;
+            }
+
+            &::-ms-input-placeholder{
+                color: $color-text;
+            }
+
+            &::placeholder{
+                color: $color-text;
+            }
+        }
+    }
 
     .uk-container{
         position: relative;
@@ -38,7 +64,7 @@
     }
 
     .content{
-        padding-bottom: 3rem;
+        padding: 0 3rem 3rem;
     }
     
     .logo{

@@ -889,37 +889,32 @@
 
         .post{
             max-width: 580px;
+            display: block;
+            color: inherit;
+            cursor: pointer;
         }
 
         .post-title{
             margin-top: 2rem;
+            
+            &:after{
+                margin: 1.5rem 0;
+            }
         }
 
         .post-descr{
-            opacity: 0.8;
             line-height: 1.6;
         }
     }
 
     .link{
+        color: $color-primary;
         width: 100%;
         text-align: right;
-        font-weight: 18px;
-        font-weight: 500;
+        font-size: 18px;
+        font-weight: 600;
         margin-top: 1rem;
         padding-right: 1rem;
-    }
-}
-
-.form{
-    .input{
-        width: 100%;
-        border: none;
-        outline: none;
-        background: $color-white;
-        color: $color-text;
-        border-radius: 60px;
-        padding: 1rem 2rem;
     }
 }
 

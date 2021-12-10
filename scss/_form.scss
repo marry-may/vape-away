@@ -1,0 +1,61 @@
+
+// FORM
+form,
+.form{
+  .textarea{
+    height: 150px;
+    border-radius: 25px;
+    margin-bottom: 2rem;
+    resize: none;
+  }
+
+  input,
+  .input,
+  textarea,
+  .textarea{
+    border-radius: 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: $color-text;
+    padding: 1rem 2rem;
+    font-family: $font-main;
+    font-size: 1rem;
+    background: #3872E8;
+
+    &::-webkit-input-placeholder{
+      font-family: $font-main;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-white
+    }
+
+    &::-moz-placeholder{
+      font-family: $font-main;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-white
+    }
+
+    &:-ms-input-placeholder{
+      font-family: $font-main;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-white
+    }
+
+    &::-ms-input-placeholder{
+      font-family: $font-main;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-white
+    }
+
+    &::placeholder{
+      font-family: $font-main;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-white
+    }
+  }
+}
