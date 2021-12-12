@@ -107,7 +107,7 @@
             width: 100%;
         }
         .title {
-            font-size: 42px;
+            font-size: 36px;
         }
         .text {
             padding-top: 20%;
@@ -231,15 +231,32 @@
 
     .how-it-works{
         padding-top: 5rem;
+        padding-bottom: 7rem;
+        
+        .item{
+            &-title{
+                font-size: 18px;
+            }
+            &-info{
+                font-size: 16px;
+            }
+            &-wrapper{
+                width: 320px;
+            }
+        }
     }
 
     .certified{
         .container{
-            padding: 8rem 5rem;
+            padding: 8rem 5rem 6rem;
         }
 
         .title{
-            font-size: 42px;
+            font-size: 46px;
+
+            .h3{
+                font-size: inherit;
+            }
         }
     }
 
@@ -418,6 +435,22 @@
         }
     }
 
+    .how-it-works{
+        padding-bottom: 7rem;
+        
+        .item{
+            &-title{
+                font-size: 16px;
+            }
+            &-info{
+                font-size: 14px;
+            }
+            &-wrapper{
+                width: 260px;
+            }
+        }
+    }
+
     .about{
         .container{
             padding: 6rem 3rem 7rem;
@@ -510,7 +543,7 @@
     
     .choose{
         min-height: auto;
-        padding: 5rem 0 8rem;
+        padding: 5rem 0 12rem;
 
         .polygon{
             display: none;
@@ -615,10 +648,6 @@
     .h2 {
         font-size: 38px;
     }
-
-    .section{
-        min-height: 700px;
-    }
     
     .main{
         height: auto;
@@ -711,7 +740,7 @@
        .title {
             font-size: 28px;
         }
-    }    
+    }
 }
 
 @media screen and (max-width: 959px) {
@@ -751,6 +780,24 @@
     .how-it-works{
         padding: 4rem 0;
         min-height: 600px;
+
+        .item{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .item-title{
+            font-size: 18px;
+            letter-spacing: .1em;
+        }
+
+        .item-info{
+            font-size: 16px;
+        }
+
+        .item-wrapper{
+            width: 300px;
+        }
     }
     
     .about{
@@ -783,8 +830,18 @@
             margin-bottom: 3rem;
         }
 
-        &::after{
-            height: 65%;
+        .container{
+            &::after{
+                display: none;
+            }
+        }
+    }
+
+    .testimonials{
+        .slider{
+            .uk-slider-items{
+                padding: 0;
+            }
         }
     }
 
@@ -950,12 +1007,8 @@
 @media screen and (max-width: 739px) {
     .mobile-toggle{
         display: block;
-    }    
-
-    .how-it-works.section{
-       min-height: 1500px;
     }
-
+    
     .hidden-m{
         display: none;
     }
@@ -1009,16 +1062,6 @@
                 }
             }
         }
-    }
-
-    .how-it-works{
-        background: $color-primary url('../images/main/bg-hw.jpg') no-repeat top center;
-        background-size: contain;
-        min-height: 1500px;
-        
-         .overlay{
-             display: none;
-         }
     }
 
     .doctors{
@@ -1093,27 +1136,20 @@
             }
         }
     }
-
+    
     .how-it-works{
-        // background: $color-blue url('../images/main/bg-hw-mobile.png') no-repeat bottom center;
-        // background-size: contain;
-        background-size: auto 100%;
-
-        .polygon{
+    
+        .overlay{
             display: none;
-        }
-
-        &::after{
-            content: none;
         }
     }
 
     .choose{
         padding-top: 5rem;
         background: $color-text;
+
         .choice{  
             .img-wrapper{
-                border-radius: 5px;
                 overflow: hidden;
             }
 
@@ -1234,7 +1270,8 @@
         padding: 5rem 0 3rem;
 
         .slider{
-            margin-top: 2rem;
+            margin: 2rem auto ;
+            max-width: 90%;
         }
 
         .subtitle{
@@ -1246,6 +1283,10 @@
             &::before{
                 content: none;
             }
+        }
+
+        .uk-dotnav{
+            margin-top: 2rem;
         }
     }
 
@@ -1318,10 +1359,19 @@
     }
 
     .main {
+        .h1{
+            font-size: 28px;
+        }
+
+        .logo {
+            max-width: 180px;
+        }
+        
         .container{
             min-height: 100vh;
         }
         .subtitle{
+            font-size: 14px;
             padding-left: 0;
             margin-left: 0;
         }
@@ -1368,6 +1418,12 @@
         .uk-container{
             max-width: 90%;
         }
+
+        .view-results{
+            .icon{
+                width: 3rem;
+            }
+        }
     }
 
     .collaborating{
@@ -1400,6 +1456,14 @@
             width: 60px;
             margin: 1rem 0;
         }
+    }
+
+    .btn-white{
+        padding: 1rem 1.5rem;
+    }
+
+    .btn-link{
+        font-size: 12px;
     }
 
 }

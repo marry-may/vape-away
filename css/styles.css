@@ -662,43 +662,29 @@ form .textarea,
   z-index: 3; }
   .how-it-works .title {
     text-align: center; }
-  .how-it-works .polygon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .4;
-    z-index: 2; }
-  .how-it-works .overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    z-index: 3; }
-    .how-it-works .overlay::before {
-      content: "";
-      display: block;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: radial-gradient(50% 50% at 50% 50%, rgba(28, 108, 232, 0) 0%, rgba(28, 108, 232, 0.367708) 63.33%, #1C6CE8 100%);
-      position: absolute;
-      z-index: 3; }
-    .how-it-works .overlay::after {
-      content: "";
-      display: block;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: transparent url("../images/main/bg-hiw.jpg") no-repeat center center;
-      background-size: cover;
-      position: absolute;
-      z-index: 4; }
-  .how-it-works .container {
-    z-index: 6; }
+  .how-it-works .grid {
+    display: flex;
+    justify-content: center; }
+  .how-it-works .item {
+    margin-top: 4rem; }
+    .how-it-works .item-img {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .how-it-works .item-content {
+      margin-top: 3rem; }
+    .how-it-works .item:first-child .item-content {
+      width: 360px;
+      max-width: 100%; }
+    .how-it-works .item-title {
+      font-weight: bold;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+      color: #FFFFFF; }
+    .how-it-works .item-info {
+      font-size: 18px;
+      line-height: 1.6; }
 
 .choose {
   padding: 10rem 0 15rem;
@@ -707,6 +693,15 @@ form .textarea,
   .choose .container {
     position: relative;
     z-index: 5; }
+    .choose .container::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 60%;
+      left: 0;
+      width: 100%;
+      height: 55%;
+      background: #1660FE; }
   .choose .title {
     color: #FFFFFF;
     text-align: center;
@@ -1283,7 +1278,7 @@ form .textarea,
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-top: 3rem; }
+    margin-top: 4rem; }
     .mission .play a {
       font-weight: 600; }
       .mission .play a:hover {
@@ -1886,7 +1881,7 @@ form .textarea,
     .collaborating .uk-container {
       width: 100%; }
     .collaborating .title {
-      font-size: 42px; }
+      font-size: 36px; }
     .collaborating .text {
       padding-top: 20%;
       padding-left: 4rem;
@@ -1945,11 +1940,20 @@ form .textarea,
   .h2 {
     font-size: 48px; }
   .how-it-works {
-    padding-top: 5rem; }
+    padding-top: 5rem;
+    padding-bottom: 7rem; }
+    .how-it-works .item-title {
+      font-size: 18px; }
+    .how-it-works .item-info {
+      font-size: 16px; }
+    .how-it-works .item-wrapper {
+      width: 320px; }
   .certified .container {
-    padding: 8rem 5rem; }
+    padding: 8rem 5rem 6rem; }
   .certified .title {
-    font-size: 42px; }
+    font-size: 46px; }
+    .certified .title .h3 {
+      font-size: inherit; }
   .collaborating .container {
     padding-top: 9rem;
     padding-bottom: 10rem; }
@@ -2040,6 +2044,14 @@ form .textarea,
     margin-top: 2rem; }
   .main .video-wrapper {
     margin-top: 3rem; }
+  .how-it-works {
+    padding-bottom: 7rem; }
+    .how-it-works .item-title {
+      font-size: 16px; }
+    .how-it-works .item-info {
+      font-size: 14px; }
+    .how-it-works .item-wrapper {
+      width: 260px; }
   .about .container {
     padding: 6rem 3rem 7rem; }
   .about .uk-grid {
@@ -2092,7 +2104,7 @@ form .textarea,
     font-size: 15px; }
   .choose {
     min-height: auto;
-    padding: 5rem 0 8rem; }
+    padding: 5rem 0 12rem; }
     .choose .polygon {
       display: none; }
     .choose .content {
@@ -2146,8 +2158,6 @@ form .textarea,
     font-size: 26px; }
   .h2 {
     font-size: 38px; }
-  .section {
-    min-height: 700px; }
   .main {
     height: auto;
     background-position-x: 58%; }
@@ -2219,6 +2229,16 @@ form .textarea,
   .how-it-works {
     padding: 4rem 0;
     min-height: 600px; }
+    .how-it-works .item {
+      display: flex;
+      justify-content: center; }
+    .how-it-works .item-title {
+      font-size: 18px;
+      letter-spacing: .1em; }
+    .how-it-works .item-info {
+      font-size: 16px; }
+    .how-it-works .item-wrapper {
+      width: 300px; }
   .about {
     padding: 0; }
     .about .container {
@@ -2237,8 +2257,10 @@ form .textarea,
       justify-content: center; }
     .choose .choice {
       margin-bottom: 3rem; }
-    .choose::after {
-      height: 65%; }
+    .choose .container::after {
+      display: none; }
+  .testimonials .slider .uk-slider-items {
+    padding: 0; }
   .technology {
     padding: 5rem 0; }
     .technology .text {
@@ -2332,8 +2354,6 @@ form .textarea,
 @media screen and (max-width: 739px) {
   .mobile-toggle {
     display: block; }
-  .how-it-works.section {
-    min-height: 1500px; }
   .hidden-m {
     display: none; }
   .navbar .uk-logo {
@@ -2356,12 +2376,6 @@ form .textarea,
     font-size: 15px; }
   .testimonials .slider .video-cover .video-play {
     padding: 0; }
-  .how-it-works {
-    background: #1660FE url("../images/main/bg-hw.jpg") no-repeat top center;
-    background-size: contain;
-    min-height: 1500px; }
-    .how-it-works .overlay {
-      display: none; }
   .doctors.testimonials {
     padding-top: 0rem; }
   .doctors .description {
@@ -2401,17 +2415,12 @@ form .textarea,
       background: #FFFFFF;
       right: 0;
       bottom: 0; }
-  .how-it-works {
-    background-size: auto 100%; }
-    .how-it-works .polygon {
-      display: none; }
-    .how-it-works::after {
-      content: none; }
+  .how-it-works .overlay {
+    display: none; }
   .choose {
     padding-top: 5rem;
     background: #000E19; }
     .choose .choice .img-wrapper {
-      border-radius: 5px;
       overflow: hidden; }
     .choose .choice .h6 {
       font-size: 15px;
@@ -2476,7 +2485,8 @@ form .textarea,
   .testimonials {
     padding: 5rem 0 3rem; }
     .testimonials .slider {
-      margin-top: 2rem; }
+      margin: 2rem auto;
+      max-width: 90%; }
     .testimonials .subtitle {
       letter-spacing: normal;
       text-transform: none;
@@ -2484,6 +2494,8 @@ form .textarea,
       margin-bottom: 0; }
       .testimonials .subtitle::before {
         content: none; }
+    .testimonials .uk-dotnav {
+      margin-top: 2rem; }
   .blog {
     padding-bottom: 5rem; }
     .blog .title {
@@ -2515,9 +2527,14 @@ form .textarea,
       margin-top: 1rem; }
   .section {
     min-height: auto; }
+  .main .h1 {
+    font-size: 28px; }
+  .main .logo {
+    max-width: 180px; }
   .main .container {
     min-height: 100vh; }
   .main .subtitle {
+    font-size: 14px;
     padding-left: 0;
     margin-left: 0; }
   .main .btn-wrapper {
@@ -2539,6 +2556,8 @@ form .textarea,
     max-width: 100%; }
   .certified .uk-container {
     max-width: 90%; }
+  .certified .view-results .icon {
+    width: 3rem; }
   .collaborating .uk-grid {
     margin: 0; }
   .collaborating .container {
@@ -2552,6 +2571,10 @@ form .textarea,
       content: none; }
   .underline:after {
     width: 60px;
-    margin: 1rem 0; } }
+    margin: 1rem 0; }
+  .btn-white {
+    padding: 1rem 1.5rem; }
+  .btn-link {
+    font-size: 12px; } }
 
 /*# sourceMappingURL=styles.css.map */
