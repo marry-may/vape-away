@@ -773,9 +773,31 @@ form .textarea,
   padding: 6rem 0 8rem;
   background-color: #FFFFFF;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  /*
+    .subtitle{
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: none;
+        position: relative;
+        display: flex;
+        width: 360px;
+        max-width: 100%;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 80px;
+            height: 5px;
+            background: $color-primary;
+            margin: 1rem 3rem 0 0;
+        }
+    }
+    */ }
   .testimonials .h2 {
-    font-weight: 800; }
+    font-size: 56px;
+    font-weight: 800;
+    color: #1660FE; }
   .testimonials .uk-dotnav {
     justify-content: center;
     margin-top: 4rem; }
@@ -785,21 +807,7 @@ form .textarea,
     .testimonials .uk-dotnav > *.uk-active > * {
       background: rgba(22, 96, 254, 0.7); }
   .testimonials .subtitle {
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    position: relative;
-    display: flex;
-    align-items: center;
-    opacity: .85; }
-    .testimonials .subtitle::before {
-      content: "";
-      display: inline-block;
-      width: 100px;
-      height: 5px;
-      background: #1660FE;
-      margin: 1.5rem 4rem 1.5rem 0; }
+    display: none; }
   .testimonials .slider {
     margin-top: 3.4rem;
     position: relative;
@@ -2058,12 +2066,13 @@ form .textarea,
     margin: 0 auto; }
   .about .title {
     font-size: 38px; }
+  .testimonials .h2 {
+    font-size: 48px; }
   .testimonials .subtitle {
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 1rem;
     opacity: 1; }
     .testimonials .subtitle::before {
-      width: 80px;
       margin-right: 2.5rem; }
   .certified {
     padding-bottom: 5rem; }
@@ -2192,7 +2201,6 @@ form .textarea,
   .about .title {
     font-size: 38px; }
   .testimonials .subtitle {
-    font-size: 15px;
     margin-top: 1rem;
     opacity: 1; }
     .testimonials .subtitle::before {
@@ -2483,15 +2491,19 @@ form .textarea,
     max-width: 100%;
     padding: 5rem 3rem; }
   .testimonials {
-    padding: 5rem 0 3rem; }
+    padding: 4rem 0 3rem; }
     .testimonials .slider {
       margin: 2rem auto;
       max-width: 90%; }
+    .testimonials .h2 {
+      font-size: 36px;
+      text-align: center; }
     .testimonials .subtitle {
-      letter-spacing: normal;
-      text-transform: none;
-      font-weight: normal;
-      margin-bottom: 0; }
+      font-size: 18px;
+      text-align: center;
+      width: 100%;
+      display: block;
+      margin: 0 auto; }
       .testimonials .subtitle::before {
         content: none; }
     .testimonials .uk-dotnav {
@@ -2544,7 +2556,7 @@ form .textarea,
   .main .btn {
     font-size: 12px; }
   .testimonials {
-    padding: 5rem 0; }
+    padding: 3rem 0; }
     .testimonials .slider .uk-slider-items {
       padding: 0 1rem; }
   .certified .title {
