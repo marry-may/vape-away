@@ -77,13 +77,26 @@ p{
     display: inline-block;
     font-family: $font-main;
     font-size: 16px;
-    transition: all .5s;
-    cursor: pointer;
+    text-align: center;
     outline: none;
     border: none;
     font-weight: bolder;
     letter-spacing: 0.15em;
     text-transform: uppercase;
+    transition: all .5s;
+    cursor: pointer;
+
+    &-bright{
+        background: $color-primary;
+        color: $color-white;
+        border-radius: 60px;
+        padding: 1rem 2.5rem;
+
+        &:hover{
+            color: $color-white;
+            background: lighten($color-primary, 10%);
+        }
+    }
 
     &-primary{
         background: $color-primary;
@@ -190,4 +203,17 @@ p{
     top: 0;
     left: 0;
     overflow: hidden;
+}
+
+.back{
+    color: $color-bg;
+    font-weight: 500;
+
+    .icon{
+       margin-right: 10px;
+    }
+
+    &:hover{
+        color: $color-primary;
+    }
 }

@@ -274,7 +274,7 @@
 
 .products{
     background-color: $color-white;
-    padding: 10rem 0 14rem;
+    padding: 0;
     position: relative;
     z-index: 2;
 
@@ -286,27 +286,44 @@
 
     .h4{
         font-size: 38px;
+        margin-top: 0;
+    }
+    .product{
+        padding: 10rem 0;
+    }
+
+    .container{
+        position: relative;
+        z-index: 3;
     }
 
     .img-wrapper{
         position: relative;
-
-        .play{
-            position: absolute;
-            bottom: -2rem;
-            right: -4rem;
-            height: 5rem;
-            cursor: pointer;
-        }
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 480px;
     }
 
-    .product-img{
-        height: 500px;
+    .product-info{
+        color: $color-white;
+        background: #081B2F;
     }
 
     .content{
-        max-width: 460px;
+        width: 460px;
+        max-width: 85%;
         margin: 0 auto;
+        position: relative;
+    }
+
+    .play{
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        height: 5rem;
+        cursor: pointer;
     }
 
     .btn-wrapper{
@@ -344,11 +361,7 @@
             }
         }
     }
-
-    .subtitle{
-        display: none;
-    }
-    /*
+ 
     .subtitle{
         font-size: 22px;
         font-weight: 700;
@@ -357,6 +370,7 @@
         display: flex;
         width: 360px;
         max-width: 100%;
+        margin-top: 1.5rem;
 
         &::before{
             content: "";
@@ -367,7 +381,6 @@
             margin: 1rem 3rem 0 0;
         }
     }
-    */
 
     .slider{
         margin-top: 3.4rem;
@@ -743,9 +756,13 @@
 
     .h2{
         font-weight: 800;
+        color: $color-text;
+        text-align: left;
     }
 
     .title {
+        text-align: left;
+        
         span{
             display: inline-block;
         }

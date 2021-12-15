@@ -1,0 +1,333 @@
+.product-page{
+  min-height: 800px;
+  background: $color-white;
+  padding: 5rem 0 8rem;
+
+  .product-img{
+    text-align: center;
+
+    img{
+      max-width: 90%;
+      max-height: 34rem;
+    }
+  }
+
+  .title{
+    margin-bottom: 2rem;
+  }
+  
+  .container{
+    margin: 3rem auto 4rem;
+  }
+
+  .content{
+    width: 440px;
+    max-width: 100%;
+
+    .btn{
+      width: 100%;
+    }
+  }
+
+  .row{
+    margin-bottom: 2rem;
+  }
+
+  .price{
+    color: $color-primary;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  .terms{
+    .icon{
+      color: $color-primary;
+      font-weight: 500;
+      font-size: 2rem;
+      margin-right: 10px;
+    }
+
+    .item{
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .subtitle{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .cards{
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .card{
+    margin-bottom: 2rem;
+    
+    &-wrapper{
+      border: 1px solid rgba($color-bg, .2);
+      padding: 1rem 3rem 2rem 3rem;
+
+    }
+
+    &-info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-title{
+      font-size: 20px;
+      line-height: 2;
+      font-weight: 600;
+    }
+
+    .price{
+      font-size: 24px;
+    }
+
+    .buy{
+      width: 100%;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+
+  .btn{
+    padding: 1rem 2rem;
+    font-size: 14px;
+  }
+
+  .box{
+    padding: 1rem;
+    border: 1px solid rgba($color-bg, .1);
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s;
+    
+    &.active,
+    &:hover{
+      border-color: $color-primary;
+
+      .box-title{
+        color: $color-primary;
+      }
+    }
+
+    p{
+      font-size: 14px;
+      margin: 0 0 .5rem;
+    }
+
+    &-title{
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: all .5s;
+    }
+
+    .price{
+      font-size: 28px;
+    }
+  }
+}
+
+.select{  
+  position: relative;
+  
+  select{
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 2rem;
+    width: 100%;
+    display: block;
+    outline: none !important;
+    border: 1px solid rgba($color-bg, .2);
+    font: 600 1rem/60px $font-main;
+  }
+
+  &:after{
+    content: "\e909";
+    font-family: 'icomoon';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 2px;
+    margin: auto;
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 60px;
+    color: rgba($color-bg, .5);
+    text-align: center;
+    line-height: 50px;
+    z-index: 3;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .product-page{
+    padding: 3rem 0 2rem;
+
+    .h4 {
+      font-size: 36px;
+    }
+    
+    .card-wrapper{
+      padding: 1.5rem;
+    }
+  }
+
+}
+
+@media screen and (max-width: 959px) {
+  .product-page{
+    padding-bottom: 10rem;
+    
+    .h4 {
+      font-size: 28px;
+    }
+
+    .box{
+      padding: 1rem .25rem .5rem;
+
+      p{
+        font-size: 13px;
+        margin-bottom: 5px;
+      }
+
+      .price{
+        font-size: 22px;
+      }
+    }
+
+    .card-info{
+      align-items: flex-start;
+    }
+
+    .select{
+      height: 54px;
+      border-radius: 30px;
+      padding: 0 1rem;
+    }
+
+    .row{
+      margin-bottom: 1.5rem;
+    }
+
+    .cards{
+      justify-content: center;
+    }
+    
+    .card{
+      padding: 0 1rem;
+
+      .buy{
+        margin-top: 1rem;
+      }
+
+      .price{
+        font-size: 20px;
+        line-height: 2;
+      }
+      
+      &-wrapper{
+        padding: 1.5rem;
+      }
+    }
+
+    .uk-container{
+      max-width: 640px;
+      margin: 3rem auto;
+    }
+
+    .product-details{
+      width: 400px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .product-img{
+      padding: 1rem;
+      
+      img{
+        max-width: 100%;
+      }
+    }
+  }  
+}
+
+
+@media screen and (max-width: 639px) {
+  .product-page{
+    padding: 1rem 0 10rem;
+
+    .subtitle {
+      margin-bottom: 1.5rem;
+    }
+
+    .terms{
+      margin-top: 1rem;
+
+      .item{
+        font-size: 16px;
+      }
+    }
+
+    .product-img img {
+      max-height: 20rem;
+    }
+    
+    .title {
+      margin-bottom: 1rem;
+    }
+
+    .wrapper{
+      p{
+        font-size: 14px;
+      }
+    }
+
+    .box{
+      p{
+        font-size: 12px;
+      }
+    }
+
+    .uk-container {
+      width: 400px;
+      max-width: 100%;
+    }
+    
+    .card{
+      padding: 0;
+    }
+
+    .select{
+      height: 48px;
+    }
+
+    .price{
+      font-size: 28px;
+    }
+
+    .h5{
+      font-size: 20px;
+    }
+
+    .h6{
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .row{
+      margin-bottom: 20px;
+    }
+  }  
+}

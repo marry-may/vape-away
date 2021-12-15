@@ -268,10 +268,8 @@
     }
 
     .products{
-        padding-bottom: 10rem;
-        
         .content {
-            max-width: 320px;
+            width: 320px;
         }
 
         .h4 {
@@ -388,8 +386,10 @@
         font-size: 44px;
     }
 
-    .subtitle{
-        font-size: 16px;
+    .main{
+        .subtitle{
+            font-size: 16px;
+        }
     }
     
     .uk-container{
@@ -579,7 +579,9 @@
     }
 
     .products{
-        padding: 6rem 0 8rem;
+        .product{
+            padding: 5rem 0;
+        }
     }
 
     .collaborating{
@@ -774,7 +776,7 @@
         }
     }
 
-    .h2 {
+    .h2{
         font-size: 36px;
     }
 
@@ -838,6 +840,12 @@
         }
     }
 
+    .products{
+        .img-wrapper{
+            height: auto;
+        }
+    }
+
     .testimonials{
         .slider{
             .uk-slider-items{
@@ -873,6 +881,9 @@
     }
 
     .certified{
+        .title{
+            font-size: 42px;
+        }
         .container{
             padding-top: 6rem;
             padding-bottom: 6rem;
@@ -1110,16 +1121,18 @@
             margin-bottom: 3rem;
         }
     }
+
+    .footer{
+        .link{
+            margin-left: 1.5rem;
+        }
+    }
 }
 
 @media screen and (max-width: 639px) {
     .products{
-        padding: 5rem 0;
-        
         .product{
-            &:not(:last-child){
-                margin-bottom: 5rem;
-            }
+            padding: 5rem 0;
 
             &-img{
                 height: auto;
@@ -1249,7 +1262,7 @@
         }
 
         .title{
-            font-size: 32px;
+            font-size: 36px;
         }
     }
 
@@ -1274,13 +1287,17 @@
             max-width: 90%;
         }
 
-        .h2{
+        .title{
             font-size: 36px;
+            margin-bottom: 1rem;
+        }
+
+        .heading{
             text-align: center;
         }
 
         .subtitle{
-            font-size: 18px;            
+            font-size: 18px;
             text-align: center;
             width: 100%;
             display: block;
@@ -1448,8 +1465,14 @@
     } 
 
     .doctors{
+        margin-bottom: 0;
+        
         .name{
             margin: 1rem 0;
+        }
+
+        .item{
+            margin-bottom: 2rem;
         }
 
         .info{
@@ -1476,5 +1499,4 @@
     .btn-link{
         font-size: 12px;
     }
-
 }
