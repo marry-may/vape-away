@@ -17,9 +17,9 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: $color-bg  url('../images/main/main-1.jpg') no-repeat center center;
+        background: $color-bg  url('../images/main/main.jpg') no-repeat center center;
         background-size: cover;
-        opacity: 0.8;
+        opacity: 0.9;
         z-index: 1;
     }
 
@@ -145,7 +145,7 @@
 .how-it-works{
     background: $color-blue;
     color: $color-white;
-    padding: 5rem 0 12rem;
+    padding: 7rem 0 12rem;
     min-height: 100vh;
     position: relative;
     overflow: hidden;
@@ -482,7 +482,8 @@
     color: $color-white;
     padding: 2rem 0;
 
-    &::after{
+    &::after,
+    &::before{
         content: "";
         display: block;
         width: 100%;
@@ -490,9 +491,15 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: -1px;
+        bottom: -1px;
         background: $color-white;
         z-index: 1;
+    }
+
+    &::before{
+        background: #000d19;
+        opacity: .9;
+        top: 0;
     }
 
     .overlay{
@@ -522,7 +529,7 @@
             height: 100%;
             width: 100%;
             position: absolute;
-            z-index: 3;
+            z-index: 2;
         }
 
         &::before{
@@ -749,6 +756,10 @@
     color: $color-text;
     position: relative;
     z-index: 2;
+
+    .uk-dotnav{
+        margin-top: 0;
+    }
 
     .description{
         width: 70%;

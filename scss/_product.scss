@@ -1,7 +1,7 @@
 .product-page{
   min-height: 800px;
   background: $color-white;
-  padding: 5rem 0 8rem;
+  padding: 3rem 0 8rem;
 
   .product-img{
     text-align: center;
@@ -21,7 +21,7 @@
   }
 
   .content{
-    width: 440px;
+    width: 520px;
     max-width: 100%;
 
     .btn{
@@ -103,15 +103,33 @@
     font-size: 14px;
   }
 
+  .btn-wrapper{
+    display: flex;
+    margin-bottom: 1.5rem;
+
+    .btn{
+      padding: 1rem 2rem;
+      font-size: 14px;
+      border-radius: 30px;
+      
+      &:first-child{
+        margin-right: 1rem;
+      }
+    }
+  }
+
   .box{
     padding: 1rem;
     border: 1px solid rgba($color-bg, .1);
     text-align: center;
     cursor: pointer;
     transition: all .5s;
-    
-    &.active,
+
     &:hover{
+      border-color: $color-bg;
+    }
+    
+    &.active{
       border-color: $color-primary;
 
       .box-title{
@@ -183,7 +201,6 @@
       padding: 1.5rem;
     }
   }
-
 }
 
 @media screen and (max-width: 959px) {
@@ -262,7 +279,6 @@
     }
   }  
 }
-
 
 @media screen and (max-width: 639px) {
   .product-page{
