@@ -1814,6 +1814,7 @@ form .textarea,
 .select {
   position: relative; }
   .select select {
+    background: transparent;
     height: 60px;
     border-radius: 30px;
     padding: 0 2rem;
