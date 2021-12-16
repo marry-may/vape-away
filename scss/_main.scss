@@ -670,7 +670,7 @@
     }
 
     .container{
-        background: url('../images/main/bg-certified.jpg') no-repeat center center;
+        background: $color-primary url('../images/main/bg-certified.jpg') no-repeat center center;
         background-size: cover;
         max-width: 86%;
         width: 1620px;
@@ -851,7 +851,7 @@
     }
 
     .container{
-        background: url('../images/main/bg-colab.jpg') no-repeat center center;
+        background: $color-primary url('../images/main/bg-colab.jpg') no-repeat center center;
         background-size: cover;
         max-width: 90%;
         width: 1620px;

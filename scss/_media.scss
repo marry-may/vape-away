@@ -50,6 +50,16 @@
             margin: 0 auto;
         }
 
+        .container{
+            width: 1100px;
+            max-width: 90%;
+            margin: 0 auto;
+            
+            &::after{
+                height: 65%;
+            }
+        }
+
         .choice-grid {
             margin-top: 4rem;
         }
@@ -747,6 +757,11 @@
 }
 
 @media screen and (max-width: 959px) {
+    .main{
+        &::before{
+            background-size: contain;
+        }
+    }
     .navbar.dark .navbar-container{
         padding: 0 1rem;
     }
@@ -1130,6 +1145,18 @@
 }
 
 @media screen and (max-width: 639px) {
+    .main{
+        &::before{
+            background-image: url('../images/main/filter.png');
+            background-position: center 10%;
+            background-size: 70%;
+        }
+
+        .content{
+            padding-top: 40vh;
+        }
+    }
+    
     .products{
         .product{
             padding: 5rem 0;
@@ -1180,7 +1207,8 @@
         }
 
         .content{
-            max-width: 320px;
+            width: 380px;
+            max-width: 100%;
             margin: 0 auto;
         }
 
