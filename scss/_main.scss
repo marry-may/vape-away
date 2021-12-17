@@ -510,8 +510,9 @@
         background: $color-blue;
         max-width: 90%;
         width: 1620px;
+        min-height: 800px;
         margin: 0 auto;
-        padding: 10rem 5rem;
+        padding: 5rem 5rem 10rem;
         box-sizing: border-box;
         overflow: hidden;
         position: relative;
@@ -519,8 +520,8 @@
 
         &::after{
             content: "";
-            background: url('../images/main/bg-device.png') no-repeat center center;
-            background-size: cover;
+            background: url('../images/main/bg-about.svg') no-repeat center 3rem;
+            background-size: contain;
             display: block;
             top: 0;
             right: 0;
@@ -531,6 +532,7 @@
             position: absolute;
             z-index: 2;
         }
+        
 
         &::before{
             content: "";
@@ -586,11 +588,13 @@
     .title{
         font-size: 46px;
         font-weight: 700;
+        text-align: center;
         text-transform: none;
         padding-left: 5rem;
 
         .h4{
             font-size: inherit;
+            text-align: center;
         }
     }
 

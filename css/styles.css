@@ -948,16 +948,17 @@ form .textarea,
     background: #1C6CE8;
     max-width: 90%;
     width: 1620px;
+    min-height: 800px;
     margin: 0 auto;
-    padding: 10rem 5rem;
+    padding: 5rem 5rem 10rem;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
     z-index: 3; }
     .about .container::after {
       content: "";
-      background: url("../images/main/bg-device.png") no-repeat center center;
-      background-size: cover;
+      background: url("../images/main/bg-about.svg") no-repeat center 3rem;
+      background-size: contain;
       display: block;
       top: 0;
       right: 0;
@@ -1007,10 +1008,12 @@ form .textarea,
   .about .title {
     font-size: 46px;
     font-weight: 700;
+    text-align: center;
     text-transform: none;
     padding-left: 5rem; }
     .about .title .h4 {
-      font-size: inherit; }
+      font-size: inherit;
+      text-align: center; }
   .about .text {
     padding-top: 28%;
     padding-left: 8rem;
@@ -2516,12 +2519,6 @@ form .textarea,
       font-size: 14px; }
     .how-it-works .item-wrapper {
       width: 260px; }
-  .about .container {
-    padding: 6rem 3rem 7rem; }
-  .about .uk-grid {
-    margin: 0 auto; }
-  .about .title {
-    font-size: 38px; }
   .testimonials .h2 {
     font-size: 48px; }
   .testimonials .subtitle {
@@ -2581,9 +2578,18 @@ form .textarea,
       padding-top: 1rem; }
     .choose .choice-grid {
       margin-top: 2.5rem; }
-  .about .text {
-    font-size: 16px;
-    padding-left: 6rem; }
+  .about {
+    min-height: initial; }
+    .about .text {
+      font-size: 16px;
+      padding-left: 6rem; }
+    .about .title {
+      font-size: 36px; }
+    .about .container {
+      padding: 3rem 0;
+      min-height: 650px; }
+      .about .container:after {
+        background-position-y: 3rem; }
   .products .product {
     padding: 5rem 0; }
   .collaborating {
@@ -2650,8 +2656,10 @@ form .textarea,
     .navbar .btn {
       display: none; }
   .about .container {
-    padding: 6rem 1rem 7rem;
-    max-width: 100%; }
+    padding: 4rem 0;
+    min-height: 600px; }
+    .about .container:after {
+      background-position-y: 2rem; }
   .about .uk-grid {
     margin: 0 auto; }
   .about .title {
@@ -2707,10 +2715,13 @@ form .textarea,
       width: 300px; }
   .about {
     padding: 0; }
+    .about .title {
+      font-size: 28px; }
     .about .container {
+      min-height: 530px;
       max-width: 100%;
       margin: 0 auto;
-      padding: 6rem 0; }
+      padding: 3rem 0; }
     .about .grid {
       justify-content: flex-end; }
     .about .text {
@@ -2832,6 +2843,10 @@ form .textarea,
     margin-right: 5px; }
     .navbar .nav-link:first-child {
       margin-right: 1rem; }
+  .about .container {
+    min-height: 480px; }
+    .about .container:after {
+      background-position: center; }
   .bg-smoke {
     display: none; }
   .certified .uk-grid {
@@ -2917,15 +2932,14 @@ form .textarea,
   .about {
     background: #1C6CE8;
     min-height: initial; }
-    .about .h5 {
-      font-size: 22px; }
     .about .title {
-      font-size: 32px; }
+      font-size: 28px; }
     .about .container {
-      padding: 5rem 2rem 7rem;
+      min-height: 680px;
+      padding: 2rem 0;
       background-image: none; }
       .about .container::after {
-        content: none; }
+        background-image: url(../images/main/bg-filter-mobile.svg); }
     .about .uk-container {
       max-width: 320px;
       margin: 0 auto; }

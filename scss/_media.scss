@@ -461,20 +461,6 @@
         }
     }
 
-    .about{
-        .container{
-            padding: 6rem 3rem 7rem;
-        }
-
-        .uk-grid{
-            margin: 0 auto;
-        }
-
-        .title{
-            font-size: 38px;
-        }
-    }
-
     .testimonials{
         .h2{
             font-size: 48px;
@@ -582,9 +568,24 @@
     }
 
     .about{
+        min-height: initial;
+
         .text{
             font-size: 16px;
             padding-left: 6rem;
+        }
+
+        .title{
+            font-size: 36px;
+        }
+
+        .container{
+            padding: 3rem 0;
+            min-height: 650px;
+
+            &:after{
+                background-position-y: 3rem;
+            }
         }
     }
 
@@ -711,8 +712,12 @@
 
     .about{
         .container{
-            padding: 6rem 1rem 7rem;
-            max-width: 100%;
+            padding: 4rem 0;
+            min-height: 600px;
+
+            &:after {
+                background-position-y: 2rem;
+            }
         }
 
         .uk-grid{
@@ -820,11 +825,16 @@
     
     .about{
         padding: 0;
+
+        .title {
+            font-size: 28px;
+        }
         
         .container {
+            min-height: 530px;
             max-width: 100%;
             margin: 0 auto;
-            padding: 6rem 0;
+            padding: 3rem 0;
         }
 
         .grid{
@@ -1054,6 +1064,16 @@
         }
     }
 
+    .about{
+        .container{
+            min-height: 480px;
+
+            &:after{
+                background-position: center;
+            }
+        }
+    }
+
     .bg-smoke{
         display: none;
     }
@@ -1230,20 +1250,17 @@
         background: $color-blue;
         min-height: initial;
 
-        .h5{
-            font-size: 22px;
-        }
-
         .title{
-            font-size: 32px;
+            font-size: 28px;
         }
         
         .container{
-            padding: 5rem 2rem 7rem;
+            min-height: 680px;
+            padding: 2rem 0;
             background-image: none;
 
             &::after{
-                content: none;
+                background-image: url(../images/main/bg-filter-mobile.svg);
             }
         }
 
