@@ -110,7 +110,12 @@
 
     .copyright{
         padding: 3rem 0;
-        font-weight: 600;
+        font-weight: 300;
+
+        .content{
+            padding: 0;
+            opacity: .5;
+        }
 
         .grid{
             display: flex;

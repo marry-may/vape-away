@@ -574,7 +574,10 @@ form .textarea,
       margin-top: 1.5rem; }
   .footer .copyright {
     padding: 3rem 0;
-    font-weight: 600; }
+    font-weight: 300; }
+    .footer .copyright .content {
+      padding: 0;
+      opacity: .5; }
     .footer .copyright .grid {
       display: flex;
       justify-content: space-between; }
@@ -1379,6 +1382,7 @@ form .textarea,
     font-weight: 700;
     cursor: pointer;
     position: relative;
+    padding-right: 3rem;
     transition: all .5s; }
     .faq .accordion-title:hover {
       color: #1660FE; }
@@ -2110,11 +2114,15 @@ form .textarea,
   color: #FFFFFF; }
   .contacts .h1 {
     font-size: 64px; }
+  .contacts .call-tel {
+    color: #FFFFFF;
+    font-weight: 600;
+    padding-left: 5px; }
   .contacts .subtitle {
     font-size: 22px;
     line-height: 1.5;
     padding-left: 50px;
-    max-width: 360px; }
+    max-width: 380px; }
   .contacts .form .input,
   .contacts .form .textarea {
     width: 100%;
