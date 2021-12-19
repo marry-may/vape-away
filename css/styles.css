@@ -224,8 +224,8 @@ p {
   text-transform: capitalize; }
 
 .h2 {
-  font-size: 58px;
-  line-height: 1.1;
+  font-size: 52px;
+  line-height: 1.2;
   font-weight: 800;
   color: inherit;
   text-transform: capitalize; }
@@ -602,9 +602,9 @@ form .textarea,
     bottom: 0;
     left: 0;
     right: 0;
-    background: #000d19 url("../images/main/main.jpg") no-repeat center center;
-    background-size: cover;
-    opacity: 0.9;
+    background: #000d19 url("../images/main/filter.png") no-repeat 90% center;
+    background-size: contain;
+    opacity: 1;
     z-index: 1; }
   .main .container {
     position: relative;
@@ -621,10 +621,9 @@ form .textarea,
     padding-top: 9rem; }
   .main .h1 {
     text-transform: capitalize;
-    font-weight: 700;
-    font-weight: bold;
-    font-size: 72px;
-    line-height: 1.2;
+    font-weight: 800;
+    font-size: 74px;
+    line-height: 1.1;
     color: #FFFFFF; }
     .main .h1 span {
       display: block; }
@@ -695,11 +694,13 @@ form .textarea,
 .how-it-works {
   background: #1C6CE8;
   color: #FFFFFF;
-  padding: 7rem 0 12rem;
+  padding: 6rem 0 8rem;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
   z-index: 3; }
+  .how-it-works .img {
+    height: 20rem; }
   .how-it-works .title {
     text-align: center; }
   .how-it-works .grid {
@@ -714,7 +715,7 @@ form .textarea,
     .how-it-works .item-content {
       margin-top: 3rem; }
     .how-it-works .item:first-child .item-content {
-      width: 360px;
+      width: 320px;
       max-width: 100%; }
     .how-it-works .item-title {
       font-weight: bold;
@@ -723,11 +724,11 @@ form .textarea,
       letter-spacing: .15em;
       color: #FFFFFF; }
     .how-it-works .item-info {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.6; }
 
 .choose {
-  padding: 10rem 0 15rem;
+  padding: 10rem 0 18rem;
   background: #000d19;
   position: relative; }
   .choose .container {
@@ -787,6 +788,18 @@ form .textarea,
   padding: 0;
   position: relative;
   z-index: 2; }
+  .products::after {
+    content: url("../images/main/arrows.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 4; }
   .products .underline::after {
     margin: 2rem 0; }
   .products .h4 {
@@ -948,16 +961,16 @@ form .textarea,
     background: #1C6CE8;
     max-width: 90%;
     width: 1620px;
-    min-height: 800px;
+    min-height: 900px;
     margin: 0 auto;
-    padding: 5rem 5rem 10rem;
+    padding: 5rem 5rem 12rem;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
     z-index: 3; }
     .about .container::after {
       content: "";
-      background: url("../images/main/bg-about.svg") no-repeat center 3rem;
+      background: url("../images/main/bg-about2.png") no-repeat center center;
       background-size: contain;
       display: block;
       top: 0;
@@ -1953,7 +1966,6 @@ form .textarea,
   .devices .device {
     padding: 2rem 1rem;
     text-align: center;
-    border: 1px solid rgba(0, 13, 25, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1964,9 +1976,9 @@ form .textarea,
     .devices .device img {
       height: 9rem; }
     .devices .device:hover {
-      border-color: #4983fe; }
+      background: #1660FE; }
       .devices .device:hover .device-title {
-        color: #1660FE; }
+        color: #FFFFFF; }
   .devices .device-title {
     font-size: 18px;
     font-weight: 600;

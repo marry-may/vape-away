@@ -17,9 +17,9 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: $color-bg  url('../images/main/main.jpg') no-repeat center center;
-        background-size: cover;
-        opacity: 0.9;
+        background: $color-bg  url('../images/main/filter.png') no-repeat 90% center;
+        background-size: contain;
+        opacity: 1;
         z-index: 1;
     }
 
@@ -42,10 +42,9 @@
 
     .h1{
         text-transform: capitalize;
-        font-weight: 700;
-        font-weight: bold;
-        font-size: 72px;
-        line-height: 1.2;
+        font-weight: 800;
+        font-size: 74px;
+        line-height: 1.1;
         color: $color-white;
 
         span {
@@ -145,11 +144,15 @@
 .how-it-works{
     background: $color-blue;
     color: $color-white;
-    padding: 7rem 0 12rem;
+    padding: 6rem 0 8rem;
     min-height: 100vh;
     position: relative;
     overflow: hidden;
     z-index: 3;
+
+    .img{
+        height: 20rem;
+    }
 
     .title{
         text-align: center;
@@ -175,7 +178,7 @@
 
         &:first-child{
             .item-content{
-                width: 360px;
+                width: 320px;
                 max-width: 100%;
             }
         }
@@ -189,7 +192,7 @@
         }
 
         &-info{
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.6;
         }
         
@@ -197,7 +200,7 @@
 }
 
 .choose{
-    padding: 10rem 0 15rem;
+    padding: 10rem 0 18rem;
     background: $color-bg;
     position: relative;
     
@@ -277,6 +280,21 @@
     padding: 0;
     position: relative;
     z-index: 2;
+
+
+    &::after{
+        content: url('../images/main/arrows.svg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        z-index: 4;
+    }
 
     .underline{
         &::after{
@@ -510,9 +528,9 @@
         background: $color-blue;
         max-width: 90%;
         width: 1620px;
-        min-height: 800px;
+        min-height: 900px;
         margin: 0 auto;
-        padding: 5rem 5rem 10rem;
+        padding: 5rem 5rem 12rem;
         box-sizing: border-box;
         overflow: hidden;
         position: relative;
@@ -520,7 +538,7 @@
 
         &::after{
             content: "";
-            background: url('../images/main/bg-about.svg') no-repeat center 3rem;
+            background: url('../images/main/bg-about2.png') no-repeat center center;
             background-size: contain;
             display: block;
             top: 0;
