@@ -789,10 +789,11 @@ form .textarea,
   position: relative;
   z-index: 2; }
   .products::after {
-    content: url("../images/main/arrows.svg");
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    content: "";
+    background: url("../images/main/arrows.svg") no-repeat center center;
+    background-size: contain;
+    height: 8rem;
+    display: block;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -803,7 +804,8 @@ form .textarea,
   .products .underline::after {
     margin: 2rem 0; }
   .products .h4 {
-    font-size: 38px;
+    font-size: 34px;
+    font-weight: 800;
     margin-top: 0; }
   .products .product {
     padding: 10rem 0; }
@@ -969,9 +971,8 @@ form .textarea,
     position: relative;
     z-index: 3; }
     .about .container::after {
-      content: "";
-      background: url("../images/main/bg-about2.png") no-repeat center center;
-      background-size: contain;
+      background: url("../images/main/bg-about.png") no-repeat center center;
+      background-size: cover;
       display: block;
       top: 0;
       right: 0;
@@ -1324,6 +1325,73 @@ form .textarea,
   position: absolute;
   z-index: 4; }
 
+.about {
+  background: none; }
+  .about .container {
+    padding: 5rem 0 0 0;
+    max-width: 100%;
+    min-height: auto; }
+  .about .wrapper {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5; }
+  .about .content {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 1100px;
+    max-width: 100%;
+    margin: 4rem auto 6rem; }
+  .about .about-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .about .about-img .img {
+      max-height: 30rem;
+      margin: auto; }
+  .about .list-wrapper {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .about .list {
+    max-width: 300px;
+    margin-top: 2rem;
+    padding: 0; }
+    .about .list li {
+      padding-left: 2rem;
+      position: relative;
+      list-style: none;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-weight: 600;
+      font-size: 15px; }
+      .about .list li::before, .about .list li::after {
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .about .list li:after {
+        opacity: .2; }
+      .about .list li::before {
+        height: 10px;
+        width: 10px;
+        margin: 5px; }
+
 .navbar.dark {
   background-color: #000d19;
   width: 100%;
@@ -1343,7 +1411,7 @@ form .textarea,
   background: #FFFFFF url(../images/bg-mission.jpg) no-repeat center center;
   background-size: cover; }
   .mission .content {
-    padding: 10rem 0 12rem;
+    padding: 8rem 0 10rem;
     max-width: 640px;
     margin: 0 auto; }
   .mission .h2 {
@@ -1534,6 +1602,28 @@ form .textarea,
   .videos .videos-section {
     margin: 5rem 0 10rem; }
 
+.videos-page.videos {
+  padding-bottom: 0; }
+
+.videos-page .testimonials {
+  margin: 0; }
+
+.videos-page .videos-section {
+  position: relative;
+  margin: 0 !important;
+  padding: 5rem 0; }
+  .videos-page .videos-section:before {
+    content: "";
+    display: block;
+    height: 50%;
+    width: 100%;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0; }
+  .videos-page .videos-section:nth-child(odd):before {
+    top: auto;
+    bottom: 0; }
+
 .blog-post {
   padding: 3rem 0 10rem;
   background-color: #FFFFFF;
@@ -1604,7 +1694,9 @@ form .textarea,
     font-size: 56px; }
   .mission .content {
     padding: 6rem 0;
-    margin-left: 0; } }
+    margin-left: 0; }
+  .how-it-works .img {
+    max-height: 15rem; } }
 
 @media screen and (max-width: 1199px) {
   .videos .video-title {
@@ -1660,7 +1752,11 @@ form .textarea,
   .videos .sction-blue .container {
     padding: 4rem 2rem 2rem; }
   .videos .thumbnav {
-    margin-top: 1rem; } }
+    margin-top: 1rem; }
+  .how-it-works .img {
+    max-height: 15rem; }
+  .products:after {
+    content: none; } }
 
 @media screen and (max-width: 767px) {
   .faq {
@@ -1700,6 +1796,20 @@ form .textarea,
         margin-left: 8px; }
   .mission .text {
     padding-left: 0; }
+  .videos-page .videos-section {
+    padding: 2rem 0; }
+  .videos-page .video .overlay {
+    padding: 1rem; }
+  .videos-page .video .play {
+    height: 5rem;
+    width: 5rem; }
+  .videos-page .video .title {
+    font-size: 22px; }
+    .videos-page .video .title:after {
+      border-width: 3px;
+      width: 50px; }
+  .videos-page .video .description {
+    display: none; }
   .videos .sction-blue::before {
     content: none; }
   .videos .sction-blue .container {
@@ -1734,7 +1844,19 @@ form .textarea,
       padding: 0; }
     .mission .play .icon {
       height: 3rem;
-      width: 3rem; } }
+      width: 3rem; }
+  .videos-page .videos-section::before {
+    content: none; }
+  .videos-page .video .title {
+    font-size: 18px;
+    padding-bottom: .5rem; }
+    .videos-page .video .title::after {
+      content: none; }
+  .videos-page .video .play {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: flex-end; } }
 
 .product-page {
   min-height: 800px;
@@ -2317,7 +2439,7 @@ form .textarea,
   .main .content {
     padding-top: 15%; }
   .products .h4 {
-    font-size: 36px; }
+    font-size: 28px; }
   .about .title {
     padding: 0; }
   .choose {
@@ -2441,7 +2563,7 @@ form .textarea,
   .products .content {
     width: 320px; }
   .products .h4 {
-    font-size: 32px; }
+    font-size: 24px; }
   .products .underline::after {
     margin: 1.25rem 0 1.5rem; }
   .products .img-wrapper {
@@ -2676,6 +2798,14 @@ form .textarea,
     margin: 0 auto; }
   .about .title {
     font-size: 38px; }
+  .about {
+    padding-bottom: 0; }
+    .about .content {
+      margin: 3rem auto; }
+    .about .about-img .img {
+      max-height: 18rem; }
+    .about .list li {
+      margin-bottom: 1rem; }
   .testimonials .subtitle {
     margin-top: 1rem;
     opacity: 1; }
@@ -2690,7 +2820,17 @@ form .textarea,
       padding: 8rem 2rem;
       min-height: 500px; }
     .collaborating .title {
-      font-size: 28px; } }
+      font-size: 28px; }
+  .products::after {
+    height: 6rem; } }
+
+@media screen and (min-width: 960px) {
+  .about .list:first-child li {
+    padding: 0 2rem 0 0;
+    text-align: right; }
+    .about .list:first-child li:before, .about .list:first-child li:after {
+      right: 0;
+      left: auto; } }
 
 @media screen and (max-width: 959px) {
   .main::before {
@@ -2725,21 +2865,25 @@ form .textarea,
       font-size: 16px; }
     .how-it-works .item-wrapper {
       width: 300px; }
-  .about {
-    padding: 0; }
-    .about .title {
-      font-size: 28px; }
-    .about .container {
-      min-height: 530px;
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 3rem 0; }
-    .about .grid {
-      justify-content: flex-end; }
-    .about .text {
-      padding-left: 0;
-      width: 310px;
-      max-width: 100%; }
+  .about .title {
+    font-size: 28px; }
+  .about .grid {
+    justify-content: flex-end; }
+  .about .text {
+    padding-left: 0;
+    width: 310px;
+    max-width: 100%; }
+  .about .container {
+    padding-bottom: 0; }
+  .about .content {
+    display: block;
+    width: 640px;
+    max-width: 100%; }
+  .about .list:first-child {
+    margin-right: 3rem; }
+  .about .list-wrapper {
+    align-items: flex-start;
+    position: relative; }
   .choose {
     padding: 5rem 0; }
     .choose .choice-grid {
@@ -2942,6 +3086,7 @@ form .textarea,
     .choose .img-wrapper {
       height: auto; }
   .about {
+    padding: 0;
     background: #1C6CE8;
     min-height: initial; }
     .about .title {
@@ -2961,6 +3106,14 @@ form .textarea,
       padding: 0; }
     .about::before {
       content: none; }
+    .about .list:first-child {
+      padding: 0; }
+    .about .list li {
+      font-size: 13px; }
+    .about .list-wrapper {
+      display: block;
+      width: 300px;
+      max-width: 100%; }
   .doctors .grid {
     width: 380px;
     max-width: 100%;

@@ -32,7 +32,7 @@
 
     .products{
         .h4 {
-            font-size: 36px;
+            font-size: 28px;
         }
     }
 
@@ -283,7 +283,7 @@
         }
 
         .h4 {
-            font-size: 32px;
+            font-size: 24px;
         }
 
         .underline{
@@ -728,6 +728,22 @@
             font-size: 38px;
         }
     }
+    // ---
+    .about{
+        padding-bottom: 0;
+        
+        .content{
+            margin: 3rem auto;
+        }
+        .about-img .img {
+        max-height: 18rem;
+        }
+        .list{
+            li{
+                margin-bottom: 1rem;
+            }
+        }
+    }
 
     .testimonials{
         .subtitle{
@@ -759,8 +775,33 @@
             font-size: 28px;
         }
     }
+
+    .products{
+        &::after{
+            height: 6rem;
+        }
+    }
 }
 
+@media screen and (min-width: 960px) {
+    .about{        
+        .list{
+             &:first-child{
+                li{
+                    padding: 0 2rem 0 0;
+                    text-align: right;
+
+                    &:before,
+                    &:after{
+                        right: 0;
+                        left: auto;
+                    }
+                }
+            }
+        }
+    }
+   
+}
 @media screen and (max-width: 959px) {
     .main{
         &::before{
@@ -823,18 +864,11 @@
         }
     }
     
-    .about{
-        padding: 0;
 
+
+    .about{
         .title {
             font-size: 28px;
-        }
-        
-        .container {
-            min-height: 530px;
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 3rem 0;
         }
 
         .grid{
@@ -845,6 +879,28 @@
             padding-left: 0;
             width: 310px;
             max-width: 100%;
+        }
+
+        .container{
+            padding-bottom: 0;
+        }
+
+        .content{
+            display: block;
+            width: 640px;
+            max-width: 100%;
+        }
+
+
+        .list{
+            &:first-child{
+                margin-right: 3rem;
+            }
+        }
+
+        .list-wrapper{
+            align-items: flex-start;
+            position: relative;
         }
     }
 
@@ -1247,6 +1303,7 @@
     }
 
     .about{
+        padding: 0;
         background: $color-blue;
         min-height: initial;
 
@@ -1277,6 +1334,22 @@
 
         &::before{
             content: none;
+        }
+
+        .list{
+            &:first-child{
+                padding: 0;
+            }
+
+            li{
+                font-size: 13px;
+            }
+        }
+
+        .list-wrapper{
+            display: block;
+            width: 300px;
+            max-width: 100%;
         }
     }
 

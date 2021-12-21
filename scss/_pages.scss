@@ -23,7 +23,7 @@
   background-size: cover;
 
   .content{
-    padding: 10rem 0 12rem;
+    padding: 8rem 0 10rem;
     max-width: 640px;
     margin: 0 auto;
   }
@@ -324,6 +324,40 @@
   }
 }
 
+.videos-page{
+  &.videos{
+    padding-bottom: 0;
+  }
+  
+  .testimonials{
+    margin: 0;
+  }
+  
+  .videos-section{
+    position: relative;
+    margin: 0 !important;
+    padding: 5rem 0;
+
+    &:before{
+      content: "";
+      display: block;
+      height: 50%;
+      width: 100%;
+      background: $color-white;
+      position: absolute;
+      top: 0;
+    }
+
+    &:nth-child(odd){
+      &:before{
+        top: auto;
+        bottom: 0;
+      }
+    }
+  }
+
+}
+
 .blog-post{
   padding: 3rem 0 10rem;
   background-color: $color-white;
@@ -445,8 +479,13 @@
       margin-left: 0;
     }
   }
-}
 
+  .how-it-works{
+    .img {
+      max-height: 15rem;
+    }
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .videos{
@@ -568,6 +607,18 @@
         margin-top: 1rem;
     }
   }
+
+  .how-it-works{
+    .img {
+      max-height: 15rem;
+    }
+  }
+
+  .products{
+    &:after{
+      content: none;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -636,6 +687,34 @@
     .text{
       padding-left: 0;
     }
+  }
+
+  .videos-page{
+    .videos-section{
+      padding: 2rem 0;
+    }
+
+    .video{
+      .overlay{
+        padding: 1rem;
+      }
+
+      .play{
+        height: 5rem;
+        width: 5rem;
+      }
+      .title{
+        font-size: 22px;
+
+        &:after{
+          border-width: 3px;
+          width: 50px;
+        }
+      }
+      .description{
+        display: none;
+      }
+    }    
   }
 
   .videos{
@@ -713,5 +792,30 @@
       }
     }
     
+  }
+
+  .videos-page{
+    .videos-section{
+      &::before{
+        content: none;
+      }
+    }
+    .video{
+      .title{
+        font-size: 18px;
+        padding-bottom: .5rem;
+
+        &::after{
+          content: none;
+        }
+      }
+      
+      .play{
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: flex-end;
+      }
+    }
   }
 }
