@@ -36,14 +36,8 @@
         }
     }
 
-    .about{
-        .title{
-            padding: 0;
-        }
-    }
-
     .choose{
-        padding-top: 7rem;
+        padding: 5rem 0 7rem;
         
         .content{
             max-width: 100%;
@@ -54,9 +48,11 @@
             width: 1100px;
             max-width: 90%;
             margin: 0 auto;
+            min-height: 650px;
             
             &::after{
-                height: 65%;
+                top: 50%;
+                height: 45%;
             }
         }
 
@@ -233,10 +229,26 @@
                 height: 100%;
             }
         }
+
+        &::before{
+            background-position-x: right;
+        }
     }
 
     .h2 {
         font-size: 48px;
+    }
+
+    .about{
+        padding: 0;
+        
+        .h4{
+            font-size: 32px;
+        }
+
+        .container{
+            padding-top: 3rem;
+        }
     }
 
     .how-it-works{
@@ -372,33 +384,23 @@
     }
 }
 
-@media screen and (max-width: 1199px) and (min-width: 639px) {
-    .testimonials{
-        .author {
-            font-size: 18px;
-        }
-        &:not(.doctors){
-            .slider{
-                .uk-slider-items{
-                    padding: 0;
-                }
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 1199px) {
     .h5{
         font-size: 26px;
     }
 
-    .h2 {
+    .h2{
         font-size: 44px;
     }
 
     .main{
         .subtitle{
             font-size: 16px;
+            font-weight: normal;
+        }
+
+        .h1 {
+            font-size: 48px;
         }
     }
     
@@ -541,7 +543,13 @@
     
     .choose{
         min-height: auto;
-        padding: 5rem 0 12rem;
+        padding: 5rem 0 2rem;
+
+        .container{
+            &::after{
+                top: 40%;
+            }
+        }
 
         .polygon{
             display: none;
@@ -564,28 +572,6 @@
 
         .choice-grid {
             margin-top: 2.5rem;
-        }
-    }
-
-    .about{
-        min-height: initial;
-
-        .text{
-            font-size: 16px;
-            padding-left: 6rem;
-        }
-
-        .title{
-            font-size: 36px;
-        }
-
-        .container{
-            padding: 3rem 0;
-            min-height: 650px;
-
-            &:after{
-                background-position-y: 3rem;
-            }
         }
     }
 
@@ -652,7 +638,6 @@
             top: 4rem;
         }
     }
-    
 }
 
 @media screen and (max-width: 1099px) {
@@ -710,41 +695,6 @@
         }
     }
 
-    .about{
-        .container{
-            padding: 4rem 0;
-            min-height: 600px;
-
-            &:after {
-                background-position-y: 2rem;
-            }
-        }
-
-        .uk-grid{
-            margin: 0 auto;
-        }
-
-        .title{
-            font-size: 38px;
-        }
-    }
-    // ---
-    .about{
-        padding-bottom: 0;
-        
-        .content{
-            margin: 3rem auto;
-        }
-        .about-img .img {
-        max-height: 18rem;
-        }
-        .list{
-            li{
-                margin-bottom: 1rem;
-            }
-        }
-    }
-
     .testimonials{
         .subtitle{
             margin-top: 1rem;
@@ -778,36 +728,47 @@
 
     .products{
         &::after{
-            height: 6rem;
+            height: 4rem;
         }
     }
 }
 
-@media screen and (min-width: 960px) {
-    .about{        
-        .list{
-             &:first-child{
-                li{
-                    padding: 0 2rem 0 0;
-                    text-align: right;
-
-                    &:before,
-                    &:after{
-                        right: 0;
-                        left: auto;
-                    }
-                }
-            }
-        }
-    }
-   
-}
 @media screen and (max-width: 959px) {
     .main{
         &::before{
             background-size: contain;
         }
     }
+
+    .about{
+        .img{
+            display: none;
+        }
+        
+        .img-mobile{
+            display: block;
+        }
+ 
+        .container{
+            max-width: 100%;
+        }
+
+        .list-wrapper{
+            display: flex;
+            align-items: flex-start;
+            width: 600px;
+            max-width: 90%;
+        }
+
+        .list{
+            width: 100%;
+
+            &:first-child{
+                margin-right: 2rem;
+            }
+        }
+    }
+
     .navbar.dark .navbar-container{
         padding: 0 1rem;
     }
@@ -863,46 +824,6 @@
             width: 300px;
         }
     }
-    
-
-
-    .about{
-        .title {
-            font-size: 28px;
-        }
-
-        .grid{
-            justify-content: flex-end;
-        }
-
-        .text{
-            padding-left: 0;
-            width: 310px;
-            max-width: 100%;
-        }
-
-        .container{
-            padding-bottom: 0;
-        }
-
-        .content{
-            display: block;
-            width: 640px;
-            max-width: 100%;
-        }
-
-
-        .list{
-            &:first-child{
-                margin-right: 3rem;
-            }
-        }
-
-        .list-wrapper{
-            align-items: flex-start;
-            position: relative;
-        }
-    }
 
     .choose{
         padding: 5rem 0;
@@ -924,6 +845,35 @@
     .products{
         .img-wrapper{
             height: auto;
+        }
+
+        &::after {
+            content: none;
+        }
+
+        .product{
+            position: relative;
+            
+            &::after{
+                content: "";
+                background: url('../images/main/arrows.svg') no-repeat center center;
+                background-size: contain;
+                height: 6rem;
+                transform: rotate(90deg);
+                display: block;
+                position: absolute;
+                bottom: -3rem;
+                right: 0;
+                left: 0;
+                margin: auto;
+                z-index: 4;
+            }
+
+            &:last-child{
+                &::after{
+                    content: none;
+                }
+            }
         }
     }
 
@@ -1066,6 +1016,11 @@
     }
     
     .footer{
+        .copyright{
+            .content{
+                display: block;
+            }
+        }
         .content{
             width: 320px;
             max-width: 100%;
@@ -1116,16 +1071,6 @@
             
             &:first-child{
                 margin-right: 1rem;
-            }
-        }
-    }
-
-    .about{
-        .container{
-            min-height: 480px;
-
-            &:after{
-                background-position: center;
             }
         }
     }
@@ -1232,6 +1177,19 @@
             padding-top: 40vh;
         }
     }
+
+    .about{
+        .h4{
+            font-size: 28px;
+        }
+        
+        .list-wrapper{
+            display: block;
+            width: 300px;
+            padding-top: 2rem;
+            margin: 0 auto;
+        }
+    }
     
     .products{
         .product{
@@ -1299,57 +1257,6 @@
 
         .img-wrapper{
             height: auto;
-        }
-    }
-
-    .about{
-        padding: 0;
-        background: $color-blue;
-        min-height: initial;
-
-        .title{
-            font-size: 28px;
-        }
-        
-        .container{
-            min-height: 680px;
-            padding: 2rem 0;
-            background-image: none;
-
-            &::after{
-                background-image: url(../images/main/bg-filter-mobile.svg);
-            }
-        }
-
-        .uk-container{
-            max-width: 320px;
-            margin: 0 auto;
-        }
-
-        .text,
-        .title{
-            max-width: 100%;
-            padding: 0;
-        }
-
-        &::before{
-            content: none;
-        }
-
-        .list{
-            &:first-child{
-                padding: 0;
-            }
-
-            li{
-                font-size: 13px;
-            }
-        }
-
-        .list-wrapper{
-            display: block;
-            width: 300px;
-            max-width: 100%;
         }
     }
 
@@ -1451,23 +1358,8 @@
 }
 
 @media screen and (max-width: 520px) {
-    .h2 {
+    .h2{
         font-size: 32px;
-    }
-
-    .about{
-        .container{
-            padding: 4rem 1rem;
-
-        }
-
-        .title{
-            margin-bottom: 1rem;
-        }
-
-        .uk-grid{
-            margin-left: 0;
-        }
     }
 
     .products{
@@ -1503,7 +1395,7 @@
         min-height: auto;
     }
 
-    .main {
+    .main{
         .h1{
             font-size: 28px;
         }

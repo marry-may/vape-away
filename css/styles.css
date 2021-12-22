@@ -589,7 +589,6 @@ form .textarea,
   box-sizing: border-box; }
 
 .main {
-  background: #000d19;
   height: 100vh;
   color: #FFFFFF;
   position: relative;
@@ -602,7 +601,7 @@ form .textarea,
     bottom: 0;
     left: 0;
     right: 0;
-    background: #000d19 url("../images/main/filter.png") no-repeat 90% center;
+    background: transparent url("../images/main/filter.png") no-repeat 90% center;
     background-size: contain;
     opacity: 1;
     z-index: 1; }
@@ -729,7 +728,6 @@ form .textarea,
 
 .choose {
   padding: 10rem 0 18rem;
-  background: #000d19;
   position: relative; }
   .choose .container {
     position: relative;
@@ -938,108 +936,86 @@ form .textarea,
         right: 1rem; }
 
 .about {
-  background: #000d19;
-  position: relative;
-  color: #FFFFFF;
-  padding: 2rem 0; }
-  .about::after, .about::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 50%;
+  padding: 4rem 0 0;
+  position: relative; }
+  .about .section-bg {
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -1px;
-    background: #FFFFFF;
-    z-index: 1; }
-  .about::before {
-    background: #000d19;
-    opacity: .9;
-    top: 0; }
-  .about .overlay {
-    position: absolute; }
-  .about .container {
-    background: #1C6CE8;
-    max-width: 90%;
-    width: 1620px;
-    min-height: 900px;
-    margin: 0 auto;
-    padding: 5rem 5rem 12rem;
-    box-sizing: border-box;
-    overflow: hidden;
-    position: relative;
-    z-index: 3; }
-    .about .container::after {
-      background: url("../images/main/bg-about.png") no-repeat center center;
-      background-size: cover;
-      display: block;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      z-index: 2; }
-    .about .container::before {
+    top: 0;
+    height: 100%;
+    width: 100%; }
+    .about .section-bg::before {
       content: "";
       display: block;
       top: 0;
       right: 0;
       left: 0;
-      bottom: 0;
+      bottom: -2px;
       height: 100%;
       width: 100%;
       background: radial-gradient(50% 50% at 50% 50%, rgba(28, 108, 232, 0) 0%, rgba(28, 108, 232, 0.367708) 63.33%, #1C6CE8 100%);
       position: absolute;
-      z-index: 2; }
-    .about .container .uk-container {
-      position: relative;
-      z-index: 3; }
-    .about .container .polygon {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      height: 100%;
-      width: 100%;
-      opacity: .6;
       z-index: 1; }
-      .about .container .polygon::after {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url(../images/smoke-blue.gif) no-repeat center center;
-        background-size: cover;
-        z-index: 4; }
-    .about .container .underline::after {
-      background-color: #FFFFFF; }
+  .about .wrapper {
+    position: relative;
+    z-index: 3; }
+  .about::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: #FFFFFF;
+    z-index: 1; }
   .about .title {
-    font-size: 46px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: none;
-    padding-left: 5rem; }
-    .about .title .h4 {
-      font-size: inherit;
-      text-align: center; }
-  .about .text {
-    padding-top: 28%;
-    padding-left: 8rem;
-    max-width: 560px;
-    font-size: 18px; }
-    .about .text p {
-      font-size: inherit; }
-  .about .btn-wrapper {
-    margin-top: 3rem; }
+    color: #FFFFFF;
+    text-align: center; }
+  .about .container {
+    width: 1620px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 6rem 0 0;
+    background: #1660FE;
+    position: relative;
+    z-index: 2; }
+  .about .img {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto; }
+  .about .img-mobile {
+    display: none;
+    max-width: 280px; }
+  .about .list-wrapper {
+    padding: 1rem 1rem 3rem;
+    margin: 2rem auto 0;
+    display: none; }
+  .about .list {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .about .list li {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      color: #FFFFFF;
+      margin-bottom: 1rem;
+      position: relative;
+      padding-left: 2rem; }
+      .about .list li::before {
+        content: "";
+        display: block;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        position: absolute;
+        left: 0; }
 
 .technology {
-  background: #000d19 url("../images/main/bg-technology.jpg") no-repeat center center;
+  background: url("../images/main/bg-technology.jpg") no-repeat center center;
   background: transparent;
   background-size: cover;
   color: #FFFFFF;
@@ -1300,20 +1276,6 @@ form .textarea,
     .bg img.bg-2 {
       right: -40%;
       left: auto; }
-  .bg:after {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background: #000d19;
-    opacity: 0;
-    z-index: 1; }
-  .bg.scroll:after {
-    opacity: .8; }
 
 .filter {
   display: none;
@@ -1324,73 +1286,6 @@ form .textarea,
   width: 18vw;
   position: absolute;
   z-index: 4; }
-
-.about {
-  background: none; }
-  .about .container {
-    padding: 5rem 0 0 0;
-    max-width: 100%;
-    min-height: auto; }
-  .about .wrapper {
-    width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
-    position: relative;
-    z-index: 5; }
-  .about .content {
-    display: flex;
-    position: relative;
-    align-items: center;
-    width: 1100px;
-    max-width: 100%;
-    margin: 4rem auto 6rem; }
-  .about .about-img {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .about .about-img .img {
-      max-height: 30rem;
-      margin: auto; }
-  .about .list-wrapper {
-    margin: auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-  .about .list {
-    max-width: 300px;
-    margin-top: 2rem;
-    padding: 0; }
-    .about .list li {
-      padding-left: 2rem;
-      position: relative;
-      list-style: none;
-      margin-bottom: 2rem;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      font-weight: 600;
-      font-size: 15px; }
-      .about .list li::before, .about .list li::after {
-        content: "";
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        background: #FFFFFF;
-        position: absolute;
-        left: 0;
-        top: 0; }
-      .about .list li:after {
-        opacity: .2; }
-      .about .list li::before {
-        height: 10px;
-        width: 10px;
-        margin: 5px; }
 
 .navbar.dark {
   background-color: #000d19;
@@ -2440,19 +2335,19 @@ form .textarea,
     padding-top: 15%; }
   .products .h4 {
     font-size: 28px; }
-  .about .title {
-    padding: 0; }
   .choose {
-    padding-top: 7rem; }
+    padding: 5rem 0 7rem; }
     .choose .content {
       max-width: 100%;
       margin: 0 auto; }
     .choose .container {
       width: 1100px;
       max-width: 90%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      min-height: 650px; }
       .choose .container::after {
-        height: 65%; }
+        top: 50%;
+        height: 45%; }
     .choose .choice-grid {
       margin-top: 4rem; }
     .choose .choice .h6 {
@@ -2540,8 +2435,16 @@ form .textarea,
     height: 70px; }
     .main .play img {
       height: 100%; }
+  .main::before {
+    background-position-x: right; }
   .h2 {
     font-size: 48px; }
+  .about {
+    padding: 0; }
+    .about .h4 {
+      font-size: 32px; }
+    .about .container {
+      padding-top: 3rem; }
   .how-it-works {
     padding-top: 5rem;
     padding-bottom: 7rem; }
@@ -2608,19 +2511,16 @@ form .textarea,
     .footer-nav:first-child {
       display: none; } }
 
-@media screen and (max-width: 1199px) and (min-width: 639px) {
-  .testimonials .author {
-    font-size: 18px; }
-  .testimonials:not(.doctors) .slider .uk-slider-items {
-    padding: 0; } }
-
 @media screen and (max-width: 1199px) {
   .h5 {
     font-size: 26px; }
   .h2 {
     font-size: 44px; }
   .main .subtitle {
-    font-size: 16px; }
+    font-size: 16px;
+    font-weight: normal; }
+  .main .h1 {
+    font-size: 48px; }
   .uk-container {
     width: 95%;
     max-width: 100%;
@@ -2700,7 +2600,9 @@ form .textarea,
     font-size: 15px; }
   .choose {
     min-height: auto;
-    padding: 5rem 0 12rem; }
+    padding: 5rem 0 2rem; }
+    .choose .container::after {
+      top: 40%; }
     .choose .polygon {
       display: none; }
     .choose .content {
@@ -2712,18 +2614,6 @@ form .textarea,
       padding-top: 1rem; }
     .choose .choice-grid {
       margin-top: 2.5rem; }
-  .about {
-    min-height: initial; }
-    .about .text {
-      font-size: 16px;
-      padding-left: 6rem; }
-    .about .title {
-      font-size: 36px; }
-    .about .container {
-      padding: 3rem 0;
-      min-height: 650px; }
-      .about .container:after {
-        background-position-y: 3rem; }
   .products .product {
     padding: 5rem 0; }
   .collaborating {
@@ -2789,23 +2679,6 @@ form .textarea,
     padding-bottom: 0; }
     .navbar .btn {
       display: none; }
-  .about .container {
-    padding: 4rem 0;
-    min-height: 600px; }
-    .about .container:after {
-      background-position-y: 2rem; }
-  .about .uk-grid {
-    margin: 0 auto; }
-  .about .title {
-    font-size: 38px; }
-  .about {
-    padding-bottom: 0; }
-    .about .content {
-      margin: 3rem auto; }
-    .about .about-img .img {
-      max-height: 18rem; }
-    .about .list li {
-      margin-bottom: 1rem; }
   .testimonials .subtitle {
     margin-top: 1rem;
     opacity: 1; }
@@ -2822,19 +2695,26 @@ form .textarea,
     .collaborating .title {
       font-size: 28px; }
   .products::after {
-    height: 6rem; } }
-
-@media screen and (min-width: 960px) {
-  .about .list:first-child li {
-    padding: 0 2rem 0 0;
-    text-align: right; }
-    .about .list:first-child li:before, .about .list:first-child li:after {
-      right: 0;
-      left: auto; } }
+    height: 4rem; } }
 
 @media screen and (max-width: 959px) {
   .main::before {
     background-size: contain; }
+  .about .img {
+    display: none; }
+  .about .img-mobile {
+    display: block; }
+  .about .container {
+    max-width: 100%; }
+  .about .list-wrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 600px;
+    max-width: 90%; }
+  .about .list {
+    width: 100%; }
+    .about .list:first-child {
+      margin-right: 2rem; }
   .navbar.dark .navbar-container {
     padding: 0 1rem; }
   .navbar .uk-logo {
@@ -2865,25 +2745,6 @@ form .textarea,
       font-size: 16px; }
     .how-it-works .item-wrapper {
       width: 300px; }
-  .about .title {
-    font-size: 28px; }
-  .about .grid {
-    justify-content: flex-end; }
-  .about .text {
-    padding-left: 0;
-    width: 310px;
-    max-width: 100%; }
-  .about .container {
-    padding-bottom: 0; }
-  .about .content {
-    display: block;
-    width: 640px;
-    max-width: 100%; }
-  .about .list:first-child {
-    margin-right: 3rem; }
-  .about .list-wrapper {
-    align-items: flex-start;
-    position: relative; }
   .choose {
     padding: 5rem 0; }
     .choose .choice-grid {
@@ -2894,6 +2755,25 @@ form .textarea,
       display: none; }
   .products .img-wrapper {
     height: auto; }
+  .products::after {
+    content: none; }
+  .products .product {
+    position: relative; }
+    .products .product::after {
+      content: "";
+      background: url("../images/main/arrows.svg") no-repeat center center;
+      background-size: contain;
+      height: 6rem;
+      transform: rotate(90deg);
+      display: block;
+      position: absolute;
+      bottom: -3rem;
+      right: 0;
+      left: 0;
+      margin: auto;
+      z-index: 4; }
+    .products .product:last-child::after {
+      content: none; }
   .testimonials .slider .uk-slider-items {
     padding: 0; }
   .technology {
@@ -2970,6 +2850,8 @@ form .textarea,
         margin-top: 2rem; }
       .blog .item:nth-child(2n+1) {
         margin-top: 0; }
+  .footer .copyright .content {
+    display: block; }
   .footer .content {
     width: 320px;
     max-width: 100%;
@@ -2999,10 +2881,6 @@ form .textarea,
     margin-right: 5px; }
     .navbar .nav-link:first-child {
       margin-right: 1rem; }
-  .about .container {
-    min-height: 480px; }
-    .about .container:after {
-      background-position: center; }
   .bg-smoke {
     display: none; }
   .certified .uk-grid {
@@ -3051,6 +2929,13 @@ form .textarea,
     background-size: 70%; }
   .main .content {
     padding-top: 40vh; }
+  .about .h4 {
+    font-size: 28px; }
+  .about .list-wrapper {
+    display: block;
+    width: 300px;
+    padding-top: 2rem;
+    margin: 0 auto; }
   .products .product {
     padding: 5rem 0; }
     .products .product-img {
@@ -3085,35 +2970,6 @@ form .textarea,
       content: none; }
     .choose .img-wrapper {
       height: auto; }
-  .about {
-    padding: 0;
-    background: #1C6CE8;
-    min-height: initial; }
-    .about .title {
-      font-size: 28px; }
-    .about .container {
-      min-height: 680px;
-      padding: 2rem 0;
-      background-image: none; }
-      .about .container::after {
-        background-image: url(../images/main/bg-filter-mobile.svg); }
-    .about .uk-container {
-      max-width: 320px;
-      margin: 0 auto; }
-    .about .text,
-    .about .title {
-      max-width: 100%;
-      padding: 0; }
-    .about::before {
-      content: none; }
-    .about .list:first-child {
-      padding: 0; }
-    .about .list li {
-      font-size: 13px; }
-    .about .list-wrapper {
-      display: block;
-      width: 300px;
-      max-width: 100%; }
   .doctors .grid {
     width: 380px;
     max-width: 100%;
@@ -3168,12 +3024,6 @@ form .textarea,
 @media screen and (max-width: 520px) {
   .h2 {
     font-size: 32px; }
-  .about .container {
-    padding: 4rem 1rem; }
-  .about .title {
-    margin-bottom: 1rem; }
-  .about .uk-grid {
-    margin-left: 0; }
   .products .h4 {
     font-size: 24px; }
   .blog .h5 {
