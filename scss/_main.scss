@@ -254,10 +254,10 @@
         text-align: center;
         z-index: 2;
 
-
         img{
             max-width: 90%;
             margin: auto;
+            transition: all .5s;
         }
         
         .h6{
@@ -268,6 +268,12 @@
             max-width: 80%;
             margin: 0 auto;
             padding-top: 2.5rem;
+        }
+
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
         }
     }
 }
@@ -977,4 +983,135 @@
     width: 18vw;
     position: absolute;
     z-index: 4;
+}
+
+
+// ANIMATION
+
+.how-it-works{
+    .item{
+        &-img{
+            text-align: center;
+            position: relative;
+        } 
+    }
+
+    .filter{
+        -webkit-animation: filter 4s infinite;
+                animation: filter 4s infinite;
+    }
+
+    
+    // Item 2
+    .filter{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        height: 58%;
+        width: auto;
+        display: block;
+    }
+
+    .heart{
+        height: 30%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        -webkit-animation: heart 2s infinite;
+                animation: heart 2s infinite;
+    }
+}
+
+
+@-webkit-keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes filter {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -10%;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+@keyframes filter {
+    0% {
+        top: 2%;
+    }
+    50% {
+        top: -6%;
+    }
+    100%{
+        top: 2%;
+    }
+}
+
+
+.brain .svg-elem-2 {
+  stroke-dashoffset: 19832.138671875px;
+  stroke-dasharray: 19832.138671875px;
+  transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+  -webkit-animation: brain 10s infinite;
+          animation: brain 10s infinite;
+}
+
+.brain.active .svg-elem-2 {
+  stroke-dashoffset: 0;
+}
+
+
+@-webkit-keyframes brain {
+    0% {
+        stroke-dashoffset: 19832.138671875px;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: 19832.138671875px;
+    }
+}
+
+
+@keyframes brain {
+    0% {
+        stroke-dashoffset: 19832.138671875px;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: 19832.138671875px;
+    }
 }

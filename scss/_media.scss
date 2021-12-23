@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
     .uk-container {
         max-width: 1360px;
     }
@@ -33,6 +33,10 @@
     .products{
         .h4 {
             font-size: 28px;
+        }
+
+        .product{
+            padding: 3rem 0 5rem;
         }
     }
 
@@ -214,6 +218,10 @@
 
 @media screen and (max-width: 1440px) {
     .main {
+        .subtitle{
+            font-size: 18px;
+        }
+
         .content {
             padding-top: 12%;
         }
