@@ -690,6 +690,9 @@ form .textarea,
     opacity: 1;
     transform: scale(1); } }
 
+.polygon {
+  opacity: .7; }
+
 .how-it-works {
   background: #1C6CE8;
   color: #FFFFFF;
@@ -1280,32 +1283,22 @@ form .textarea,
       right: -40%;
       left: auto; }
 
-.filter {
-  display: none;
-  position: absolute;
-  z-index: 4;
-  right: 6vw;
-  top: 19vh;
-  width: 18vw;
-  position: absolute;
-  z-index: 4; }
-
 .how-it-works .item-img {
   text-align: center;
   position: relative; }
 
 .how-it-works .filter {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 0;
+  margin: 0 auto;
+  height: 60%;
   -webkit-animation: filter 4s infinite;
   animation: filter 4s infinite; }
 
-.how-it-works .filter {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  height: 58%;
-  width: auto;
+.how-it-works .filters {
+  max-height: 20rem;
   display: block; }
 
 .how-it-works .heart {
@@ -1334,22 +1327,6 @@ form .textarea,
   100% {
     transform: scale(1); } }
 
-@-webkit-keyframes filter {
-  0% {
-    top: 0; }
-  50% {
-    top: -10%; }
-  100% {
-    top: 0; } }
-
-@keyframes filter {
-  0% {
-    top: 2%; }
-  50% {
-    top: -6%; }
-  100% {
-    top: 2%; } }
-
 .brain .svg-elem-2 {
   stroke-dashoffset: 19832.138671875px;
   stroke-dasharray: 19832.138671875px;
@@ -1375,6 +1352,43 @@ form .textarea,
     stroke-dashoffset: 0; }
   100% {
     stroke-dashoffset: 19832.138671875px; } }
+
+/**********Filter *****/
+@-webkit-keyframes filter-device {
+  0% {
+    stroke-dashoffset: 2557.940673828125px;
+    stroke-dasharray: 2557.940673828125px; }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 2557.940673828125px; } }
+
+@keyframes filter-device {
+  0% {
+    stroke-dashoffset: 2557.940673828125px;
+    stroke-dasharray: 2557.940673828125px; }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 2557.940673828125px; } }
+
+.filters .svg-elem-1 {
+  -webkit-animation: filter-device 6s ease-in 0s both infinite;
+  animation: filter-device 6s ease-in 0s both infinite; }
+
+@-webkit-keyframes filter {
+  0% {
+    top: -3%; }
+  50% {
+    top: 3%; }
+  100% {
+    top: -3%; } }
+
+@keyframes filter {
+  0% {
+    top: -3%; }
+  50% {
+    top: 2%; }
+  100% {
+    top: -3%; } }
 
 .navbar.dark {
   background-color: #000d19;
@@ -2657,7 +2671,7 @@ form .textarea,
   .certified {
     padding-bottom: 5rem; }
     .certified .container {
-      padding: 9rem 3rem;
+      padding: 6rem 3rem;
       max-width: 94%; }
     .certified .uk-grid {
       margin-left: 0; }
@@ -2712,7 +2726,7 @@ form .textarea,
   .collaborating {
     padding-bottom: 4rem; }
     .collaborating .container {
-      padding: 10rem 5rem;
+      padding: 8rem 5rem;
       min-height: 500px; }
     .collaborating .title {
       font-size: 28px; }
