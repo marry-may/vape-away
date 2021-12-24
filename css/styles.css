@@ -199,7 +199,7 @@
 html {
   font: normal 16px/1.5 "Gilroy", sans-serif;
   color: #000E19;
-  background: #000d19; }
+  background: #040D16; }
 
 a {
   text-decoration: none; }
@@ -290,18 +290,18 @@ p {
     border-radius: 60px;
     padding: 1rem 2.5rem; }
     .btn-white:hover {
-      background: #000d19;
+      background: #040D16;
       color: #FFFFFF; }
   .btn-dark {
-    background: #000d19;
+    background: #040D16;
     color: #FFFFFF; }
     .btn-dark:hover {
-      background: #000d19;
+      background: #040D16;
       color: #FFFFFF; }
   .btn-outline {
-    border: 1px solid #000d19;
+    border: 1px solid #040D16;
     background: #FFFFFF;
-    color: #000d19; }
+    color: #040D16; }
   .btn-pure {
     color: #1660FE;
     padding: 1rem 2rem; }
@@ -367,7 +367,7 @@ p {
   overflow: hidden; }
 
 .back {
-  color: #000d19;
+  color: #040D16;
   font-weight: 500; }
   .back .icon {
     margin-right: 10px; }
@@ -510,7 +510,7 @@ form .textarea,
     color: #FFFFFF; }
 
 .footer {
-  background: #00080f;
+  background: #02080d;
   color: #FFFFFF;
   padding: 5rem 0 0;
   position: relative;
@@ -825,7 +825,7 @@ form .textarea,
     height: 480px; }
   .products .product-info {
     color: #FFFFFF;
-    background: #081B2F; }
+    background: #040D16; }
   .products .content {
     width: 460px;
     max-width: 85%;
@@ -1049,7 +1049,7 @@ form .textarea,
       margin: 0 20px 0 50px; }
 
 .certified {
-  background: #000d19;
+  background: #040D16;
   position: relative;
   color: #FFFFFF;
   padding: 8rem 0; }
@@ -1176,7 +1176,7 @@ form .textarea,
 
 .collaborating {
   position: relative;
-  background: #000d19;
+  background: #040D16;
   color: #FFFFFF;
   padding: 6rem 0 10rem; }
   .collaborating:after {
@@ -1218,7 +1218,7 @@ form .textarea,
       font-size: inherit; }
 
 .blog {
-  background: #000d19;
+  background: #040D16;
   color: #FFFFFF;
   padding: 0 0 10rem;
   position: relative;
@@ -1391,7 +1391,7 @@ form .textarea,
     top: -3%; } }
 
 .navbar.dark {
-  background-color: #000d19;
+  background-color: #040D16;
   width: 100%;
   max-width: 100%;
   left: 0;
@@ -1458,7 +1458,7 @@ form .textarea,
       display: block;
       width: 100%;
       margin-top: 2rem;
-      border-bottom: 1px solid rgba(0, 13, 25, 0.15); }
+      border-bottom: 1px solid rgba(4, 13, 22, 0.15); }
   .faq .accordion-title {
     font-size: 24px;
     font-weight: 700;
@@ -1502,7 +1502,7 @@ form .textarea,
   .videos .video-mobile {
     padding: 2rem 0 0;
     display: none;
-    background: #000d19;
+    background: #040D16;
     color: #FFFFFF; }
     .videos .video-mobile .video-cover {
       padding: 0; }
@@ -1900,7 +1900,7 @@ form .textarea,
   .product-page .card {
     margin-bottom: 2rem; }
     .product-page .card-wrapper {
-      border: 1px solid rgba(0, 13, 25, 0.2);
+      border: 1px solid rgba(4, 13, 22, 0.2);
       padding: 1rem 3rem 2rem 3rem; }
     .product-page .card-info {
       display: flex;
@@ -1930,12 +1930,12 @@ form .textarea,
         margin-right: 1rem; }
   .product-page .box {
     padding: 1rem;
-    border: 1px solid rgba(0, 13, 25, 0.1);
+    border: 1px solid rgba(4, 13, 22, 0.1);
     text-align: center;
     cursor: pointer;
     transition: all .5s; }
     .product-page .box:hover {
-      border-color: #000d19; }
+      border-color: #040D16; }
     .product-page .box.active {
       border-color: #1660FE; }
       .product-page .box.active .box-title {
@@ -1961,7 +1961,7 @@ form .textarea,
     width: 100%;
     display: block;
     outline: none !important;
-    border: 1px solid rgba(0, 13, 25, 0.2);
+    border: 1px solid rgba(4, 13, 22, 0.2);
     font: 600 1rem/60px "Gilroy", sans-serif; }
   .select:after {
     content: "\e909";
@@ -1976,7 +1976,7 @@ form .textarea,
     width: 50px;
     background-color: #fff;
     border-radius: 60px;
-    color: rgba(0, 13, 25, 0.5);
+    color: rgba(4, 13, 22, 0.5);
     text-align: center;
     line-height: 50px;
     z-index: 3; }
@@ -2147,7 +2147,7 @@ form .textarea,
       align-items: center;
       padding: 2rem 0;
       margin: 0;
-      border-bottom: 1px solid rgba(0, 13, 25, 0.2); }
+      border-bottom: 1px solid rgba(4, 13, 22, 0.2); }
       .cart .table .row div:first-child {
         padding-left: 0; }
     .cart .table .title {

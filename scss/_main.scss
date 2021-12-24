@@ -334,7 +334,7 @@
 
     .product-info{
         color: $color-white;
-        background: #081B2F;
+        background: $color-bg;
     }
 
     .content{
@@ -344,6 +344,7 @@
         position: relative;
     }
 
+    
     .play{
         position: absolute;
         top: 1rem;
