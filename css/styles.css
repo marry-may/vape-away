@@ -589,7 +589,7 @@ form .textarea,
   box-sizing: border-box; }
 
 .main {
-  height: 100vh;
+  height: 110vh;
   color: #FFFFFF;
   position: relative;
   overflow: hidden; }
@@ -597,11 +597,12 @@ form .textarea,
     content: "";
     display: block;
     position: absolute;
+    height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: transparent url("../images/main/filter.png") no-repeat 90% center;
+    background: transparent url("../images/main/main-filter.png") no-repeat 90% center;
     background-size: contain;
     opacity: 1;
     z-index: 1; }
@@ -942,7 +943,6 @@ form .textarea,
         right: 1rem; }
 
 .about {
-  padding: 4rem 0 0;
   position: relative; }
   .about .section-bg {
     position: absolute;
@@ -1326,53 +1326,6 @@ form .textarea,
     transform: scale(1.2); }
   100% {
     transform: scale(1); } }
-
-.brain .svg-elem-2 {
-  stroke-dashoffset: 19832.138671875px;
-  stroke-dasharray: 19832.138671875px;
-  transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
-  -webkit-animation: brain 10s infinite;
-  animation: brain 10s infinite; }
-
-.brain.active .svg-elem-2 {
-  stroke-dashoffset: 0; }
-
-@-webkit-keyframes brain {
-  0% {
-    stroke-dashoffset: 19832.138671875px; }
-  50% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 19832.138671875px; } }
-
-@keyframes brain {
-  0% {
-    stroke-dashoffset: 19832.138671875px; }
-  50% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 19832.138671875px; } }
-
-/**********Filter *****/
-@-webkit-keyframes filter-device {
-  0% {
-    stroke-dashoffset: 2557.940673828125px;
-    stroke-dasharray: 2557.940673828125px; }
-  100% {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 2557.940673828125px; } }
-
-@keyframes filter-device {
-  0% {
-    stroke-dashoffset: 2557.940673828125px;
-    stroke-dasharray: 2557.940673828125px; }
-  100% {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 2557.940673828125px; } }
-
-.filters .svg-elem-1 {
-  -webkit-animation: filter-device 6s ease-in 0s both infinite;
-  animation: filter-device 6s ease-in 0s both infinite; }
 
 @-webkit-keyframes filter {
   0% {
