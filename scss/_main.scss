@@ -457,6 +457,8 @@
                 border-radius: 50%;
                 text-align: center;
                 position: relative;
+                transform: scale(.8);
+                transition: all .5s;
 
                 &::before{
                     position: relative;
@@ -476,6 +478,10 @@
                     left: -25%;
                     margin: auto;
                     z-index: 0;
+                }
+
+                &:hover{
+                    transform: scale(1);
                 }
             }
 

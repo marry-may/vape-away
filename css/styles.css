@@ -912,7 +912,9 @@ form .textarea,
         line-height: 46px;
         border-radius: 50%;
         text-align: center;
-        position: relative; }
+        position: relative;
+        transform: scale(0.8);
+        transition: all .5s; }
         .testimonials .slider .video-cover .icon-play::before {
           position: relative;
           z-index: 1; }
@@ -929,6 +931,8 @@ form .textarea,
           left: -25%;
           margin: auto;
           z-index: 0; }
+        .testimonials .slider .video-cover .icon-play:hover {
+          transform: scale(1); }
       .testimonials .slider .video-cover .video-play {
         font-weight: 500;
         color: #FFFFFF;
