@@ -151,7 +151,7 @@
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-    z-index: 3;    
+    z-index: 3;
 
     .img{
         height: 20rem;
@@ -168,6 +168,7 @@
 
     .item{
         margin-top: 4rem;
+        padding-left: 5rem;
         
         &-img{
             display: flex;
@@ -192,6 +193,19 @@
             text-transform: uppercase;
             letter-spacing: .15em;
             color: $color-white;
+            position: relative;
+
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                height: 12px;
+                width: 12px;
+                background-color: $color-white;
+                border: .5rem solid rgba($color-primary, .8);
+                border-radius: 50%;
+                left: -3rem;
+            }
         }
 
         &-info{
@@ -432,6 +446,39 @@
             position: relative;
             margin-bottom: 1.5rem;
 
+            .icon-play{
+                display: block;
+                margin: 1rem 1.5rem 1rem 1rem;
+                background: $color-primary;
+                height: 46px;
+                width: 46px;
+                padding-left: 3px;
+                line-height: 46px;
+                border-radius: 50%;
+                text-align: center;
+                position: relative;
+
+                &::before{
+                    position: relative;
+                    z-index: 1;
+                }
+
+                &::after{
+                    content: "";
+                    height: 150%;
+                    width: 150%;
+                    display: block;
+                    background: $color-primary;
+                    border-radius: 50%;
+                    opacity: .2;
+                    position: absolute;
+                    top: -25%;
+                    left: -25%;
+                    margin: auto;
+                    z-index: 0;
+                }
+            }
+
             .video-play{
                 font-weight: 500;
                 color: $color-white;
@@ -444,14 +491,14 @@
                 display: flex;
                 align-items: center;
 
-                &::before{
-                    content: "";
-                    display: inline-block;
-                    height: 5rem;
-                    width: 5rem;
-                    background: url(../images/icons/play-c.svg) no-repeat center center;
-                    background-size: contain;
-                }
+                // &::before{
+                //     content: "";
+                //     display: inline-block;
+                //     height: 5rem;
+                //     width: 5rem;
+                //     background: url(../images/icons/play-c.svg) no-repeat center center;
+                //     background-size: contain;
+                // }
             }
         }
 

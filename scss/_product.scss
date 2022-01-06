@@ -5,10 +5,33 @@
 
   .product-img{
     text-align: center;
-
+    
     img{
-      max-width: 90%;
-      max-height: 34rem;
+      height: 100%;
+    }
+  }
+
+  .product-slider{
+    &-items{
+      min-height: 50vh !important;
+      
+      & > * {
+        padding-left: 5rem;
+      }
+    }
+
+    .uk-thumbnav{
+      margin-top: 3rem;
+      flex-direction: column;
+
+      img{
+        height: auto;
+        width: 5rem;
+      }
+
+      &>*{
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -204,9 +227,24 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .product-page .btn-wrapper .btn {
+    padding: 1rem .5rem;
+    letter-spacing: 0;
+  }
+}
+
 @media screen and (max-width: 959px) {
   .product-page{
     padding-bottom: 10rem;
+
+    .btn-wrapper{
+      .btn{
+        padding: 1rem .5rem;
+        font-size: 13px;
+        letter-spacing: 0;
+      }
+    }
     
     .h4 {
       font-size: 28px;
@@ -232,7 +270,17 @@
     .select{
       height: 54px;
       border-radius: 30px;
-      padding: 0 1rem;
+      padding: 0;
+
+      select{
+        height: inherit;
+        padding: 0 1rem;
+      }
+
+      &::after{
+        top: 1px;
+        height: 46px;
+      }
     }
 
     .row{
@@ -262,20 +310,42 @@
 
     .uk-container{
       max-width: 640px;
-      margin: 3rem auto;
+      margin: 2rem auto;
     }
 
     .product-details{
-      width: 400px;
+      width: 480px;
       max-width: 100%;
       margin: 0 auto;
     }
 
     .product-img{
       padding: 1rem;
+      // margin-bottom: 2rem;
       
       img{
         max-width: 100%;
+        height: auto;
+        max-height: 100%;
+      }
+    }
+
+    .product-slider {
+      &-items{
+        min-height: 20rem !important;
+
+        &>*{
+          padding-left: 3rem;
+        }
+      }
+
+
+      .uk-thumbnav{
+        padding-left: 1rem;
+
+        img{
+          width: 3rem;
+        }
       }
     }
   }  
@@ -283,7 +353,7 @@
 
 @media screen and (max-width: 639px) {
   .product-page{
-    padding: 1rem 0 10rem;
+    padding: 1rem 0 10rem;    
 
     .subtitle {
       margin-bottom: 1.5rem;
@@ -297,10 +367,6 @@
       }
     }
 
-    .product-img img {
-      max-height: 20rem;
-    }
-    
     .title {
       margin-bottom: 1rem;
     }
