@@ -840,11 +840,14 @@
         .choice-grid{
             justify-content: center;
         }
+        
         .choice{
             margin-bottom: 3rem;
         }
-
+        
         .container{
+            min-height: initial;
+
             &::after{
                 display: none;
             }
@@ -1202,11 +1205,16 @@
     
     .products{
         .product{
-            padding: 5rem 0;
+            padding: 3rem 0 6rem;
 
             &-img{
                 height: auto;
                 max-width: 90%;
+            }
+            &-slider{
+                ul {
+                    height: 320px;
+                }
             }
         }
 

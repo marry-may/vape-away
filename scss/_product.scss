@@ -213,6 +213,18 @@
   }
 }
 
+.coming-soon{
+  .uk-modal-body{
+    padding: 3rem;
+  }
+  
+  .form{
+    width: 400px;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .product-page{
     padding: 3rem 0 2rem;
@@ -352,6 +364,11 @@
 }
 
 @media screen and (max-width: 639px) {
+  .coming-soon{
+    .uk-modal-body{
+      padding: 2.5rem 2rem;
+    }
+  }
   .product-page{
     padding: 1rem 0 10rem;    
 

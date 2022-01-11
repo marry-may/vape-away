@@ -276,6 +276,30 @@
     </div>
 </section>
 
+<div id="coming-soon" class="uk-flex-top coming-soon" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <div class="uk-text-center">
+            <h5 class="h5 bright">Coming Soon</h5>
+
+            <p class="h6 subtitle">Be first to know when it's available</p>
+
+            <form action="" class="form">
+                <div class="uk-margin-top">
+                <input type="text" class="input" placeholder="Name">
+                </div>
+                <div class="uk-margin-top">
+                <input type="email" class="input" placeholder="Email">
+                </div>
+                <button type="submit" class="btn btn-bright uk-margin-top">Subscribe</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
 <footer class="footer">
     <div class="content uk-container">
         <div class="uk-grid">
@@ -374,8 +398,6 @@
     </div>
 </footer>
 
-
-
 <!-- JS Libs-->
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.8.0/dist/js/uikit.min.js"></script>
@@ -386,6 +408,11 @@
 
 <!-- JS Custom -->
 <script src="js/app.js" defer></script>
+
+<script>
+
+    UIkit.modal('#coming-soon').show();
+</script>
 
 
 </body>
