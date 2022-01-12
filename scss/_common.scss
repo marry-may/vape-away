@@ -164,57 +164,7 @@ p{
         color: $color-primary;
     }
 }
-
-.icon-play{
-    position: relative;
-
-    span{
-        display: block;
-        margin: auto !important;
-        height: 46px;
-        width: 46px;
-        border-radius: 50%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border: 1px solid $color-primary;
-        transform: scale(1);
-        opacity: 1;
-
-        &::before{
-            content: "";
-            display: block;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            border: 1px solid $color-primary;
-            margin: auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            opacity: 1;
-        }
-    }
-
-    &:hover{
-        span{
-            border-color: $color-white;
-            transform: scale(1.6);
-            opacity: 0;
-            transition: all .8s;
-            
-            &::before{
-                border-color: $color-white;
-                transform: scale(1.8);
-                transition: all 2s;
-            }
-        }
-    }
-}
+ 
 
 .play-btn {
     span{
@@ -249,6 +199,102 @@ p{
 
         .play{
             transition:fill .4s .3s ease-out;
+        }
+    }
+}
+
+
+.icon-play{ 
+    background: $color-primary;
+    height: 46px;
+    width: 46px;
+    display: block;
+    line-height: 46px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+
+    &::before{
+        position: relative;
+        z-index: 1;
+    }
+
+    &::after{
+        content: "";
+        height: 150%;
+        width: 150%;
+        display: block;
+        background: $color-primary;
+        border-radius: 50%;
+        opacity: .2;
+        position: absolute;
+        top: -25%;
+        left: -25%;
+        margin: auto;
+        z-index: 0;
+    }
+
+     position: relative;
+
+    &::before{
+        color: $color-white;
+    }
+
+    span{
+        display: block;
+        margin: auto !important;
+        height: inherit;
+        width: inherit;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid $color-primary;
+        transform: scale(1);
+        opacity: 1;
+
+        &::before{
+            content: "";
+            display: block;
+            width: calc(inherit -10px);
+            height: calc(inherit -10px);
+            border-radius: 50%;
+            border: 1px solid $color-primary;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 1;
+        }
+    }
+
+    &:hover{
+        span{
+            border-color: $color-white;
+            transform: scale(1.5);
+            opacity: 0;
+            transition: all .8s;
+            
+            &::before{
+                border-color: $color-white;
+                transform: scale(1.8);
+                transition: all 2s;
+            }
+        }
+    }
+
+
+    &-lg{
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
+
+        &::before{
+            font-size: 20px;
         }
     }
 }

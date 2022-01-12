@@ -1,4 +1,28 @@
 
+// Product - Filter Pack Size
+$('.b-va-8').click(function () {
+  $('.box').removeClass('active');
+  $(this).addClass('active');
+  $('.va').addClass('uk-hidden');
+  $('.va-8').removeClass('uk-hidden');
+});
+
+$('.b-va-16').click(function () {
+  $('.box').removeClass('active');
+  $(this).addClass('active');
+  $('.va').addClass('uk-hidden');
+  $('.va-16').removeClass('uk-hidden');  
+});
+
+$('.b-va-32').click(function () {
+  $('.box').removeClass('active');
+  $(this).addClass('active');
+  $('.va').addClass('uk-hidden');
+  $('.va-32').removeClass('uk-hidden');  
+});
+
+
+// ===========
 if ($('.bg').length > 0) {
   var bg = document.querySelector('.bg');
 

@@ -748,6 +748,12 @@
         }
     }
 
+    .icon-play{
+        &-lg{
+            transform: scale(.8);
+        }
+    }
+
     .about{
         .img{
             display: none;
@@ -814,23 +820,33 @@
         padding: 4rem 0;
         min-height: 600px;
 
-        .item{
-            display: flex;
-            justify-content: center;
-        }
-        
-        .item-title{
-            font-size: 18px;
-            letter-spacing: .1em;
-        }
-
-        .item-info{
-            font-size: 16px;
-        }
-
         .item-wrapper{
             width: 300px;
             max-width: 100%;
+        }
+        
+        .item {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+
+            &-img{
+                transform: scale(.8);
+                margin-bottom: 0;
+            }
+            &-content{
+                margin: 0;
+            }
+
+            &-title {
+                font-size: 16px;
+                letter-spacing: .1em;
+            }
+            
+            &-info {
+                font-size: 14px;
+                margin-top: 10px;
+            }
         }
     }
 
@@ -1064,6 +1080,13 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+     .icon-play{
+        &-lg{
+            transform: scale(.5);
+        }
+    }
+}
 @media screen and (max-width: 739px) {
     .mobile-toggle{
         display: block;
@@ -1233,6 +1256,37 @@
         .overlay{
             display: none;
         }
+
+        .logo{
+            img{
+                height: 24px;
+                margin-bottom: 1rem;
+            }
+        }
+        /*
+        .item {
+            margin-top: 1rem;
+
+            &-img{
+                transform: scale(.8);
+                margin-bottom: 0;
+            }
+            &-content{
+                margin: 0;
+            }
+
+            &-title {
+                font-size: 16px;
+            }
+            
+            &-info {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+        */
+
+        
     }
 
     .choose{

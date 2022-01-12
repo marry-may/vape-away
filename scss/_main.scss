@@ -491,6 +491,11 @@
         }
     }
 
+    .icon-play{
+        margin: 1rem 1.5rem 1rem 1rem;
+        padding-left: 3px;
+    }
+
     .slider{
         margin-top: 3.4rem;
         position: relative;
@@ -513,38 +518,6 @@
             position: relative;
             margin-bottom: 1.5rem;
 
-            .icon-play{
-                display: block;
-                margin: 1rem 1.5rem 1rem 1rem;
-                background: $color-primary;
-                height: 46px;
-                width: 46px;
-                padding-left: 3px;
-                line-height: 46px;
-                border-radius: 50%;
-                text-align: center;
-                position: relative;
-
-                &::before{
-                    position: relative;
-                    z-index: 1;
-                }
-
-                &::after{
-                    content: "";
-                    height: 150%;
-                    width: 150%;
-                    display: block;
-                    background: $color-primary;
-                    border-radius: 50%;
-                    opacity: .2;
-                    position: absolute;
-                    top: -25%;
-                    left: -25%;
-                    margin: auto;
-                    z-index: 0;
-                }
-            }
 
             .video-play{
                 font-weight: 500;
