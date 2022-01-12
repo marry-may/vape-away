@@ -1,5 +1,5 @@
 .contacts{
-  padding: 6rem 0 12rem;
+  padding: 6rem 0 8rem;
   color: $color-white;
 
   .h1{
@@ -91,6 +91,34 @@
   }
 }
 
+.guarantee{
+    padding: 3rem 0 0;
+    color: rgba($color-white, .7);
+
+    p{
+        font-size: 14px;
+    }
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        width: 900px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .img{
+        margin-right: 1rem;
+        width: 8rem;
+        text-align: center;
+    }
+
+    .text{
+        margin-top: 1.5rem;
+    }
+    
+}
+
 @media screen and (max-width: 1660px) {
     .contacts{
         .content{
@@ -167,7 +195,6 @@
     }
 }
 
-
 @media screen and (max-width: 767px) {
     .contacts{
         .h1{
@@ -199,6 +226,18 @@
 
         .title-container{
             padding-left: 0;
+        }
+    }
+
+    .guarantee{
+        .wrapper{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text{
+            margin-top: 0;
+            text-align: center;
         }
     }
 

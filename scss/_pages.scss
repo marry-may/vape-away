@@ -702,7 +702,11 @@
       .play{
         height: 5rem;
         width: 5rem;
+        position: relative;
+        top: 1rem;
+        right: .5rem;
       }
+      
       .title{
         font-size: 22px;
 
@@ -718,6 +722,7 @@
   }
 
   .videos{
+    
     .sction-blue{
       &::before{
         content: none;

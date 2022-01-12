@@ -12,6 +12,13 @@
 </head>
 <body>
 
+<!-- <div class="preloader">
+    <video autoplay loop muted id="preloader">
+        <source src="images/video/preloader.mp4" type="video/mp4">
+    </video>
+</div> -->
+
+
 <nav class="navbar">
     <div class="navbar-container uk-navbar-container uk-navbar-transparent" uk-navbar="mode: click">
         <div class="uk-navbar-left">
@@ -39,7 +46,7 @@
                 <span class="icon icon-cart"></span>
             </a>
 
-            <a href="main.html" class="btn btn-primary">
+            <a href="index.html" class="btn btn-primary">
                 buy now
             </a>
 
@@ -80,13 +87,20 @@
     <img src="images/bg-smoke2.gif" alt="">   
 </div>
 
-<section class="main section">
+<section class="main section section-video">
+
+    <div class="bg-video">
+        <video autoplay muted id="main-video">
+            <source src="images/video/loop.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <div class="uk-container container">
         <div class="content">
             <div class="title">
                 <h1 class="h1 underline">
                     <span class="bright">Less toxins</span>
-                    <span>Same Experience</span>
+                    Same Experience
                 </h1>
             </div>
 
@@ -103,11 +117,9 @@
                     <div uk-lightbox>
                         <a class="play-btn" href="https://www.youtube.com/watch?v=sVIMUMEI61c" data-caption="YouTube">
                             <span>Watch Founders Video</span>
-                            <svg width="105" height="105" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                                <circle class="inner_circle" cx="65.5" cy="65.5" r="50" stroke="white"></circle>
-                                <circle class="outer_circle" cx="65.5" cy="65.5" r="50" stroke="#1660FE"></circle>
-                                <path class="play" fill-rule="evenodd" clip-rule="evenodd" d="M60 76V57L77 66.7774L60 76Z" fill="white"></path>
-                            </svg>
+                            <div class="play">
+                                <img src="images/icons/play-icon.svg" alt="">
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -115,6 +127,7 @@
         </div>
     </div>
 </section>
+
 
 <section class="about">
     <div class="container">
@@ -181,9 +194,7 @@
                             <div uk-lightbox>
                                 <a class="play-btn" href="https://www.youtube.com/watch?v=NK3pxAAjWX4" data-caption="YouTube">
                                     <div class="video-play">
-                                        <i class="icon icon-play">
-                                            <span></span>
-                                        </i> 
+                                        <i class="icon icon-play"></i> 
                                         Play Video
                                     </div>
                                 </a>
@@ -213,9 +224,7 @@
                             <div uk-lightbox>
                                 <a class="play-btn" href="https://www.youtube.com/watch?v=pAKdlKqfAsI" data-caption="YouTube">
                                     <div class="video-play">
-                                        <i class="icon icon-play">
-                                            <span></span>
-                                        </i> 
+                                        <i class="icon icon-play"></i> 
                                         Play Video
                                     </div>
                                 </a>
@@ -243,9 +252,7 @@
                             <div uk-lightbox>
                                 <a class="play-btn" href=https://www.youtube.com/watch?v=fa7OWycugIU" data-caption="YouTube">
                                     <div class="video-play">
-                                        <i class="icon icon-play">
-                                            <span></span>
-                                        </i> 
+                                        <i class="icon icon-play"></i> 
                                         Play Video
                                     </div>
                                 </a>
@@ -273,9 +280,7 @@
                             <div uk-lightbox>
                                 <a class="play-btn" href="https://www.youtube.com/watch?v=d7Nuq6loW_o" data-caption="YouTube">
                                     <div class="video-play">
-                                        <i class="icon icon-play">
-                                            <span></span>
-                                        </i> 
+                                        <i class="icon icon-play"></i> 
                                         Play Video
                                     </div>
                                 </a>
@@ -303,9 +308,7 @@
                             <div uk-lightbox>
                                 <a class="play-btn" href="https://www.youtube.com/watch?v=jNgEL7JYXds" data-caption="YouTube">
                                     <div class="video-play">
-                                        <i class="icon icon-play">
-                                            <span></span>
-                                        </i> 
+                                        <i class="icon icon-play"></i> 
                                         Play Video
                                     </div>
                                 </a>
@@ -333,9 +336,7 @@
                             <div uk-lightbox>
                                 <a class="play-btn" href="https://www.youtube.com/watch?v=fA619rkP8cU" data-caption="YouTube">
                                     <div class="video-play">
-                                        <i class="icon icon-play">
-                                            <span></span>
-                                        </i> 
+                                        <i class="icon icon-play"></i> 
                                         Play Video
                                     </div>
                                 </a>
@@ -467,7 +468,7 @@
                         I vape and I do not intend to quit soon
                     </h6>
                 </a>
-                <a href="device.html" class="choice uk-hidden">
+                <a href="device.html" class="choice">
                     <div class="img-wrapper">
                         <img src="images/main/select-3.jpg" alt="">
                     </div>
@@ -484,40 +485,8 @@
     <div class="container">
         <div class="uk-grid uk-grid-collapse uk-child-width-1-2@m">
             <div class="product takeaway-system">
-                <div class="slider">
-                    <div class="product-slider uk-position-relative" uk-slideshow="animation: fade">
-                        <ul class="product-slider-items uk-slideshow-items">
-                            <li>
-                                <img src="images/product/takeaway.jpg" alt="" >
-                            </li>
-                            <li>
-                                <img src="images/product/takeaway_2.jpg" alt="">
-                            </li>
-                            <li>
-                                <img src="images/product/takeaway.jpg" alt="">
-                            </li>
-                        </ul>
-
-                        <!-- Controls -->
-                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-
-
-                        <!-- Devices -->
-                        <div class="uk-position-top-center uk-position-small">
-                            <ul class="uk-thumbnav thumbnav">
-                                <li uk-slideshow-item="0">
-                                    <a href="#">Juul</a>
-                                </li>                                
-                                <li uk-slideshow-item="2">
-                                    <a href="#">Myle</a>
-                                </li>
-                                <li uk-slideshow-item="1">
-                                    <a href="#">Vuse</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="img-wrapper">
+                    <img class="product-img" src="images/main/takeaway.png" alt="">
                 </div>
 
                 <div class="content">
@@ -609,16 +578,9 @@
                     </div>
 
                     <div class="view-results" uk-lightbox>
-                        <a class="play-btn white" href="images/TestingResults.png" data-caption="YouTube">
-                            <span>
-                                Testing Results
-                            </span>
-                            <svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle class="inner_circle" cx="45" cy="45" r="44" stroke="white"></circle>
-                                <circle class="outer_circle" cx="45" cy="45" r="44" stroke="white"></circle>
-
-                                <path d="M36 44C35.4477 44 35 44.4477 35 45C35 45.5523 35.4477 46 36 46V44ZM54.7071 45.7071C55.0976 45.3166 55.0976 44.6834 54.7071 44.2929L48.3431 37.9289C47.9526 37.5384 47.3195 37.5384 46.9289 37.9289C46.5384 38.3195 46.5384 38.9526 46.9289 39.3431L52.5858 45L46.9289 50.6569C46.5384 51.0474 46.5384 51.6805 46.9289 52.0711C47.3195 52.4616 47.9526 52.4616 48.3431 52.0711L54.7071 45.7071ZM36 46H54V44H36V46Z" fill="white"/>
-                            </svg>
+                        <a href="images/TestingResults.png" class="link">
+                            Testing Results
+                            <img class="icon" src="images/icons/more.svg" alt="">
                         </a>
                     </div>
                     
@@ -1311,6 +1273,12 @@
 <!-- JS Custom -->
 <script src="js/app.js" defer></script>
 
+<!-- 
+<script>
+    setTimeout(function tick() {
+        $(".preloader").fadeOut();
+    }, 9200);
+</script> -->
 
 
 </body>
