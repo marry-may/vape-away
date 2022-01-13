@@ -1192,13 +1192,22 @@ form .textarea,
         left: 0; }
 
 .technology {
-  background: url("../images/main/bg-technology.jpg") no-repeat center center;
-  background: transparent;
+  background: #040D16;
   background-size: cover;
   color: #FFFFFF;
   padding: 10rem 0 8rem;
   position: relative;
   overflow-x: hidden; }
+  .technology::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: #040D16;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1; }
   .technology .container {
     position: relative;
     z-index: 2; }
@@ -1207,8 +1216,23 @@ form .textarea,
     max-width: 80%;
     position: relative;
     left: 25%; }
+    .technology-img::after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: transparent url(../images/tech-wrapper.png) no-repeat center center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2; }
   .technology .content {
-    margin-top: -10rem; }
+    position: relative;
+    z-index: 3;
+    margin-top: -8rem; }
   .technology .text {
     display: flex;
     align-items: flex-start;
@@ -3100,7 +3124,9 @@ form .textarea,
         margin: 0 0 1rem; }
     .technology .technology-img {
       max-width: 90%;
-      position: static;
+      top: 0;
+      right: 0;
+      left: 0;
       margin: 0 auto 3rem; }
     .technology .content {
       max-width: 90%;

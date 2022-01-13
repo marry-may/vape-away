@@ -686,13 +686,25 @@
 }
 
 .technology{
-    background: url('../images/main/bg-technology.jpg') no-repeat center center;
-    background: transparent;
+    background: $color-bg;
     background-size: cover;
     color: $color-white;
     padding: 10rem 0 8rem;
     position: relative;
     overflow-x: hidden;
+
+
+    &::before{
+        content: "";
+        display: block;
+        width: 50%;
+        height: 100%;
+        background: $color-bg;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
 
     .container{
         position: relative;
@@ -704,10 +716,27 @@
         max-width: 80%;
         position: relative;
         left: 25%;
+
+        &::after{
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: transparent url(../images/tech-wrapper.png) no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+        }
     }
 
     .content{
-        margin-top: -10rem;
+        position: relative;
+        z-index: 3;
+        margin-top: -8rem;
     }
 
     .text{
