@@ -741,6 +741,21 @@
     }
 }
 
+@media screen and (min-width: 960px) and (max-width: 1400px) {
+    .how-it-works{
+        .item{
+            transform: scale(.9);
+            padding-left: 4rem;
+        }
+
+        .grid{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+}
+
 @media screen and (max-width: 959px) {
     .main{
         &::before{
@@ -768,18 +783,15 @@
         }
 
         .list-wrapper{
-            display: flex;
-            align-items: flex-start;
-            width: 600px;
+            display: block;
+            width: 330px;
             max-width: 90%;
+            padding-top: 2rem;
+            margin: 0 auto;
         }
 
-        .list{
-            width: 100%;
-
-            &:first-child{
-                margin-right: 2rem;
-            }
+        .img-mobile{
+            max-width: 180px;
         }
     }
 
@@ -820,6 +832,12 @@
         padding: 4rem 0;
         min-height: 600px;
 
+        &.smoke{
+            &::after{
+                z-index: 1;
+            }
+        }
+
         .item-wrapper{
             width: 300px;
             max-width: 100%;
@@ -829,6 +847,13 @@
             display: flex;
             justify-content: center;
             margin-top: 1rem;
+            padding-left: 0;
+
+            &-title{
+                &::before{
+                    content: none;
+                }
+            }
 
             &-img{
                 transform: scale(.8);
@@ -846,6 +871,28 @@
             &-info {
                 font-size: 14px;
                 margin-top: 10px;
+            }
+        }
+
+        .uk-slideshow-items{
+            z-index: 5;
+        }
+
+        .grid{
+            display: none;
+        }
+
+        .slider{
+            display: block;
+            position: relative;
+            z-index: 5;
+            
+            &-items{
+                height: 470px;
+            }
+            
+            li{
+                height: inherit;
             }
         }
     }
@@ -1027,7 +1074,7 @@
         }
 
         .item{
-            margin:  0 auto 5rem;
+            margin:  0 auto;
             width: 500px;
             max-width: 100%;
 
@@ -1036,11 +1083,11 @@
             }
             
             &:first-child {
-                margin-top: 2rem;
+                margin-top: 1rem;
             }
 
-            &:nth-child(2n+1){
-                margin-top: 0;
+            &:not(:first-child){
+                display: none;
             }
         }
     }
@@ -1089,6 +1136,7 @@
         }
     }
 }
+
 @media screen and (max-width: 739px) {
     .mobile-toggle{
         display: block;
@@ -1111,6 +1159,7 @@
             }
         }
     }
+
 
     .bg-smoke{
         display: none;
@@ -1222,9 +1271,14 @@
         
         .list-wrapper{
             display: block;
-            width: 300px;
+            width: 330px;
+            max-width: 90%;
             padding-top: 2rem;
             margin: 0 auto;
+        }
+
+        .img-mobile{
+            max-width: 180px;
         }
     }
     
@@ -1261,34 +1315,14 @@
 
         .logo{
             img{
-                height: 24px;
+                height: 20px;
                 margin-bottom: 1rem;
             }
         }
-        /*
-        .item {
-            margin-top: 1rem;
 
-            &-img{
-                transform: scale(.8);
-                margin-bottom: 0;
-            }
-            &-content{
-                margin: 0;
-            }
-
-            &-title {
-                font-size: 16px;
-            }
-            
-            &-info {
-                font-size: 14px;
-                margin-top: 10px;
-            }
+        .item{
+            text-align: center;
         }
-        */
-
-        
     }
 
     .choose{
@@ -1381,7 +1415,7 @@
         padding: 4rem 0 3rem;
 
         .slider{
-            margin: 2rem auto ;
+            margin: 2rem auto 0;
             max-width: 90%;
         }
 
@@ -1432,7 +1466,21 @@
 
 @media screen and (max-width: 520px) {
     .h2{
-        font-size: 32px;
+        font-size: 28px;
+    }
+
+    .play-video span{
+        margin-right: .5rem;
+    }
+
+    .about{
+        .list{
+            margin-bottom: -1rem;
+            
+            li{
+                font-size: 12px;
+            }
+        }
     }
 
     .products{
@@ -1512,7 +1560,6 @@
     .certified{
         .title{
             font-size: 28px;
-            
         }
 
         .underline{
@@ -1534,6 +1581,10 @@
             .icon{
                 width: 3rem;
             }
+        }
+
+        svg{
+            width: 4rem;
         }
     }
 

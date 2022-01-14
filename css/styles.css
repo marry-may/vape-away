@@ -885,6 +885,8 @@ form .textarea,
     .how-it-works .item-info {
       font-size: 16px;
       line-height: 1.6; }
+  .how-it-works .slider {
+    display: none; }
 
 .choose {
   padding: 10rem 0 18rem;
@@ -2146,6 +2148,12 @@ form .textarea,
 .coming-soon .uk-modal-body {
   padding: 3rem; }
 
+.coming-soon .subtitle {
+  display: block;
+  max-width: 85%;
+  margin: 0 auto 2rem;
+  font-size: 18px; }
+
 .coming-soon .form {
   width: 400px;
   max-width: 100%;
@@ -2228,8 +2236,15 @@ form .textarea,
         width: 3rem; } }
 
 @media screen and (max-width: 639px) {
+  .coming-soon .h4 {
+    font-size: 28px;
+    margin-bottom: .75rem; }
   .coming-soon .uk-modal-body {
     padding: 2.5rem 2rem; }
+  .coming-soon .subtitle {
+    font-size: 15px;
+    max-width: 100%;
+    margin-bottom: 0; }
   .product-page {
     padding: 1rem 0 10rem; }
     .product-page .subtitle {
@@ -3023,6 +3038,14 @@ form .textarea,
   .products::after {
     height: 4rem; } }
 
+@media screen and (min-width: 960px) and (max-width: 1400px) {
+  .how-it-works .item {
+    transform: scale(0.9);
+    padding-left: 4rem; }
+  .how-it-works .grid {
+    margin-left: auto;
+    margin-right: auto; } }
+
 @media screen and (max-width: 959px) {
   .main::before {
     background-size: contain; }
@@ -3035,14 +3058,13 @@ form .textarea,
   .about .container {
     max-width: 100%; }
   .about .list-wrapper {
-    display: flex;
-    align-items: flex-start;
-    width: 600px;
-    max-width: 90%; }
-  .about .list {
-    width: 100%; }
-    .about .list:first-child {
-      margin-right: 2rem; }
+    display: block;
+    width: 330px;
+    max-width: 90%;
+    padding-top: 2rem;
+    margin: 0 auto; }
+  .about .img-mobile {
+    max-width: 180px; }
   .navbar.dark .navbar-container {
     padding: 0 1rem; }
   .navbar .uk-logo {
@@ -3063,13 +3085,18 @@ form .textarea,
   .how-it-works {
     padding: 4rem 0;
     min-height: 600px; }
+    .how-it-works.smoke::after {
+      z-index: 1; }
     .how-it-works .item-wrapper {
       width: 300px;
       max-width: 100%; }
     .how-it-works .item {
       display: flex;
       justify-content: center;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      padding-left: 0; }
+      .how-it-works .item-title::before {
+        content: none; }
       .how-it-works .item-img {
         transform: scale(0.8);
         margin-bottom: 0; }
@@ -3081,6 +3108,18 @@ form .textarea,
       .how-it-works .item-info {
         font-size: 14px;
         margin-top: 10px; }
+    .how-it-works .uk-slideshow-items {
+      z-index: 5; }
+    .how-it-works .grid {
+      display: none; }
+    .how-it-works .slider {
+      display: block;
+      position: relative;
+      z-index: 5; }
+      .how-it-works .slider-items {
+        height: 470px; }
+      .how-it-works .slider li {
+        height: inherit; }
   .choose {
     padding: 5rem 0; }
     .choose .choice-grid {
@@ -3181,15 +3220,15 @@ form .textarea,
       .blog .title:after {
         margin: 1.5rem auto; }
     .blog .item {
-      margin: 0 auto 5rem;
+      margin: 0 auto;
       width: 500px;
       max-width: 100%; }
       .blog .item .post {
         max-width: 100%; }
       .blog .item:first-child {
-        margin-top: 2rem; }
-      .blog .item:nth-child(2n+1) {
-        margin-top: 0; }
+        margin-top: 1rem; }
+      .blog .item:not(:first-child) {
+        display: none; }
   .footer .copyright .content {
     display: block; }
   .footer .content {
@@ -3277,9 +3316,12 @@ form .textarea,
     font-size: 28px; }
   .about .list-wrapper {
     display: block;
-    width: 300px;
+    width: 330px;
+    max-width: 90%;
     padding-top: 2rem;
     margin: 0 auto; }
+  .about .img-mobile {
+    max-width: 180px; }
   .products .product {
     padding: 3rem 0 6rem; }
     .products .product-img {
@@ -3293,34 +3335,13 @@ form .textarea,
     background: #FFFFFF;
     right: 0;
     bottom: 0; }
-  .how-it-works {
-    /*
-        .item {
-            margin-top: 1rem;
-
-            &-img{
-                transform: scale(.8);
-                margin-bottom: 0;
-            }
-            &-content{
-                margin: 0;
-            }
-
-            &-title {
-                font-size: 16px;
-            }
-            
-            &-info {
-                font-size: 14px;
-                margin-top: 10px;
-            }
-        }
-        */ }
-    .how-it-works .overlay {
-      display: none; }
-    .how-it-works .logo img {
-      height: 24px;
-      margin-bottom: 1rem; }
+  .how-it-works .overlay {
+    display: none; }
+  .how-it-works .logo img {
+    height: 20px;
+    margin-bottom: 1rem; }
+  .how-it-works .item {
+    text-align: center; }
   .choose {
     padding-top: 5rem;
     background: #000E19; }
@@ -3369,7 +3390,7 @@ form .textarea,
   .testimonials {
     padding: 4rem 0 3rem; }
     .testimonials .slider {
-      margin: 2rem auto;
+      margin: 2rem auto 0;
       max-width: 90%; }
     .testimonials .title {
       font-size: 36px;
@@ -3395,7 +3416,13 @@ form .textarea,
 
 @media screen and (max-width: 520px) {
   .h2 {
-    font-size: 32px; }
+    font-size: 28px; }
+  .play-video span {
+    margin-right: .5rem; }
+  .about .list {
+    margin-bottom: -1rem; }
+    .about .list li {
+      font-size: 12px; }
   .products .h4 {
     font-size: 24px; }
   .blog .h5 {
@@ -3442,6 +3469,8 @@ form .textarea,
     max-width: 90%; }
   .certified .view-results .icon {
     width: 3rem; }
+  .certified svg {
+    width: 4rem; }
   .collaborating .uk-grid {
     margin: 0; }
   .collaborating .container {
