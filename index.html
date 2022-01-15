@@ -23,7 +23,7 @@
         <div class="uk-navbar-center hidden-m">
             <ul class="uk-navbar-nav">
                 <li><a href="mission.html">Our Mission</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog.html">Press</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="videos.html">Video</a></li>
                 <li><a href="contacts.html">Contact</a></li>
@@ -60,7 +60,7 @@
                 <a href="mission.html">Our Mission</a>
             </li>
             <li>
-                <a href="blog.html">Blog</a>
+                <a href="blog.html">Press</a>
             </li>            
             <li>
                 <a href="faq.html">FAQ</a>
@@ -101,13 +101,11 @@
             <div class="video-wrapper">
                 <div class="play-video">
                     <div uk-lightbox>
-                        <a class="play-btn" href="https://www.youtube.com/watch?v=sVIMUMEI61c" data-caption="YouTube">
+                        <a class="play-btn play-btn-lg" href="https://www.youtube.com/watch?v=sVIMUMEI61c" data-caption="YouTube">
                             <span>Watch Founders Video</span>
-                            <svg width="105" height="105" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                                <circle class="inner_circle" cx="65.5" cy="65.5" r="50" stroke="white"></circle>
-                                <circle class="outer_circle" cx="65.5" cy="65.5" r="50" stroke="#1660FE"></circle>
-                                <path class="play" fill-rule="evenodd" clip-rule="evenodd" d="M60 76V57L77 66.7774L60 76Z" fill="white"></path>
-                            </svg>
+                            <i class="icon icon-play">
+                                <span></span>
+                            </i>
                         </a>
                     </div>
                 </div>
@@ -163,23 +161,6 @@
 
                     <ul class="uk-slideshow-nav uk-dotnav uk-flex-center"></ul>
                 </div>
-
-                <!-- <div class="list-wrapper">
-                    <ul class="list">
-                        <li>Captures harmful toxins</li>
-                        <li>Same Vaping experience</li>
-                        <li>Quit vaping, while vaping</li>
-                        <li>Freezes chemicals on contact</li>
-                        <li>Scientifically proven results</li>
-                    </ul>
-                    <ul class="list">
-                        <li>Non-toxic / safe to use</li>
-                        <li>Patented VF 2.0 technology</li>
-                        <li>Targets problem at its source</li>
-                        <li>Laboratory Tested</li>
-                        <li>Easily snaps in place</li>
-                    </ul>
-                </div> -->
             </div>
         </div>
     </div>
@@ -589,13 +570,34 @@
                     <div class="product-slider uk-position-relative" uk-slideshow="animation: fade">
                         <ul class="product-slider-items uk-slideshow-items">
                             <li>
-                                <img src="images/product/takeaway.jpg" alt="" >
+                                <div class="slide-wrapper">
+                                    <img src="images/product/takeaway.jpg" alt="" >
+                                    <div class="content">
+                                    <h4 class="h4 underline">
+                                        The VapeAway <br> System <span class="bright">for Juul</span>
+                                    </h4>
+                                    </div>
+                                </div>
                             </li>
                             <li>
-                                <img src="images/product/takeaway_2.jpg" alt="">
+                                <div class="slide-wrapper">
+                                    <img src="images/product/takeaway_2.jpg" alt="" >
+                                    <div class="content">
+                                    <h4 class="h4 underline">
+                                        The VapeAway <br> System <span class="bright">for Myle</span>
+                                    </h4>
+                                    </div>
+                                </div>
                             </li>
                             <li>
-                                <img src="images/product/takeaway.jpg" alt="">
+                                <div class="slide-wrapper">
+                                    <img src="images/product/takeaway.jpg" alt="" >
+                                    <div class="content">
+                                        <h4 class="h4 underline">
+                                            The VapeAway <br> System <span class="bright">for Vuse</span>
+                                        </h4>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
 
@@ -622,15 +624,6 @@
                 </div>
 
                 <div class="content">
-                    <div class="play-video uk-hidden">
-                        <div uk-lightbox>
-                            <a class="play-btn" href="https://www.youtube.com/watch?v=DtLytAzqiPc" data-caption="YouTube">
-                                <img class="play" src="images/icons/play-more.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <h4 class="h4 underline">The VapeAway <br> System</h4>
                     <p>
                         For those looking to reduce their nicotine dependency for good, VapeAway offers the takeaway system, a revolutionary filter system that comes with a total of 63 disposable filters. each filter attaches to your e-cigarette pod to reduce your nicotine intake in 3 tiered levels.
                     </p>
@@ -1373,6 +1366,17 @@
         </div>
     </div>
     <div class="copyright">
+       <div class="guarantee uk-container">
+            <div class="wrapper">
+                <div class="img">
+                    <img src="images/guarantee.png" alt="">
+                </div>
+                <div class="text">
+                    <p>All products purchased from VapeAway are backed by a 100% Money-Back Guarantee*. <br>
+                    If you are not satisfied with your purchase, you may return it to us for a prompt and courteous refund or replacement. </p>
+                </div>
+            </div>
+        </div>
         <div class="uk-container">
             <div class="content">
                 <p>© 2021 VapeAway® LLC. All Rights Reserved. VapeAway and the VapeAway logo and graphic design of this package are trademarks of VapeAway Intellectual Property LLC. , New York, New York 10018.</p>
@@ -1382,7 +1386,8 @@
                 <p>** For testing information and results, please visit: vapewaynow.com/testing</p>
             </div>
         </div>
-        <div class="uk-container uk-hidden">
+         
+        <!-- <div class="uk-container uk-hidden">
             <div class="grid">
                 <div class="">
                     © All rights reserved – VapeAway
@@ -1397,7 +1402,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </footer>
 

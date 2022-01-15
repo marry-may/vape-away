@@ -130,3 +130,46 @@
         }
     }
 }
+
+.guarantee{
+    padding-bottom: 1rem;
+    color: rgba($color-white, .7);
+
+    p{
+        opacity: .7;
+    }
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .img{
+        margin-right: 1rem;
+        width: 8rem;
+        text-align: center;
+    }
+
+    .text{
+        font-size: 16px;
+        margin-top: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 639px){
+    .guarantee{
+        .wrapper{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text{
+            margin-top: 0;
+            text-align: center;
+        }
+    }
+
+}

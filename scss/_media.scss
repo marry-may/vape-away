@@ -38,6 +38,10 @@
         .product{
             padding: 3rem 0 5rem;
         }
+
+        .product-slider ul {
+            height: 580px;
+        }
     }
 
     .choose{
@@ -310,6 +314,10 @@
             &::after{
                 margin: 1.25rem 0 1.5rem;
             }
+        }
+
+        .product-slider ul {
+            height: 560px;
         }
 
         .img-wrapper{
@@ -1264,6 +1272,16 @@
         }
     }
 
+    .play-btn {
+        &-lg{
+            .icon-play{
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+            } 
+        }
+    }
+
     .about{
         .h4{
             font-size: 28px;
@@ -1292,7 +1310,7 @@
             }
             &-slider{
                 ul {
-                    height: 320px;
+                    height: 450px;
                 }
             }
         }
@@ -1438,10 +1456,6 @@
             &::before{
                 content: none;
             }
-        }
-
-        .h2{
-            
         }
 
         .uk-dotnav{

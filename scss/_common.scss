@@ -166,6 +166,15 @@ p{
 }
 
 .play-btn {
+    &-lg{
+        .icon-play{
+            height: 70px;
+            width: 70px;
+            line-height: 70px;
+            margin-left: 1rem;
+        } 
+    }
+
     span{
         display: inline-block;
         margin-right: 1rem;
