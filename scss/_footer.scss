@@ -114,7 +114,10 @@
 
         .content{
             padding: 0;
-            opacity: .5;
+            
+            p{
+                opacity: .5;
+            }
         }
 
         .grid{
@@ -133,11 +136,7 @@
 
 .guarantee{
     padding-bottom: 1rem;
-    color: rgba($color-white, .7);
-
-    p{
-        opacity: .7;
-    }
+    color: $color-white;
 
     .wrapper{
         display: flex;

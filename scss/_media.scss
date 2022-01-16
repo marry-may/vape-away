@@ -1104,6 +1104,11 @@
         .copyright{
             .content{
                 display: block;
+
+                .img{
+                    margin: 0 auto;
+                    display: inline-block;
+                }
             }
         }
         .content{
@@ -1468,12 +1473,6 @@
 
         .title{
             top: 0;
-        }
-    }
-
-    .footer{
-        .copyright{
-            display: none;
         }
     }
 }
