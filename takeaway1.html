@@ -88,25 +88,29 @@
     </div>
     <div class="uk-container container product-details">
         <div class="uk-grid uk-child-width-1-2@m">
-            <div class="slider-container">
+            <div class="product-img">
+                <div class="product-slider uk-position-relative" uk-slideshow="animation: fade">
 
-                <div class="slider-wrapper uk-position-relative" uk-slideshow="animation: fade">
-                    <ul class="slider uk-slideshow-items">
-                        <li class="slide-wrapper">
-                            <div class="product-slide">
-                                <img src="images/product/system-slider-1.jpg" alt="" class="img">
+                    <ul class="product-slider-items uk-slideshow-items">
+                        <li>
+                            <div class="slide-wrapper">
+                                <img src="images/product/takeaway.jpg" alt="" >
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="slide-wrapper">
+                                <img src="images/product/takeaway_2.jpg" alt="">
                             </div>
                         </li>
-                        <li class="slide-wrapper">
-                            <div class="product-slide">
-                                <img src="images/technology.gif" alt="" class="img">
+                        <li>
+                            <div class="slide-wrapper">
+                                <img src="images/technology.gif" alt="">
                             </div>
                         </li>
                     </ul>
 
-                    <!-- thumbnav -->
                     <div class="uk-position-top-left">
-                        <ul class="uk-thumbnav uk-thumbnav-vertical">
+                        <ul class="uk-thumbnav">
                             <li uk-slideshow-item="0">
                                 <a href="#">
                                     <img src="images/product/takeaway.jpg" width="100" alt="">
@@ -114,18 +118,17 @@
                             </li>
                             <li uk-slideshow-item="1">
                                 <a href="#">
+                                    <img src="images/product/takeaway_2.jpg" width="100" alt="">
+                                </a>
+                            </li>
+                            <li uk-slideshow-item="2">
+                                <a href="#">
                                     <img src="images/technology.gif" width="100" alt="">
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-
-                
-
-                <!-- <div class="product-slide">
-                    <img src="images/technology.gif" alt="" class="img">
-                </div> -->
             </div>
             
             <div>

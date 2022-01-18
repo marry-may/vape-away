@@ -2313,6 +2313,32 @@ form .textarea,
     .product-page .row {
       margin-bottom: 20px; } }
 
+.slider-wrapper {
+  margin-bottom: 5rem;
+  padding-left: 8rem; }
+  .slider-wrapper .slider {
+    height: 480px; }
+
+.product-slide {
+  position: relative;
+  height: 480px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .product-slide .img {
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: block;
+    min-height: 100%;
+    height: 100%;
+    width: auto;
+    max-width: initial; }
+
 .devices {
   background: #FFFFFF;
   min-height: 800px;
