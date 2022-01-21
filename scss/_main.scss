@@ -185,7 +185,12 @@
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-    z-index: 3;
+    z-index: 2;
+
+    .container{
+        position: relative;
+        z-index: 4;
+    }
 
     .img{
         height: 20rem;
@@ -228,18 +233,6 @@
             letter-spacing: .15em;
             color: $color-white;
             position: relative;
-
-            &:before{
-                content: "";
-                display: block;
-                position: absolute;
-                height: 12px;
-                width: 12px;
-                background-color: $color-white;
-                border: .5rem solid rgba($color-primary, .8);
-                border-radius: 50%;
-                left: -3rem;
-            }
         }
 
         &-info{
@@ -251,6 +244,45 @@
 
     .slider{
         display: none;
+    }
+
+    .play-btn{
+        justify-content: center;
+    }
+
+    .icon-play{
+        font-size: 1rem;
+        background: $color-white;
+        color: $color-primary;
+
+        span{
+            border-color: $color-white;
+
+            &::before{
+                border-color: inherit;
+            }
+        }
+    }
+
+    .watch-video{
+        margin-top: 3rem;
+        display: flex;
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        p{
+            font: inherit;
+            margin: 0;
+        }
+
+        .play-btn{
+            margin: 0 0 0 2rem;
+        }
     }
 }
 

@@ -152,6 +152,10 @@ p{
     color: $color-primary;
     padding: 0;
     cursor: pointer;
+
+    &-white{
+        color: $color-white;
+    }
 }
 
 .play-btn{
@@ -212,6 +216,7 @@ p{
 }
 
 .icon-play{ 
+    color: $color-white;
     background: $color-primary;
     height: 46px;
     width: 46px;
@@ -231,7 +236,7 @@ p{
         height: 150%;
         width: 150%;
         display: block;
-        background: $color-primary;
+        background: inherit;
         border-radius: 50%;
         opacity: .2;
         position: absolute;
@@ -239,12 +244,6 @@ p{
         left: -25%;
         margin: auto;
         z-index: 0;
-    }
-
-     position: relative;
-
-    &::before{
-        color: $color-white;
     }
 
     span{

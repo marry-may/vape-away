@@ -595,6 +595,17 @@
         .product{
             padding: 5rem 0;
         }
+
+        .product-slider {
+            ul{
+                height: 530px;
+            }
+
+            img{
+                margin-top: 1rem;
+                height: 440px;
+            }
+        }
     }
 
     .collaborating{
@@ -1173,6 +1184,17 @@
         }
     }
 
+    .how-it-works{
+        .uk-dotnav{
+            display: none;
+        }
+        .watch-video{
+            font-size: 16px;
+            max-width: 85%;
+            margin: 2rem auto;
+        }
+    }
+
 
     .bg-smoke{
         display: none;
@@ -1313,11 +1335,21 @@
                 height: auto;
                 max-width: 90%;
             }
+
             &-slider{
                 ul {
-                    height: 450px;
+                    height: 400px;
+                }
+
+                img{
+                    height: 300px;
+                    margin-bottom: 10px;
                 }
             }
+        }
+
+        .uk-slidenav{
+            visibility: hidden;
         }
 
         .img-wrapper{
@@ -1645,5 +1677,14 @@
 
     .btn-link{
         font-size: 12px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .how-it-works{
+        .play-btn{
+            margin-top: 2rem;
+        }
     }
 }
