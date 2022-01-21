@@ -496,3 +496,93 @@
     max-width: initial;
   }
 }
+
+
+.payments{
+  .boxes{
+    align-items: stretch;
+
+    .box-title{
+      // text-transform: none;
+      // text-transform: capitalize;
+      letter-spacing: 0;
+    }
+
+    .box{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      &.active{
+        .price{
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  
+  .btn{
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    sup{
+      font-size: .55em;
+      letter-spacing: 0;
+    }
+
+    .text{
+      font-size: 13px;
+    }
+
+    .price{
+      font-size: 38px;
+      margin-left: 1rem;
+      line-height: 1;
+    }
+
+    span{
+      display: block;
+    }
+
+    .sub{
+      font-size: .9em;
+      font-weight: 800;
+    }
+
+    &.btn-outline{
+      border-color: rgba($color-bg, .15);
+    }
+
+    &.active{
+      border-color: $color-primary;
+      border-width: 2px;
+      
+      .price{
+        
+        color: inherit;
+      }
+    }
+
+    .price{
+      min-width: 50px;
+      text-align: center;
+    }
+
+    &:not(.active){
+      .price{
+        font-size: 24px;
+      }
+    }
+  }
+
+  .devider{
+    font-weight: 600;    
+    text-align: center;
+    padding: .5rem;
+    opacity: .5;
+  }
+}

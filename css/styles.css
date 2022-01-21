@@ -2365,6 +2365,57 @@ form .textarea,
     width: auto;
     max-width: initial; }
 
+.payments .boxes {
+  align-items: stretch; }
+  .payments .boxes .box-title {
+    letter-spacing: 0; }
+  .payments .boxes .box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .payments .boxes .box.active .price {
+      font-size: 32px; }
+
+.payments .btn {
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .payments .btn sup {
+    font-size: .55em;
+    letter-spacing: 0; }
+  .payments .btn .text {
+    font-size: 13px; }
+  .payments .btn .price {
+    font-size: 38px;
+    margin-left: 1rem;
+    line-height: 1; }
+  .payments .btn span {
+    display: block; }
+  .payments .btn .sub {
+    font-size: .9em;
+    font-weight: 800; }
+  .payments .btn.btn-outline {
+    border-color: rgba(4, 13, 22, 0.15); }
+  .payments .btn.active {
+    border-color: #1660FE;
+    border-width: 2px; }
+    .payments .btn.active .price {
+      color: inherit; }
+  .payments .btn .price {
+    min-width: 50px;
+    text-align: center; }
+  .payments .btn:not(.active) .price {
+    font-size: 24px; }
+
+.payments .devider {
+  font-weight: 600;
+  text-align: center;
+  padding: .5rem;
+  opacity: .5; }
+
 .devices {
   background: #FFFFFF;
   min-height: 800px;
