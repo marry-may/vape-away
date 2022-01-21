@@ -1,0 +1,104 @@
+.devices{
+  background: $color-white;
+  min-height: 800px;
+  padding: 6rem 0 10rem;
+
+  .title{
+    text-align: center;
+  }
+
+  .subtitle{
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .grid{
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 3rem auto;
+  }
+
+  .item{
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .device{
+    padding: 2rem 1rem;
+    text-align: center;
+    // border: 1px solid rgba($color-bg, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: all .5s;
+    cursor: pointer;
+
+    img{
+      height: 9rem;
+    }
+
+    &:hover{
+      background: $color-primary;
+
+      .device-title{
+        color: $color-white;
+      }
+    }
+  }
+
+  .device-title{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 1rem 0;
+    transition: all .5s;
+  }
+}
+
+
+@media screen and (max-width: 1199px) {
+  .devices{
+    padding: 4rem 0 6rem;
+    
+    .h4{
+      font-size: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .devices{
+    .h4{
+      font-size: 28px;
+    }
+
+    .item{
+      padding: 0 .5rem;
+    }
+
+    .subtitle{
+      font-size: 16px;
+    }
+
+    .device{
+      padding: 1rem .5rem;
+      
+      img{
+        height: 7rem;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 639px) {
+  .devices{
+    .device{
+      img {
+        height: 7rem;
+      }
+    }
+  }
+}

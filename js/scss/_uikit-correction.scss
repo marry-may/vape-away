@@ -1,0 +1,19 @@
+
+.uk-navbar-item, 
+.uk-navbar-nav>li>a,
+.uk-navbar-toggle{
+    color: inherit;
+    transition: all 0.5s;
+
+    &:hover{
+        color: $color-primary;
+    }
+}
+
+.uk-navbar-nav>li.uk-active>a{
+    color: inherit;
+
+    &:hover{
+        color: $color-primary;
+    }
+}
