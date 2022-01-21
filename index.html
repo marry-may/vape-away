@@ -101,7 +101,7 @@
             <div class="video-wrapper">
                 <div class="play-video">
                     <div uk-lightbox>
-                        <a class="play-btn play-btn-lg" href="https://www.youtube.com/watch?v=sVIMUMEI61c" data-caption="YouTube">
+                        <a id="main-video" class="play-btn play-btn-lg" href="https://www.youtube.com/watch?v=sVIMUMEI61c" data-caption="">
                             <span>Watch Founders Video</span>
                             <i class="icon icon-play">
                                 <span></span>
@@ -1414,6 +1414,12 @@
 <!-- JS Custom -->
 <script src="js/app.js" defer></script>
 
+<script>
+    setTimeout(function(){
+        $("#main-video").trigger("click");
+        console.log("open video");
+    }, 5000);
+</script>
 
 
 </body>
