@@ -1594,6 +1594,25 @@ form .textarea,
   100% {
     top: -3%; } }
 
+.how-it-works {
+  padding-bottom: 0 !important; }
+  .how-it-works s
+.video-preview {
+    position: relative;
+    z-index: 5; }
+
+.video-preview {
+  background: url("../images/support-system.gif") no-repeat center center;
+  background-size: cover;
+  height: 10rem;
+  margin-top: 3rem;
+  padding: 0; }
+  .video-preview .watch-video {
+    margin: 0;
+    background: rgba(22, 96, 254, 0.8);
+    width: 100%;
+    height: 100%; }
+
 .navbar.dark {
   background-color: #040D16;
   width: 100%;
@@ -3385,9 +3404,8 @@ form .textarea,
   .how-it-works .uk-dotnav {
     display: none; }
   .how-it-works .watch-video {
-    font-size: 16px;
-    max-width: 85%;
-    margin: 2rem auto; }
+    padding: 2rem;
+    font-size: 16px; }
   .bg-smoke {
     display: none; }
   .certified .uk-grid {
