@@ -2135,7 +2135,8 @@ form .textarea,
       line-height: 2;
       font-weight: 600; }
     .product-page .card .price {
-      font-size: 24px; }
+      font-size: 24px;
+      line-height: 1.7; }
     .product-page .card .buy {
       width: 100%;
       text-align: center;
@@ -2165,7 +2166,7 @@ form .textarea,
       .product-page .box.active .box-title {
         color: #1660FE; }
     .product-page .box p {
-      font-size: 14px;
+      font-size: 13px;
       margin: 0; }
     .product-page .box-title {
       font-size: 18px;
@@ -2224,16 +2225,17 @@ form .textarea,
   align-items: stretch; }
   .payments .boxes .box-title {
     letter-spacing: 0; }
-  .payments .boxes .box {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column; }
-    .payments .boxes .box.active {
-      border-width: 3px; }
-      .payments .boxes .box.active .price {
-        font-size: 44px; }
+
+.payments .box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; }
+  .payments .box.active {
+    border-width: 3px; }
+    .payments .box.active .price {
+      font-size: 38px; }
 
 .payments .devider {
   font-weight: 600;
@@ -2241,7 +2243,17 @@ form .textarea,
   padding: .5rem;
   opacity: .5; }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
+  .payments .box {
+    padding: 12px; }
+    .payments .box p {
+      font-size: 12px; }
+    .payments .box .price {
+      font-size: 24px; }
+    .payments .box.active {
+      border-width: 2px; }
+      .payments .box.active .price {
+        font-size: 32px; }
   .product-page {
     padding: 3rem 0 2rem; }
     .product-page .h4 {
@@ -2263,11 +2275,13 @@ form .textarea,
       letter-spacing: 0; }
     .product-page .h4 {
       font-size: 28px; }
+    .product-page .boxes .box.active {
+      border-width: 2px; }
     .product-page .box {
-      padding: 1rem .25rem .5rem; }
+      padding: .5rem .25rem; }
       .product-page .box p {
         font-size: 13px;
-        margin-bottom: 5px; }
+        margin-bottom: 0; }
       .product-page .box .price {
         font-size: 22px; }
     .product-page .card-info {
@@ -2331,7 +2345,7 @@ form .textarea,
   .payments .boxes .box-title {
     font-size: 11px; }
   .payments .boxes .box.active .price {
-    font-size: 34px;
+    font-size: 28px;
     margin-bottom: 0; }
   .product-page {
     padding: 1rem 0 10rem; }

@@ -120,6 +120,7 @@
 
     .price{
       font-size: 24px;
+      line-height: 1.7;
     }
 
     .buy{
@@ -169,7 +170,7 @@
     }
 
     p{
-      font-size: 14px;
+      font-size: 13px;
       margin: 0;
     }
 
@@ -241,7 +242,6 @@
   }
 }
 
-
 .payments{
   .boxes{
     align-items: stretch;
@@ -249,33 +249,56 @@
     .box-title{
       letter-spacing: 0;
     }
+  }
 
-    .box{
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      flex-direction: column;
+  .box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 
-      &.active{
-        border-width: 3px;
-        
-        .price{
-          font-size: 44px;
-        }
+    &.active{
+      border-width: 3px;
+      
+      .price{
+        font-size: 38px;
       }
     }
   }
-
+  
   .devider{
-    font-weight: 600;    
+    font-weight: 600;
     text-align: center;
     padding: .5rem;
     opacity: .5;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
+  .payments{
+    .box{
+      padding: 12px;
+      
+      p{
+        font-size: 12px;
+      }
+
+      .price{
+        font-size: 24px;
+      }
+      
+      &.active{
+        border-width: 2px;
+        
+        .price{
+          font-size: 32px;
+        }
+      }
+    }
+
+  }
+
   .product-page{
     padding: 3rem 0 2rem;
 
@@ -312,12 +335,20 @@
       font-size: 28px;
     }
 
+    .boxes{
+      .box{
+        &.active{
+          border-width: 2px;
+        }
+      }
+    }
+
     .box{
-      padding: 1rem .25rem .5rem;
+      padding: .5rem .25rem;
 
       p{
         font-size: 13px;
-        margin-bottom: 5px;
+        margin-bottom: 0;
       }
 
       .price{
@@ -438,7 +469,7 @@
     }
   }
   .payments .boxes .box.active .price{
-    font-size: 34px;
+    font-size: 28px;
     margin-bottom: 0;
   }
 
