@@ -239,11 +239,10 @@
             font-size: 16px;
             line-height: 1.6;
         }
-        
     }
 
     .slider{
-        display: none;
+       display: none;
     }
 
     .play-btn{
@@ -273,7 +272,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
 
         p{
             font: inherit;
@@ -390,6 +388,11 @@
         left: 0;
         margin: auto;
         z-index: 4;
+    }
+
+    .text{
+        width: 430px;
+        max-width: 100%;
     }
 
     .underline{
@@ -1225,7 +1228,7 @@
  
 // ========== VIDEO PREVIEW =========
 .how-it-works{
-    padding-bottom: 0 !important;s
+    padding-bottom: 0 !important;
 
     .video-preview{
         position: relative;
@@ -1242,7 +1245,7 @@
 
     .watch-video{
         margin: 0;
-        background: rgba($color-primary, .8);
+        background: rgba($color-primary, .7);
         width: 100%;
         height: 100%;
     }
