@@ -1915,6 +1915,9 @@ form .textarea,
   color: #000E19; }
   .blog-light .description {
     margin-bottom: 4rem; }
+  .blog-light .press-info p {
+    width: 500px;
+    max-width: 100%; }
   .blog-light .press-contacts {
     text-align: right;
     padding-right: 2.5rem; }
