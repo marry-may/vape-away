@@ -474,19 +474,46 @@
         margin: 0 auto;
         position: relative;
     }
-    
-    .play{
-        position: absolute;
-        top: 1rem;
-        right: 0;
-        height: 5rem;
-        cursor: pointer;
-    }
 
     .btn-wrapper{
         margin-top: 2rem;
         display: flex;
         justify-content: flex-end;
+    }
+
+    .play-btn{
+        color: $color-primary;
+
+        .icon-play{
+            margin-left: 1rem;
+        }
+    }
+
+    .product-info{
+        padding-bottom: 0;
+    }
+
+    .video-preview{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .video-link{
+            position: relative;
+            z-index: 3;
+        }
+
+        &::after{
+            content: "";
+            top: 0;
+            left: 0;
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            background-color: rgba($color-bg, .85);
+        }
     }
 }
 

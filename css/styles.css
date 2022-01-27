@@ -1118,16 +1118,33 @@ form .textarea,
     max-width: 85%;
     margin: 0 auto;
     position: relative; }
-  .products .play {
-    position: absolute;
-    top: 1rem;
-    right: 0;
-    height: 5rem;
-    cursor: pointer; }
   .products .btn-wrapper {
     margin-top: 2rem;
     display: flex;
     justify-content: flex-end; }
+  .products .play-btn {
+    color: #1660FE; }
+    .products .play-btn .icon-play {
+      margin-left: 1rem; }
+  .products .product-info {
+    padding-bottom: 0; }
+  .products .video-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .products .video-preview .video-link {
+      position: relative;
+      z-index: 3; }
+    .products .video-preview::after {
+      content: "";
+      top: 0;
+      left: 0;
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(4, 13, 22, 0.85); }
 
 .testimonials {
   padding: 6rem 0 8rem;
@@ -1767,13 +1784,6 @@ form .textarea,
       font-size: inherit;
       line-height: 1.6; }
 
-.blog-light {
-  padding-top: 6rem;
-  background: #FFFFFF;
-  color: #000E19; }
-  .blog-light p {
-    font-weight: 500; }
-
 .videos {
   padding-bottom: 5rem; }
   .videos .video-mobile {
@@ -1899,21 +1909,59 @@ form .textarea,
     top: auto;
     bottom: 0; }
 
+.blog-light {
+  padding-top: 6rem;
+  background: #FFFFFF;
+  color: #000E19; }
+  .blog-light .description {
+    margin-bottom: 4rem; }
+  .blog-light .press-contacts {
+    text-align: right;
+    padding-right: 2.5rem; }
+  .blog-light .item {
+    margin-bottom: 0;
+    padding-bottom: 5rem; }
+    .blog-light .item:first-child, .blog-light .item:nth-child(2n+1) {
+      margin-top: 0; }
+    .blog-light .item:first-child {
+      padding-top: 5rem; }
+  .blog-light p {
+    font-weight: 500; }
+
+.blog .post-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .blog .post-info .link {
+    margin-top: 0;
+    max-width: 50%; }
+
+.blog .post-date {
+  font-weight: bolder;
+  margin: 1rem 0; }
+
 .blog-post {
   padding: 3rem 0 10rem;
   background-color: #FFFFFF;
   color: #000E19; }
   .blog-post .content {
     margin: 3rem auto;
-    width: 680px;
-    max-width: 80%; }
+    width: 730px;
+    max-width: 80%;
+    font-size: 18px;
+    line-height: 1.8; }
     .blog-post .content p {
       font-size: 18px;
       line-height: 1.8;
       margin-bottom: 2rem; }
+    .blog-post .content ul li {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 1rem; }
   .blog-post .title {
-    font-size: 44px;
-    font-weight: 800; }
+    font-size: 38px;
+    font-weight: 800;
+    text-align: center; }
     .blog-post .title b {
       font-weight: inherit;
       color: #1660FE; }
@@ -1943,6 +1991,11 @@ form .textarea,
       padding-right: 1rem; }
       .blog-post .post-info .social-link:last-child {
         margin-left: 1rem; }
+
+@media screen and (max-width: 1600px) {
+  .blog-light .item {
+    margin-bottom: 0;
+    padding-bottom: 3rem; } }
 
 @media screen and (max-width: 1440px) {
   .videos {
@@ -1974,6 +2027,9 @@ form .textarea,
     max-height: 15rem; } }
 
 @media screen and (max-width: 1199px) {
+  .blog.blog-light .title {
+    position: static;
+    top: 0; }
   .videos .video-title {
     font-size: 20px; }
   .videos .video-subtitle {
@@ -1987,7 +2043,15 @@ form .textarea,
   .videos .section-blue .title {
     font-size: 32px; }
   .blog-light {
-    padding-top: 3rem; }
+    padding-top: 3rem;
+    padding-bottom: 15rem; }
+    .blog-light .press-info p {
+      width: 370px;
+      max-width: 100%; }
+    .blog-light .description {
+      margin-bottom: 1rem; }
+    .blog-light .item {
+      padding-bottom: 1rem; }
   .faq .h2 {
     font-size: 44px; }
   .mission .h2 {
@@ -2002,6 +2066,25 @@ form .textarea,
 @media screen and (max-width: 959px) {
   .faq .accordion-title {
     font-size: 20px; }
+  .blog.blog-light {
+    padding-bottom: 5rem; }
+    .blog.blog-light .posts {
+      height: auto !important; }
+    .blog.blog-light .title {
+      margin-bottom: 1rem; }
+    .blog.blog-light .press-info {
+      text-align: center; }
+      .blog.blog-light .press-info p {
+        margin: 0 auto 1rem; }
+    .blog.blog-light .press-contacts {
+      text-align: center;
+      padding-right: 0; }
+    .blog.blog-light .item {
+      margin-bottom: 3rem; }
+    .blog.blog-light .item:first-child {
+      padding-top: 1rem; }
+    .blog.blog-light .item:not(:first-child) {
+      display: block; }
   .blog-post .title {
     font-size: 36px; }
   .mission {
@@ -3085,6 +3168,8 @@ form .textarea,
     opacity: 1; }
     .testimonials .subtitle::before {
       margin-right: 2.5rem; }
+  .testimonials .slider li {
+    opacity: 1; }
   .certified {
     padding-bottom: 5rem; }
     .certified .container {
