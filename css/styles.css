@@ -2866,6 +2866,36 @@ form .textarea,
     .contacts .title-container {
       padding-left: 0; } }
 
+.products-page:after {
+  content: none; }
+
+.products-page.products .product:after {
+  content: none; }
+
+.products-page.products .product-img {
+  height: auto; }
+
+.products-page .h4 {
+  font-size: 32px; }
+
+.products-page .system {
+  background-color: #1660FE;
+  color: #FFFFFF; }
+  .products-page .system .underline::after {
+    background-color: #FFFFFF; }
+
+@media screen and (max-width: 1439px) {
+  .products-page.products .img-wrapper {
+    height: 320px; }
+  .products-page.products .h4 {
+    font-size: 22px; }
+  .products-page.products p {
+    font-size: 14px; } }
+
+@media screen and (max-width: 639px) {
+  .products-page.products .product {
+    padding: 3rem 0; } }
+
 .mt-8 {
   margin-top: 8rem; }
 
