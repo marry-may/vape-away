@@ -45,7 +45,8 @@
     }
 
     .choose{
-        padding: 5rem 0 7rem;
+        padding: 5rem 0 8rem;
+        min-height: initial;
         
         .content{
             max-width: 100%;
@@ -56,7 +57,7 @@
             width: 1100px;
             max-width: 90%;
             margin: 0 auto;
-            min-height: 650px;
+            min-height: initial;
             
             &::after{
                 top: 50%;
@@ -70,7 +71,7 @@
 
         .choice {
             .h6{
-                font-size: 20px;
+                font-size: 18px;
                 padding-top: 1.5rem;
             }
         }
@@ -562,7 +563,7 @@
     
     .choose{
         min-height: auto;
-        padding: 5rem 0 2rem;
+        padding: 5rem 0 7rem;
 
         .container{
             &::after{
@@ -854,6 +855,18 @@
         padding: 4rem 0;
         min-height: 600px;
 
+        .logo{
+            margin-bottom: 1rem;
+
+            img{
+                max-height: 2rem;
+            }
+        }
+
+        .video-preview{
+            height: 7rem;
+        }
+
         &.smoke{
             &::after{
                 z-index: 1;
@@ -927,7 +940,7 @@
         }
         
         .choice{
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
         }
         
         .container{
@@ -1383,8 +1396,7 @@
     }
 
     .choose{
-        padding-top: 5rem;
-        background: $color-text;
+        padding: 3rem 0 2rem;
 
         .choice{  
             .img-wrapper{
@@ -1392,15 +1404,19 @@
             }
 
             .h6 {
-                font-size: 15px;
+                font-size: 13px;
                 font-weight: 600;
                 max-width: 100%;
             }
         }
 
         .title{
+            .h2{
+                margin-bottom: .5rem;
+            }
             p{
                 font-size: 1rem;
+                margin-top: 0;
             }
         }
 
@@ -1514,6 +1530,12 @@
 @media screen and (max-width: 520px) {
     .h2{
         font-size: 28px;
+    }
+
+    .how-it-works{
+        .logo{
+            margin-bottom: 0;
+        }
     }
 
     .play-video span{

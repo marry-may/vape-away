@@ -989,22 +989,15 @@ form .textarea,
       margin: 0 0 0 2rem; }
 
 .choose {
-  padding: 10rem 0 18rem;
-  position: relative; }
+  padding: 8rem 0 12rem;
+  position: relative;
+  background: #040D16 url("../images/main/choose-bg.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1; }
   .choose .container {
     position: relative;
     z-index: 5; }
-    .choose .container::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 60%;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 80%;
-      height: 55%;
-      background: #1660FE; }
   .choose .title {
     color: #FFFFFF;
     text-align: center;
@@ -1019,7 +1012,6 @@ form .textarea,
     justify-content: center;
     z-index: 5; }
   .choose .img-wrapper {
-    background: #FFFFFF;
     height: 320px;
     display: flex;
     flex-wrap: wrap;
@@ -1040,7 +1032,7 @@ form .textarea,
       margin: auto;
       transition: all .5s; }
     .choose .choice .h6 {
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 700;
       width: 100%;
       color: #FFFFFF;
@@ -2972,7 +2964,8 @@ form .textarea,
   .products .product-slider ul {
     height: 580px; }
   .choose {
-    padding: 5rem 0 7rem; }
+    padding: 5rem 0 8rem;
+    min-height: initial; }
     .choose .content {
       max-width: 100%;
       margin: 0 auto; }
@@ -2980,14 +2973,14 @@ form .textarea,
       width: 1100px;
       max-width: 90%;
       margin: 0 auto;
-      min-height: 650px; }
+      min-height: initial; }
       .choose .container::after {
         top: 50%;
         height: 45%; }
     .choose .choice-grid {
       margin-top: 4rem; }
     .choose .choice .h6 {
-      font-size: 20px;
+      font-size: 18px;
       padding-top: 1.5rem; }
     .choose .img-wrapper {
       display: flex;
@@ -3242,7 +3235,7 @@ form .textarea,
     font-size: 15px; }
   .choose {
     min-height: auto;
-    padding: 5rem 0 2rem; }
+    padding: 5rem 0 7rem; }
     .choose .container::after {
       top: 40%; }
     .choose .polygon {
@@ -3391,6 +3384,12 @@ form .textarea,
   .how-it-works {
     padding: 4rem 0;
     min-height: 600px; }
+    .how-it-works .logo {
+      margin-bottom: 1rem; }
+      .how-it-works .logo img {
+        max-height: 2rem; }
+    .how-it-works .video-preview {
+      height: 7rem; }
     .how-it-works.smoke::after {
       z-index: 1; }
     .how-it-works .item-wrapper {
@@ -3431,7 +3430,7 @@ form .textarea,
     .choose .choice-grid {
       justify-content: center; }
     .choose .choice {
-      margin-bottom: 3rem; }
+      margin-bottom: 1rem; }
     .choose .container {
       min-height: initial; }
       .choose .container::after {
@@ -3666,16 +3665,18 @@ form .textarea,
   .how-it-works .item {
     text-align: center; }
   .choose {
-    padding-top: 5rem;
-    background: #000E19; }
+    padding: 3rem 0 2rem; }
     .choose .choice .img-wrapper {
       overflow: hidden; }
     .choose .choice .h6 {
-      font-size: 15px;
+      font-size: 13px;
       font-weight: 600;
       max-width: 100%; }
+    .choose .title .h2 {
+      margin-bottom: .5rem; }
     .choose .title p {
-      font-size: 1rem; }
+      font-size: 1rem;
+      margin-top: 0; }
     .choose .content {
       width: 380px;
       max-width: 100%;
@@ -3738,6 +3739,8 @@ form .textarea,
 @media screen and (max-width: 520px) {
   .h2 {
     font-size: 28px; }
+  .how-it-works .logo {
+    margin-bottom: 0; }
   .play-video span {
     margin-right: .5rem; }
   .about .list {

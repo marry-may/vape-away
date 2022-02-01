@@ -285,25 +285,16 @@
 }
 
 .choose{
-    padding: 10rem 0 18rem;
+    padding: 8rem 0 12rem;
     position: relative;
+    background: $color-bg url("../images/main/choose-bg.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
     
     .container{
         position: relative;
         z-index: 5;
-
-        &::after{
-            content: "";
-            display: block;
-            position: absolute;
-            top: 60%;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 80%;
-            height: 55%;
-            background: $color-primary;
-        }
     }
 
     .title{
@@ -326,7 +317,6 @@
     }
 
     .img-wrapper{
-        background: $color-white;
         height: 320px;
         display: flex;
         flex-wrap: wrap;
@@ -352,7 +342,7 @@
         }
         
         .h6{
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 700;
             width: 100%;
             color: $color-white;
