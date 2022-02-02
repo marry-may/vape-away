@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    <title>VapeAway</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.8.0/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar dark">
+    <div class="navbar-container uk-navbar-container uk-navbar-transparent" uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+             <a class="uk-navbar-item uk-logo" href="/">
+                 <img src="images/logo.svg" alt="">
+             </a>
+        </div>
+
+        <div class="uk-navbar-center hidden-m">
+            <ul class="uk-navbar-nav">
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="videos.html">Video</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            
+            <a href="#" class="nav-link">
+                <span class="icon icon-profile"></span>
+            </a>
+            <a href="cart.html" class="nav-link">
+                <span class="icon icon-cart"></span>
+            </a>
+
+            <a href="takeaway.html" class="btn btn-primary">
+                buy now
+            </a>
+
+            <div class="mobile-toggle">
+                <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#mobile-nav" uk-toggle></a>
+            </div>
+        </div>
+    </div>
+</nav> 
+
+<div id="mobile-nav" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav">
+            <li class="uk-active">
+                <a href="index.html">Main</a>
+            </li>
+            <li>
+                <a href="mission.html">Our Mission</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>            
+            <li>
+                <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+                <a href="video.html">Videos</a>
+            </li>
+            <li>
+                <a href="contacts.html">Contact</a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<section class="devices">
+    <div class="uk-container">
+        <h4 class="title h4">Which device do you use?</h4>
+        <p class="subtitle">Pick the device you use from all the ones below:</p>
+
+        <div class="grid uk-grid uk-grid-small uk-child-width-1-2  uk-child-width-1-3@s uk-child-width-1-4@m">
+            <a href="vapeaway.html" class="item">
+                <div class="device">
+                    <img src="images/devices/jull.png" alt="">
+                    <h5 class="device-title">
+                        Juul
+                    </h5>
+                </div>
+            </a>
+            
+            <a class="item" href="vapeaway-vuse.html">
+                <div class="device">
+                    <img src="images/devices/vuse.png" alt="">
+                    <h5 class="device-title">
+                        Vuse
+                    </h5>
+                </div>
+            </a>
+
+            <a class="item" href="vapeaway-myle.html">
+                <div class="device">
+                    <img src="images/devices/myle-1.png"  alt="">
+                    <h5 class="device-title">
+                        Myle
+                    </h5>
+                </div>
+            </a>
+
+            <a class="item" href="#coming-soon" uk-toggle>
+                <div class="device">
+                    <img src="images/devices/myle-2.png"  alt="">
+                    <h5 class="device-title">
+                        Myle Disposable
+                    </h5>
+                </div>
+            </a>
+
+            <a class="item" href="#coming-soon" uk-toggle>
+                <div class="device">
+                    <img src="images/devices/blu.png" alt="">
+                    <h5 class="device-title">
+                        Blu
+                    </h5>
+                </div>
+            </a>
+
+            <a class="item" href="#coming-soon" uk-toggle>
+                <div class="device">
+                    <img src="images/devices/njoy.png" alt="">
+                    <h5 class="device-title">
+                        Njoy Ace
+                    </h5>
+                </div>
+            </a>
+
+            <a class="item" href="#coming-soon" uk-toggle>
+                <div class="device">
+                    <img src="images/devices/puff.png" alt="">
+                    <h5 class="device-title">
+                        Puff Bar
+                    </h5>
+                </div>
+            </a>
+
+            <a class="item" href="#no-device" uk-toggle>
+                <div class="device">
+                    <h5 class="device-title">
+                        Not on the list
+                    </h5>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<div id="coming-soon" class="uk-flex-top coming-soon" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <div class="uk-text-center">
+            <h5 class="h4 bright">Coming Soon</h5>
+
+            <p class="subtitle">
+                Filters for this product are currently under development. Please enter your information to be the first to know when this product is available.
+            </p>
+
+            <form action="" class="form">
+                <div class="uk-margin-top">
+                <input type="text" class="input" placeholder="Name">
+                </div>
+                <div class="uk-margin-top">
+                <input type="email" class="input" placeholder="Email">
+                </div>
+                <button type="submit" class="btn btn-bright uk-margin-top">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div id="no-device" class="uk-flex-top coming-soon" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <div class="uk-text-center">
+            <h5 class="h5 bright">Don't see your device?</h5>
+
+            <p class="subtitle">Please advise what device you use and we can get back to you to let you know if and when we plan to have filters to adopt to your e-cigarette.</p>
+
+            <form action="" class="form">
+                <div class="uk-margin-top">
+                    <input type="email" class="input" placeholder="Email">
+                </div>
+                <div class="uk-margin-top">
+                    <input type="text" class="input" placeholder="Device">
+                </div>
+                <button type="submit" class="btn btn-bright uk-margin-top">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="content uk-container">
+        <div class="uk-grid">
+            <div class="logo-container uk-width-1-3@m uk-width-1-4@l">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <div class="subtitle">
+                    The Smarter Way
+                </div>
+
+                <div class="social">
+                    <a href="#" class="social-link">
+                        <span class="icon icon-instagram"></span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <span class="icon icon-facebook"></span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <span class="icon icon-twitter"></span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="nav-container uk-width-1-3@m uk-width-1-2@l">
+                <div class="uk-grid uk-child-width-1-2@l">
+                    <div class="footer-nav">
+                        <a href="#" class="section-title">
+                            Shop
+                        </a>
+                        <a href="#" class="nav-link">
+                            FAQ
+                        </a>
+                        <a href="#" class="nav-link">
+                            Our Mission
+                        </a>
+                        <a href="#" class="nav-link">
+                            Videos
+                        </a>
+                        <a href="#" class="nav-link">
+                            Blog
+                        </a>
+                    </div>
+
+                    <div class="footer-nav">
+                        <a href="#" class="section-title">
+                            Contact
+                        </a>
+                        <a href="#" class="nav-link">
+                            help@VapeAwaynow.com
+                        </a>
+                        <a href="#" class="nav-link">
+                            844-4VAPE-AWAY
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-container uk-width-1-3@m uk-width-1-4@l">
+                <div class="section-title">
+                    Stay in the know
+                </div>
+                <form class="form">
+                    <input class="input" type="text" placeholder="Email">
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+       <div class="guarantee uk-container">
+            <div class="wrapper content">
+                <div class="img">
+                    <img src="images/guarantee.png" alt="">
+                </div>
+                <div class="text">
+                    <p>All products purchased from VapeAway are backed by a 100% Money-Back Guarantee*. <br>
+                    If you are not satisfied with your purchase, you may return it to us for a prompt and courteous refund or replacement. </p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-container copyright-wrappers">
+            <div class="content">
+                <p>© 2021 VapeAway® LLC. All Rights Reserved. VapeAway and the VapeAway logo and graphic design of this package are trademarks of VapeAway Intellectual Property LLC. , New York, New York 10018.</p>
+
+                <p>* Approximate percentage range, has up to a 5% variance.</p>
+
+                <p>** For testing information and results, please visit: vapewaynow.com/testing</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JS Libs-->
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.8.0/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.8.0/dist/js/uikit-icons.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/particles.min.js"></script>
+
+<!-- JS Custom -->
+<script src="js/app.js" defer></script>
+
+
+</body>
+</html>

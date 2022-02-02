@@ -1,0 +1,95 @@
+
+// FORM
+
+
+form,
+.form{
+  .textarea{
+    height: 150px;
+    border-radius: 25px;
+    margin-bottom: 2rem;
+    resize: none;
+  }
+
+
+
+  input,
+  .input,
+  textarea,
+  .textarea{
+    outline: none;
+    border-radius: 25px;
+    width: 100%;
+    border: 1px solid rgba($color-bg, .2);
+    color: $color-text;
+    padding: 1rem 2rem;
+    font-family: $font-main;
+    font-size: 1rem;
+
+    &::-webkit-input-placeholder{
+      font-family: $font-main;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-text;
+    }
+
+    &::-moz-placeholder{
+      font-family: $font-main;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-text;
+    }
+
+    &:-ms-input-placeholder{
+      font-family: $font-main;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-text;
+    }
+
+    &::-ms-input-placeholder{
+      font-family: $font-main;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-text;
+    }
+
+    &::placeholder{
+      font-family: $font-main;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-text;
+    }
+  }
+}
+
+
+.form.form-blue{
+  input,
+  .input,
+  textarea,
+  .textarea{
+    border: none;
+    background: #3872E8;
+
+    &::-webkit-input-placeholder{
+      color: $color-white;
+    }
+
+    &::-moz-placeholder{
+      color: $color-white;
+    }
+
+    &:-ms-input-placeholder{
+      color: $color-white;
+    }
+
+    &::-ms-input-placeholder{
+      color: $color-white;
+    }
+
+    &::placeholder{
+      color: $color-white;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 1520px;
+    max-width: 95%;
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: normal;
+    color: $color-white;
+    text-transform: capitalize;
+    background: linear-gradient(180deg, rgba(15, 19, 22, 0.35) 0%, rgba(15, 19, 22, 0.28) 56.56%, rgba(15, 19, 22, 0.1925) 76.87%, rgba(15, 19, 22, 0) 100%);
+    z-index: 100;
+
+    .uk-logo{
+        max-width: 220px;
+        padding: 0;
+    }
+
+    .uk-navbar-nav > li > a {
+        font-family: $font-main;
+        font-size: 18px;
+        font-weight: normal;
+        text-transform: capitalize;
+        
+        &:hover{
+            color: $color-primary;
+        }
+    }
+
+    .btn{
+        font-size: 14px;
+        line-height: 1;
+        padding: 1rem 2rem;
+    }
+
+    .nav-link{
+        margin-right: 2.5rem;
+    }
+
+    .icon{
+        font-size: 2rem;
+        color: $color-primary;
+    }
+}
+
+.uk-navbar-nav>li>a{
+    color: $color-white;
+}
+
+.uk-navbar-toggle {
+    color: $color-white;
+    
+
+    &:hover, 
+    &[aria-expanded=true]{
+        color: $color-primary;
+    }
+}
+
+.uk-offcanvas-bar{
+    background: $color-text;
+
+    .uk-nav>li{
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+
+        &.uk-active{
+            a{
+                color: $color-primary;
+
+                &::after{
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background: $color-primary;
+                }
+            }
+        }
+
+        &>a{
+            display: inline-block;
+            font-weight: 600;
+            position: relative;
+        }
+    }
+}
