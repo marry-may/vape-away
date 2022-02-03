@@ -2874,7 +2874,8 @@ form .textarea,
   font-weight: 600; }
 
 .products-page.products .product-img {
-  height: auto; }
+  height: auto;
+  max-height: 90%; }
 
 .products-page .h4 {
   font-size: 32px; }
@@ -2885,7 +2886,7 @@ form .textarea,
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: .2em;
-  margin-bottom: 0; }
+  margin-bottom: -1.5rem; }
 
 .products-page .system {
   background-color: #1660FE;
