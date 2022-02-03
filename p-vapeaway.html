@@ -76,144 +76,167 @@
     </div>
 </div>
 
-<section class="devices">
+<section class="product-page">
     <div class="uk-container back-wrapper">
-        <a href="index.html" class="back">
+        <a href="products.html" class="back">
             <i class="icon">←</i>
             Back
         </a>
     </div>
-    <div class="uk-container">
-        <h4 class="title h4">Which device do you use?</h4>
-        <p class="subtitle">Pick the device you use from all the ones below:</p>
+    <div class="uk-container container product-details">
+        <div class="uk-grid uk-child-width-1-2@m">
+            
+            <div class="product-img">
+                <div class="product-slider uk-position-relative" uk-slideshow="animation: fade">
+                    <ul class="product-slider-items uk-slideshow-items">
+                        <li>
+                            <img src="images/product/va-8.jpg" alt="" class="va va-8">
+                            <img src="images/product/va-16.jpg" alt="" class="va va-16 uk-hidden">
+                            <img src="images/product/va-32.jpg" alt="" class="va va-32 uk-hidden">
+                        </li>
+                        <li>
+                            <div class="slide-wrapper">
+                                <img src="images/technology.gif" alt=""  uk-cover>
+                            </div>
+                        </li>
+                    </ul>
 
-        <div class="grid uk-grid uk-grid-small uk-child-width-1-2  uk-child-width-1-3@s uk-child-width-1-4@m">
-            <a href="takeaway.html" class="item">
-                <div class="device">
-                    <img src="images/devices/jull.png" alt="">
-                    <h5 class="device-title">
-                        Juul
-                    </h5>
+                    <div class="uk-position-top-left">
+                        <ul class="uk-thumbnav">
+                            <li uk-slideshow-item="0">
+                                 <a href="#">
+                                    <img src="images/product/va-8.jpg" width="100" alt="">
+                                </a>
+                            </li>
+                            <li uk-slideshow-item="1">
+                                <a href="#">
+                                    <img src="images/technology.gif" width="100" alt="" >
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </a>
+                
+            </div>
 
-             <a class="item" href="takeaway-vuse.html">
-                <div class="device">
-                    <img src="images/devices/vuse.png" alt="">
-                    <h5 class="device-title">
-                        Vuse
-                    </h5>
+            <div>
+                <div class="content">
+                    <h1 class="h4 title">
+                        VapeAway Filters
+                    </h1>
+
+                     <div class="row description">
+                        <div class="wrapper">
+                            <p>
+                                For those looking to be smarter about their vaping habits, vapeaway offers a revolutionary disposable filter that attaches to your e-cigarette pod to dramatically reduce harmful toxins
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row device">
+                        <h6 class="h6">
+                            Device
+                        </h6>
+                        <div class="wrapper">
+                            <div class="select">
+                                <select name="" id="">
+                                    <option value="">
+                                        Juul
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h6 class="h6">
+                            Pack size
+                        </h6>
+                        <div class="wrapper">
+                            <div class="uk-grid uk-grid-small uk-child-width-1-3">
+                                <div>
+                                    <div class="box active b-va-8">
+                                        <p class="box-title">
+                                            8 filters
+                                        </p>
+                                        <p class="price">$ 10</p>
+                                        <p class="text">
+                                           Only $1.25 per filter
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="box b-va-16">
+                                        <p class="box-title">
+                                            16 filters
+                                        </p>
+                                        <p class="price">$ 18</p>
+                                        <p class="text">
+                                            Save 12%
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="box b-va-32">
+                                        <p class="box-title">
+                                            32 filters
+                                        </p>
+                                        <p class="price">$ 29</p>
+                                        <p class="text">
+                                           Save 28%
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row frequency">
+                        <h6 class="h6">
+                            Frequency
+                        </h6>
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn btn-dark">
+                                Buy Once
+                            </a>
+                            <a href="#" class="btn btn-outline">
+                                Auto-Refill <span class="bright">Save 6%</span>
+                            </a>
+                        </div>
+
+                        <div class="wrapper uk-hidden">
+                            <div class="select ship">
+                                <select name="" id="">
+                                    <option value="">
+                                        Ships every 3 month
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <a href="cart.html" class="btn btn-bright">
+                            Add to cart
+                        </a>
+                    </div>
+
+                    <div class="row terms">
+                        <div class="item">
+                            <span class="icon icon-delivery"></span>
+                            Qualifies for free shipping
+                        </div>
+                        <div class="item">
+                            <span class="icon icon-mark"></span>
+                            Quality guarantee
+                        </div>
+                    </div>
+
                 </div>
-            </a>
-
-            <a class="item" href="takeaway-myle.html">
-                <div class="device">
-                    <img src="images/devices/myle-1.png"  alt="">
-                    <h5 class="device-title">
-                        Myle
-                    </h5>
-                </div>
-            </a>
-
-            <a class="item" href="#coming-soon" uk-toggle>
-                <div class="device">
-                    <img src="images/devices/myle-2.png"  alt="">
-                    <h5 class="device-title">
-                        Myle Disposable
-                    </h5>
-                </div>
-            </a>
-
-            <a class="item" href="#coming-soon" uk-toggle>
-                <div class="device">
-                    <img src="images/devices/blu.png" alt="">
-                    <h5 class="device-title">
-                        Blu
-                    </h5>
-                </div>
-            </a>
-
-            <a class="item" href="#coming-soon" uk-toggle>
-                <div class="device">
-                    <img src="images/devices/njoy.png" alt="">
-                    <h5 class="device-title">
-                        Njoy Ace
-                    </h5>
-                </div>
-            </a>
-
-            <a class="item" href="#coming-soon" uk-toggle>
-                <div class="device">
-                    <img src="images/devices/puff.png" alt="">
-                    <h5 class="device-title">
-                        Puff Bar
-                    </h5>
-                </div>
-            </a>
-
-           
-
-            <a class="item" href="#no-device" uk-toggle>
-                <div class="device">
-                    <h5 class="device-title">
-                        Don't see your device?
-                    </h5>
-                </div>
-            </a>
+            </div>
         </div>
     </div>
 </section>
-
-<div id="coming-soon" class="uk-flex-top coming-soon" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-
-        <div class="uk-text-center">
-            <h5 class="h4 bright">Coming Soon</h5>
-
-            <p class="subtitle">
-                Filters for this product are currently under development. Please enter your information to be the first to know when this product is available.
-            </p>
-
-            <form action="" class="form">
-                <div class="uk-margin-top">
-                <input type="text" class="input" placeholder="Name">
-                </div>
-                <div class="uk-margin-top">
-                <input type="email" class="input" placeholder="Email">
-                </div>
-                <button type="submit" class="btn btn-bright uk-margin-top">Submit</button>
-            </form>
-
-        </div>
-    </div>
-</div>
-
-<div id="no-device" class="uk-flex-top coming-soon" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-
-        <div class="uk-text-center">
-            <h5 class="h5 bright">Don't see your device?</h5>
-
-            <p class="subtitle">Please advise what device you use and we can get back to you to let you know if and when we plan to have filters to adopt to your e-cigarette.</p>
-
-            <form action="" class="form">
-                <div class="uk-margin-top">
-                    <input type="email" class="input" placeholder="Email">
-                </div>
-                <div class="uk-margin-top">
-                    <input type="text" class="input" placeholder="Device">
-                </div>
-                <button type="submit" class="btn btn-bright uk-margin-top">Submit</button>
-            </form>
-
-        </div>
-    </div>
-</div>
-
 
 <footer class="footer">
     <div class="content uk-container">
@@ -307,6 +330,7 @@
         </div>
     </div>
 </footer>
+
 
 <!-- JS Libs-->
 <!-- UIkit JS -->
