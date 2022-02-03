@@ -2864,11 +2864,24 @@ form .textarea,
 .products-page.products .product:after {
   content: none; }
 
+.products-page.products .product-title {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600; }
+
 .products-page.products .product-img {
   height: auto; }
 
 .products-page .h4 {
   font-size: 32px; }
+
+.products-page .subtitle {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin-bottom: 0; }
 
 .products-page .system {
   background-color: #1660FE;
