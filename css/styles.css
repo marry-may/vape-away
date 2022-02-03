@@ -989,7 +989,7 @@ form .textarea,
       margin: 0 0 0 2rem; }
 
 .choose {
-  padding: 8rem 0 12rem;
+  padding: 8rem 0 14rem;
   position: relative;
   background: #040D16 url("../images/main/choose-bg.jpg") no-repeat center center;
   background-size: cover;
@@ -1032,13 +1032,14 @@ form .textarea,
       margin: auto;
       transition: all .5s; }
     .choose .choice .h6 {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 700;
       width: 100%;
       color: #FFFFFF;
       max-width: 80%;
-      margin: 0 auto;
-      padding-top: 2.5rem; }
+      margin: 0 auto; }
+      .choose .choice .h6 span {
+        display: block; }
     .choose .choice:hover img {
       transform: scale(1.1); }
 
@@ -2864,6 +2865,9 @@ form .textarea,
 .products-page.products .product:after {
   content: none; }
 
+.products-page.products .img-wrapper {
+  height: 420px; }
+
 .products-page.products .product-title {
   display: block;
   margin-bottom: 1rem;
@@ -2878,7 +2882,7 @@ form .textarea,
 .products-page .subtitle {
   text-align: center;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: .2em;
   margin-bottom: 0; }

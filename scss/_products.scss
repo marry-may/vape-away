@@ -8,9 +8,12 @@
       content: none;
     }
 
+    .img-wrapper{
+      height: 420px;
+    }
+
     .product-title{
       display: block;
-      // color: inherit;
       margin-bottom: 1rem;
       font-weight: 600;
     }
@@ -27,7 +30,7 @@
   .subtitle{
     text-align: center;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 300;
     text-transform: uppercase;
     letter-spacing: .2em;
     margin-bottom: 0;

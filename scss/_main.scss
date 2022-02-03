@@ -285,7 +285,7 @@
 }
 
 .choose{
-    padding: 8rem 0 12rem;
+    padding: 8rem 0 14rem;
     position: relative;
     background: $color-bg url("../images/main/choose-bg.jpg") no-repeat center center;
     background-size: cover;
@@ -342,13 +342,16 @@
         }
         
         .h6{
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 700;
             width: 100%;
             color: $color-white;
             max-width: 80%;
             margin: 0 auto;
-            padding-top: 2.5rem;
+
+            span{
+                display: block;
+            }
         }
 
         &:hover{
