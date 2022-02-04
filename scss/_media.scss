@@ -299,8 +299,8 @@
             padding-left: 0;
             font-size: 14px;
 
-            &>div:last-child{
-                margin-left: 2rem;
+            &>div:first-child{
+             margin-right: 2rem;
             }
         }
 
@@ -1186,6 +1186,10 @@
         &-lg{
             transform: scale(.5);
         }
+    }
+
+    .certified .view-results{
+        justify-content: flex-start;
     }
 }
 

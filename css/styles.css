@@ -1411,9 +1411,10 @@ form .textarea,
       font-size: inherit; }
   .certified .view-results {
     display: flex;
-    justify-content: space-between;
     margin-top: 3.5rem;
     padding-left: 3rem; }
+    .certified .view-results > div:first-child {
+      margin-right: 3rem; }
     .certified .view-results a,
     .certified .view-results .link {
       display: flex;
@@ -3124,8 +3125,8 @@ form .textarea,
     justify-content: flex-end;
     padding-left: 0;
     font-size: 14px; }
-    .certified .view-results > div:last-child {
-      margin-left: 2rem; }
+    .certified .view-results > div:first-child {
+      margin-right: 2rem; }
   .collaborating .container {
     padding-top: 9rem;
     padding-bottom: 10rem; }
@@ -3594,7 +3595,9 @@ form .textarea,
 
 @media screen and (max-width: 767px) {
   .icon-play-lg {
-    transform: scale(0.5); } }
+    transform: scale(0.5); }
+  .certified .view-results {
+    justify-content: flex-start; } }
 
 @media screen and (max-width: 739px) {
   .mobile-toggle {
