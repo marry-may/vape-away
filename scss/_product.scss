@@ -414,7 +414,6 @@
 
     .product-img{
       padding: 1rem;
-      // margin-bottom: 2rem;
       
       img{
         max-width: 100%;
@@ -468,6 +467,7 @@
       }
     }
   }
+  
   .payments .boxes .box.active .price{
     font-size: 28px;
     margin-bottom: 0;
@@ -501,6 +501,12 @@
     .box{
       p{
         font-size: 12px;
+      }
+
+      .text{
+        span{
+          display: block;
+        }
       }
     }
 
