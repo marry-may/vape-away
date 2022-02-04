@@ -293,6 +293,18 @@
                 font-size: inherit;
             }
         }
+
+        .view-results{
+            justify-content: flex-end;
+            padding-left: 0;
+            font-size: 14px;
+
+            &>div:last-child{
+                margin-left: 2rem;
+            }
+        }
+
+        
     }
 
     .collaborating{
