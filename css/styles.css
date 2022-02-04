@@ -2328,6 +2328,10 @@ form .textarea,
     .product-page .box .price {
       font-size: 28px;
       line-height: 1.6; }
+    .product-page .box .text {
+      text-transform: capitalize; }
+      .product-page .box .text span {
+        display: block; }
 
 .select {
   position: relative; }

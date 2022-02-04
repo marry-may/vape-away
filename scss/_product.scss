@@ -185,6 +185,13 @@
       font-size: 28px;
       line-height: 1.6;
     }
+
+    .text{
+      text-transform: capitalize;
+      span{
+        display: block;
+      }
+    }
   }
 }
 
@@ -430,7 +437,6 @@
           padding-left: 3rem;
         }
       }
-
 
       .uk-thumbnav{
         margin-top: 1rem;
