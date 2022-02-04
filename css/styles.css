@@ -3640,7 +3640,7 @@ form .textarea,
 
 @media screen and (max-width: 639px) {
   .main::before {
-    background-image: url("../images/main/filter.png");
+    background-image: url("../images/main/filter.webp");
     background-position: center 10%;
     background-size: 70%; }
   .main .content {
