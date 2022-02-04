@@ -991,7 +991,7 @@ form .textarea,
 .choose {
   padding: 8rem 0 14rem;
   position: relative;
-  background: #040D16 url("../images/main/choose-bg.jpg") no-repeat center center;
+  background: #040D16 url("../images/main/choose-bg.webp") no-repeat center center;
   background-size: cover;
   position: relative;
   z-index: 1; }
@@ -1382,7 +1382,7 @@ form .textarea,
     background: #FFFFFF;
     z-index: 1; }
   .certified .container {
-    background: #1660FE url("../images/main/bg-certified.jpg") no-repeat center center;
+    background: #1660FE url("../images/main/bg-certified.webp") no-repeat center center;
     background-size: cover;
     max-width: 86%;
     width: 1620px;
@@ -1508,7 +1508,7 @@ form .textarea,
     top: -1px;
     z-index: 1; }
   .collaborating .container {
-    background: #1660FE url("../images/main/bg-colab.jpg") no-repeat center center;
+    background: #1660FE url("../images/main/bg-colab.webp") no-repeat center center;
     background-size: cover;
     max-width: 90%;
     width: 1620px;
