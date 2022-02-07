@@ -377,13 +377,13 @@
             margin: 0 auto;
 
             &>*{
-                padding-left: 0;
+                padding: 0;
             }
         }
 
-        .nav-container{
-            padding: 0 1rem;
-        }
+        // .nav-container{
+        //     padding: 0 1rem;
+        // }
         
         .subtitle {
             font-size: 20px;
@@ -405,7 +405,7 @@
             max-width: 100%;
             margin: 0 auto;
 
-            &:first-child{
+            &:not(:last-child){
                 display: none;
             }
 
