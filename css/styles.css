@@ -989,9 +989,10 @@ form .textarea,
       margin: 0 0 0 2rem; }
 
 .choose {
-  padding: 8rem 0 14rem;
+  padding: 9rem 0 14rem;
+  min-height: 100vh;
   position: relative;
-  background: #040D16 url("../images/main/choose-bg.webp") no-repeat center center;
+  background: #040D16 url("../images/main/bg-choice.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
   z-index: 1; }
@@ -1006,7 +1007,7 @@ form .textarea,
       font-size: inherit;
       margin-top: 1.5rem; }
   .choose .choice-grid {
-    margin-top: 6rem;
+    margin-top: 8rem;
     position: relative;
     display: flex;
     justify-content: center;
@@ -1037,7 +1038,7 @@ form .textarea,
       width: 100%;
       color: #FFFFFF;
       max-width: 80%;
-      margin: 0 auto; }
+      margin: 0; }
       .choose .choice .h6 span {
         display: block; }
     .choose .choice:hover img {

@@ -285,9 +285,11 @@
 }
 
 .choose{
-    padding: 8rem 0 14rem;
+    padding: 9rem 0 14rem;
+    min-height: 100vh;
     position: relative;
-    background: $color-bg url("../images/main/choose-bg.webp") no-repeat center center;
+    // background: $color-bg url("../images/main/choose-bg.webp") no-repeat center center;
+    background: $color-bg url("../images/main/bg-choice.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -309,7 +311,7 @@
     }
 
     .choice-grid{
-        margin-top: 6rem;
+        margin-top: 8rem;
         position: relative;
         display: flex;
         justify-content: center;
@@ -334,6 +336,18 @@
         align-items: center;
         text-align: center;
         z-index: 2;
+        
+
+        // .img-wrapper{
+        //     background: rgba($color-bg, .4);
+        //     padding-bottom: 4rem;
+        //     box-shadow: 0 0 10px rgba($color-primary, 0);
+        //     transition: all .5s;
+
+        //     &:hover{
+        //         box-shadow: 0 0 60px rgba($color-primary, .3);
+        //     }
+        // }
 
         img{
             max-width: 90%;
@@ -347,7 +361,7 @@
             width: 100%;
             color: $color-white;
             max-width: 80%;
-            margin: 0 auto;
+            margin: 0;
 
             span{
                 display: block;
